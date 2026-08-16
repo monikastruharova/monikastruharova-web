@@ -1,26 +1,96 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Warm, earthy, "safe space" palette */
+  --color-cream: #faf5ec;
+  --color-cream-dark: #f2e9d8;
+  --color-sand: #e9dcc3;
+  --color-ink: #33261c;
+  --color-ink-soft: #5a4a3c;
+  --color-clay: #bd6b45;
+  --color-clay-dark: #a35634;
+  --color-clay-light: #e8b79a;
+  --color-sage: #7c8a6a;
+  --color-sage-dark: #5f6c50;
+  --color-gold: #c8a05a;
+  --color-rose: #d8927a;
+
+  --background: var(--color-cream);
+  --foreground: var(--color-ink);
 }
 
 @theme inline {
+  --color-cream: var(--color-cream);
+  --color-cream-dark: var(--color-cream-dark);
+  --color-sand: var(--color-sand);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-clay: var(--color-clay);
+  --color-clay-dark: var(--color-clay-dark);
+  --color-clay-light: var(--color-clay-light);
+  --color-sage: var(--color-sage);
+  --color-sage-dark: var(--color-sage-dark);
+  --color-gold: var(--color-gold);
+  --color-rose: var(--color-rose);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-serif: var(--font-fraunces);
+  --font-sans: var(--font-mulish);
+
+  /* Chakra accent colors */
+  --color-chakra-root: #b3392f;
+  --color-chakra-sacral: #d17a2f;
+  --color-chakra-solar: #d6ab34;
+  --color-chakra-heart: #6f8f5e;
+  --color-chakra-throat: #4e7f9c;
+  --color-chakra-third-eye: #4b4a86;
+  --color-chakra-crown: #8b6bab;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4,
+.font-serif {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+/* Organic blob shape used behind portraits / hero imagery */
+.blob {
+  border-radius: 62% 38% 55% 45% / 48% 42% 58% 52%;
+}
+
+.blob-alt {
+  border-radius: 42% 58% 61% 39% / 52% 40% 60% 48%;
+}
+
+/* Subtle texture divider */
+.soft-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-sand), transparent);
+}
+
+::selection {
+  background: var(--color-clay-light);
+  color: var(--color-ink);
+}
+
+.container-page {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-page {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }

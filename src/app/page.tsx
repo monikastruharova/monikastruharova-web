@@ -1,69 +1,217 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { Container } from "@/components/Container";
+import { ServiceCard } from "@/components/ServiceCard";
+import { TestimonialCard } from "@/components/TestimonialCard";
+import { CTABlock } from "@/components/CTABlock";
+import { PlaceholderImage } from "@/components/PlaceholderImage";
+import { services, dvojplamenTeaser } from "@/data/services";
+import { testimonials } from "@/data/testimonials";
+import { blogPosts } from "@/data/blog";
+import { siteConfig } from "@/data/site";
 
-export default function Home() {
+export const metadata: Metadata = {
+  // Explicitný celý title (nie len "Domov") — na koreňovej trase "/" sa
+  // title.template z layoutu na vlastnú stránku rovnakého segmentu nemusí
+  // aplikovať, preto je tu radšej istota.
+  title: `Domov | ${siteConfig.name}`,
+  description:
+    "Monika Struhárová — terapeutka a lektorka. Staň sa tvorcom svojho života: terapia Cesta, harmonizácia čakier, ženské kruhy a intuitívny tanec.",
+  alternates: { canonical: "/" },
+};
+
+const featuredTestimonials = testimonials.filter((t) => t.featured).slice(0, 2);
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+    <>
+      {/* HERO */}
+      <section className="pt-14 pb-20 md:pt-20 md:pb-28">
+        <Container className="grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <p className="text-sm font-semibold tracking-[0.2em] text-clay-dark uppercase">
+              Terapeutka · Lektorka
+            </p>
+            <h1 className="mt-4 font-serif text-3xl leading-tight text-ink md:text-5xl">
+              Staň sa tvorcom svojho života.
+            </h1>
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft md:text-lg">
+              <p>Dôveruj svojmu srdcu, aj keď kráčaš v hmle a neistote.</p>
+              <p>
+                Už nečakaj, kým búrka prehrmí, kým vonkajší svet schváli tvoju hodnotu, alebo kým
+                ťa niekto zachráni.
+              </p>
+              <p>
+                Skutočný tvorca života sa nespolieha na ideálne podmienky. Vie, že vonkajšia
+                realita je len zrkadlom jeho vnútorného sveta.
+              </p>
+              <p>Nechcem ťa učiť, ako máš žiť.</p>
+              <p>
+                Pomôžem ti však nájsť tvoju vlastnú pravdu, spojiť sa s hlasom srdca a začať konať
+                z pozície rýdzej kráľovskej sily.
+              </p>
+              <p>
+                Ponúkam ti hlbokú transformáciu, pri ktorej sa staneš hlavným tvorcom svojho života
+                opäť ty.
+              </p>
+            </div>
+            <div className="mt-8">
+              <Link
+                href="/moj-pribeh"
+                className="inline-flex items-center gap-2 rounded-full bg-clay px-7 py-3.5 text-sm font-semibold text-cream shadow-sm transition hover:bg-clay-dark"
+              >
+                Spoznaj môj príbeh <span aria-hidden>→</span>
+              </Link>
+            </div>
+          </div>
+
+          <div className="relative mx-auto w-full max-w-sm">
+            <PlaceholderImage
+              label="Portrét Moniky Struhárovej (hero fotografia)"
+              className="w-full"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+            {/* Meno vsadené priamo do hero vizuálu, viditeľné aj bez fotografie */}
+            <div className="absolute -bottom-5 left-1/2 w-[85%] -translate-x-1/2 rounded-2xl bg-cream px-5 py-4 text-center shadow-lg">
+              <p className="font-serif text-xl text-ink md:text-2xl">Monika Struhárová</p>
+              <p className="text-xs tracking-wide text-ink-soft uppercase">
+                Terapia Cesta · Čakry · Ženské kruhy · Tanec
+              </p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* NÁSTROJE PRE NÁVRAT K CELISTVOSTI */}
+      <section className="py-16 md:py-24">
+        <Container>
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="font-serif text-2xl text-ink md:text-3xl">
+              Nástroje pre tvoj návrat k celistvosti
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-ink-soft md:text-lg">
+              Nekĺžem po povrchu. Prepájam hlboké terapeutické prístupy s prácou s podvedomím a
+              energiou. Sprevádzam ženy a mužov, ktorí sú pripravení pozrieť sa pravde do očí a
+              začať žiť bez masiek a ilúzií.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {services.map((service) => (
+              <ServiceCard key={service.slug} service={service} />
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* CESTA DVOJPLAMEŇA */}
+      <section className="py-16 md:py-24">
+        <Container>
+          <div className="grid items-center gap-10 rounded-[2.5rem] border border-sand bg-white/50 p-8 md:grid-cols-2 md:p-14">
+            <PlaceholderImage
+              label="Symbolický vizuál — Cesta Dvojplameňa"
+              tone="sage"
+              shape="blob-alt"
+              className="max-w-sm"
+            />
+            <div>
+              <p className="text-xs font-semibold tracking-[0.2em] text-sage-dark uppercase">
+                Cesta Dvojplameňa
+              </p>
+              <p className="mt-4 text-lg leading-relaxed text-ink md:text-xl">
+                Hlboké zrkadlenie duší, ktoré prebúdza tvoju najčistejšiu podstatu. Spojenie,
+                ktoré nezväzuje, ale transformuje, oslobodzuje a vedie ťa späť k sebe.
+              </p>
+              <Link
+                href={dvojplamenTeaser.href}
+                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-clay-dark"
+              >
+                Preskúmať Cestu Dvojplameňa <span aria-hidden>→</span>
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* POVEDALI O MNE */}
+      <section className="py-16 md:py-24">
+        <Container>
+          <h2 className="text-center font-serif text-2xl text-ink md:text-3xl">
+            Povedali o mne…
+          </h2>
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {featuredTestimonials.map((t) => (
+              <TestimonialCard key={t.id} testimonial={t} />
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/skusenosti-klientov"
+              className="text-sm font-semibold text-clay-dark underline underline-offset-4"
+            >
+              Prečítať viac skúseností klientov
+            </Link>
+          </div>
+        </Container>
+      </section>
+
+      {/* AKTUÁLNE PODUJATIA */}
+      <section className="py-16 md:py-24">
+        <Container>
+          <div className="rounded-[2.5rem] bg-cream-dark/70 p-8 text-center md:p-14">
+            <h2 className="font-serif text-2xl text-ink md:text-3xl">Aktuálne podujatia</h2>
+            <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-ink-soft">
+              Termíny ženských kruhov, tanečných večerov a ďalších stretnutí nájdeš vždy aktuálne
+              na Facebooku.
+            </p>
+            {/* TODO: doplniť reálny odkaz na FB udalosti/skupinu */}
+            <Link
+              href={siteConfig.facebookEvents || "#"}
+              className="mt-6 inline-flex items-center gap-2 rounded-full border border-clay px-6 py-3 text-sm font-semibold text-clay-dark"
+            >
+              Pozrieť podujatia na Facebooku <span aria-hidden>↗</span>
+            </Link>
+          </div>
+        </Container>
+      </section>
+
+      {/* INŠPIRATÍVNE ČLÁNKY */}
+      <section className="py-16 md:py-24">
+        <Container>
+          <div className="flex items-end justify-between gap-4">
+            <h2 className="font-serif text-2xl text-ink md:text-3xl">Inšpiratívne články</h2>
+            <Link href="/blog" className="text-sm font-semibold text-clay-dark">
+              Celý blog →
+            </Link>
+          </div>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {blogPosts.slice(0, 3).map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="flex flex-col rounded-[1.75rem] border border-sand bg-white/50 p-6 transition hover:-translate-y-1 hover:shadow-md"
+              >
+                <p className="text-xs font-semibold tracking-wide text-sage-dark uppercase">
+                  Príbehy zo života
+                </p>
+                <h3 className="mt-2 font-serif text-lg text-ink">{post.title}</h3>
+                <p className="mt-2 line-clamp-3 text-sm text-ink-soft">{post.excerpt}</p>
+              </Link>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* ZÁVEREČNÉ CTA */}
+      <section className="pb-20 md:pb-28">
+        <Container>
+          <CTABlock
+            heading="Cieľom života nie je prežívať v ochrannej ulite."
+            body="Cieľom života je postaviť sa do svojej sily a naozaj žiť. Ak cítiš, že nastal čas ukončiť pasívne čakanie a chceš premeniť svoju bolesť na vnútornú slobodu, bude mi cťou ťa sprevádzať."
+            ctaLabel="Chcem sa objednať na sedenie"
+            ctaHref="/kontakt"
+          />
+        </Container>
+      </section>
+    </>
   );
 }
