@@ -32,8 +32,8 @@ export default function PrivacyPolicyPage() {
             <h2 className="font-serif text-xl text-ink">Prevádzkovateľ</h2>
             <p className="mt-2">
               Monika Struhárová, prevádzkovateľka webu {siteConfig.domain}. Kontakt:{" "}
-              <a href={`mailto:${siteConfig.email}`} className="underline">
-                {siteConfig.email}
+              <a href={siteConfig.facebook} target="_blank" rel="noopener noreferrer" className="underline">
+                Facebook — Cestou srdca
               </a>{" "}
               (TODO: doplniť fakturačné/IČO údaje, ak sú relevantné).
             </p>
@@ -41,8 +41,9 @@ export default function PrivacyPolicyPage() {
           <div>
             <h2 className="font-serif text-xl text-ink">Aké údaje spracúvame</h2>
             <p className="mt-2">
-              Údaje, ktoré nám dobrovoľne poskytneš prostredníctvom kontaktného formulára (meno,
-              e-mail, telefón, obsah správy) za účelom vybavenia tvojej poptávky.
+              Údaje, ktoré nám dobrovoľne poskytneš pri komunikácii na Facebooku (meno/profil,
+              obsah správy) za účelom vybavenia tvojej poptávky. Spracovanie správ prostredníctvom
+              Facebook Messengeru sa riadi aj zásadami ochrany súkromia spoločnosti Meta.
             </p>
           </div>
           <div>

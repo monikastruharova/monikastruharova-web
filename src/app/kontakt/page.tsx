@@ -30,14 +30,6 @@ export default function ContactPage() {
             Napísať mi na Facebooku <span aria-hidden>↗</span>
           </a>
         </div>
-
-        <p className="mt-8 text-sm text-ink-soft">
-          Prípadne mi môžeš napísať aj na e-mail{" "}
-          <a href={`mailto:${siteConfig.email}`} className="font-medium text-ink underline">
-            {siteConfig.email}
-          </a>
-          {/* TODO: potvrdiť finálny kontaktný e-mail (sekcia 14, bod 3) */}
-        </p>
       </Container>
     </section>
   );

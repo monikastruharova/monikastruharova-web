@@ -46,12 +46,6 @@ export function Footer() {
               </a>
             </li>
             <li>
-              {/* TODO: potvrdiť finálny kontaktný e-mail */}
-              <a href={`mailto:${siteConfig.email}`} className="hover:text-ink">
-                {siteConfig.email}
-              </a>
-            </li>
-            <li>
               <Link href="/ochrana-osobnych-udajov" className="hover:text-ink">
                 Ochrana osobných údajov
               </Link>

@@ -20,8 +20,9 @@ Monika sa rozhodla, že poptávky majú chodiť cez Facebook, nie cez formulár/
 e-mail. Všetky "Objednať sa" / "Chcem sa objednať..." CTA po webe (header,
 `/kontakt`, závery stránok služieb aj Dvojplameňov) teraz vedú na
 `siteConfig.facebook` = `https://www.facebook.com/cestou.srdca` (nová
-karta). `/kontakt` stránka ponúka FB ako hlavnú možnosť + e-mail ako
-záložný kontakt (TODO: potvrdiť finálny e-mail).
+karta). Kontaktný e-mail bol na výslovnú žiadosť úplne odstránený z webu
+(pätička, `/kontakt`, `/ochrana-osobnych-udajov`) — Facebook je teraz
+jediný uvedený kontaktný kanál.
 
 Pôvodný `ContactForm` + `/api/kontakt` route zostávajú v kóde nenapojené
 (pozri komentár na začiatku oboch súborov) pre prípad, že by sa Monika

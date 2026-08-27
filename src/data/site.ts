@@ -2,9 +2,6 @@ export const siteConfig = {
   name: "Monika Struhárová",
   title: "Monika Struhárová — Cestou srdca",
   domain: "monikastruharova.sk",
-  // E-mail je len záložný/informačný kontakt v pätičke — hlavný kontaktný
-  // kanál (poptávky) vedie na Facebook, pozri `facebook` nižšie.
-  email: "info@monikastruharova.sk",
   phone: "",
   instagram: "",
   // Hlavný kontaktný kanál — všetky "Objednať sa" CTA po webe vedú sem.
