@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { mainNav, siteConfig } from "@/data/site";
 import { Container } from "./Container";
@@ -12,15 +13,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-sand/70 bg-cream/90 backdrop-blur">
       <Container className="flex h-20 items-center justify-between">
-        {/* TODO: nahradiť súborom loga od Moniky (SVG/PNG) */}
         <Link href="/" className="flex items-center gap-3" onClick={() => setMobileOpen(false)}>
-          <span
-            aria-hidden
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-cream"
-            style={{ background: "linear-gradient(135deg, var(--color-clay), var(--color-gold))" }}
-          >
-            <span className="font-serif text-lg">M</span>
-          </span>
+          <Image
+            src="/images/logo-mandala.png"
+            alt="Monika Struhárová — logo"
+            width={44}
+            height={44}
+            className="h-11 w-11 shrink-0"
+          />
           <span className="font-serif text-lg leading-tight text-ink md:text-xl">
             Monika
             <br className="hidden sm:block" /> Struhárová

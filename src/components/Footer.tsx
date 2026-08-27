@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { mainNav, siteConfig } from "@/data/site";
 
 export function Footer() {
@@ -6,15 +7,14 @@ export function Footer() {
     <footer className="mt-24 border-t border-sand bg-cream-dark/60">
       <div className="container-page grid gap-10 py-14 md:grid-cols-3">
         <div>
-          {/* TODO: nahradiť súborom loga od Moniky (SVG/PNG) */}
           <div className="flex items-center gap-3">
-            <span
-              aria-hidden
-              className="flex h-10 w-10 items-center justify-center rounded-full text-cream"
-              style={{ background: "linear-gradient(135deg, var(--color-clay), var(--color-gold))" }}
-            >
-              <span className="font-serif text-base">M</span>
-            </span>
+            <Image
+              src="/images/logo-mandala.png"
+              alt="Monika Struhárová — logo"
+              width={40}
+              height={40}
+              className="h-10 w-10 shrink-0"
+            />
             <span className="font-serif text-lg text-ink">Monika Struhárová</span>
           </div>
         </div>

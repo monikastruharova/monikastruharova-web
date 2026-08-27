@@ -42,10 +42,14 @@ TODO: ak časom vznikne samostatná FB udalosť/skupina len pre podujatia
 `siteConfig.facebookEvents` v `src/data/site.ts` (zatiaľ ukazuje na ten
 istý profil).
 
-## 6. Logo
-Chýba súbor loga. Momentálne v hlavičke a v pätičke nahradené jednoduchým
-kruhovým monogramom "M" — vyznačené `TODO` v `src/components/Header.tsx` a
-`src/components/Footer.tsx`.
+## 6. ~~Logo~~ — VYRIEŠENÉ
+Nasadené zelené mandala logo (dodané ako animovaný GIF, extrahovaný
+statický snímok) — `public/images/logo-mandala.png`. Použité v hlavičke
+(`Header.tsx`), pätičke (`Footer.tsx`) a ako favicon (`src/app/icon.png`,
+nahradil pôvodný predvolený Next.js favicon).
+Zdrojový súbor má len 100×100 px — ak Monika má k dispozícii vektor
+(AI/EPS/SVG) alebo väčšie rozlíšenie, oplatí sa ho nahradiť pre ostrejšie
+zobrazenie na retina displejoch a väčších plochách.
 
 ## 7. Staré URL / SEO presmerovania
 Treba rozhodnúť, či staré podstránky (semináre, programy, terapeuti — pôvodne
@@ -82,8 +86,8 @@ Pred produkciou nahradiť skutočnými súbormi:
 - Vizuál/foto k Dvojplameňom (Domov + `/dvojplamene`)
 - Foto atmosféry ženského kruhu (`/sluzby/zenske-kruhy`)
 - Titulné fotografie ku každému blogovému článku
-- Logo (SVG/PNG, svetlá aj prípadne tmavá verzia)
-- Favicon (momentálne predvolený Next.js favicon)
+- [x] Logo — nasadené (mandala), pozri bod 6 vyššie
+- [x] Favicon — nasadený z rovnakého loga
 
 ## Chýbajúci obsah blogu
 Plný text 4 nových článkov ("Tanec srdca 1", "Tanec srdca 2", "Slzy na
