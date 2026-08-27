@@ -7,9 +7,10 @@
   --color-sand: #e9dcc3;
   --color-ink: #33261c;
   --color-ink-soft: #5a4a3c;
-  --color-clay: #bd6b45;
-  --color-clay-dark: #a35634;
-  --color-clay-light: #e8b79a;
+  /* Hlavný accent — presne odtieň zeleného loga (mandala) namiesto pôvodnej terakoty */
+  --color-clay: #16814a;
+  --color-clay-dark: #0b5c34;
+  --color-clay-light: #bfe0cb;
   --color-sage: #7c8a6a;
   --color-sage-dark: #5f6c50;
   --color-gold: #c8a05a;
