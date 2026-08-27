@@ -22,7 +22,10 @@ e-mail. Všetky "Objednať sa" / "Chcem sa objednať..." CTA po webe (header,
 `siteConfig.facebook` = `https://www.facebook.com/cestou.srdca` (nová
 karta). Kontaktný e-mail bol na výslovnú žiadosť úplne odstránený z webu
 (pätička, `/kontakt`, `/ochrana-osobnych-udajov`) — Facebook je teraz
-jediný uvedený kontaktný kanál.
+jediný uvedený kontaktný kanál. Položka "Kontakt" bola na žiadosť
+odstránená aj z hlavnej navigácie (`src/data/site.ts` → `mainNav`) —
+stránka `/kontakt` naďalej existuje (napr. pre priamy odkaz), len už nie
+je v menu ani v pätičke.
 
 Pôvodný `ContactForm` + `/api/kontakt` route zostávajú v kóde nenapojené
 (pozri komentár na začiatku oboch súborov) pre prípad, že by sa Monika

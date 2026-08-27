@@ -33,5 +33,4 @@ export const mainNav: NavItem[] = [
   { label: "Dvojplamene", href: "/dvojplamene" },
   { label: "Skúsenosti klientov", href: "/skusenosti-klientov" },
   { label: "Blog", href: "/blog" },
-  { label: "Kontakt", href: "/kontakt" },
 ];
