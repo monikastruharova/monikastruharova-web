@@ -2,13 +2,16 @@ export const siteConfig = {
   name: "Monika Struhárová",
   title: "Monika Struhárová — Cestou srdca",
   domain: "monikastruharova.sk",
-  // TODO: potvrdiť s Monikou/Petrom skutočný kontaktný e-mail a telefón, kam majú chodiť poptávky.
+  // E-mail je len záložný/informačný kontakt v pätičke — hlavný kontaktný
+  // kanál (poptávky) vedie na Facebook, pozri `facebook` nižšie.
   email: "info@monikastruharova.sk",
   phone: "",
   instagram: "",
-  facebook: "",
-  // TODO: dodať konkrétne URL na FB udalosti / skupiny ("Cestou srdca", "Dvojplameň lásky")
-  facebookEvents: "",
+  // Hlavný kontaktný kanál — všetky "Objednať sa" CTA po webe vedú sem.
+  facebook: "https://www.facebook.com/cestou.srdca",
+  // TODO: ak vznikne samostatná FB udalosť/skupina pre podujatia, doplniť
+  // sem jej konkrétne URL — zatiaľ odkazujeme na ten istý profil vyššie.
+  facebookEvents: "https://www.facebook.com/cestou.srdca",
 };
 
 export type NavItem = {

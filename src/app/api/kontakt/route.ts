@@ -1,16 +1,13 @@
 import { NextResponse } from "next/server";
 
 /**
- * TODO (pozri sekciu 14, bod 3 zadania): potvrdiť s Monikou/Petrom, kam majú
- * poptávky reálne chodiť (e-mail schránka, prípadne CRM), aby sa zachovalo
- * súčasné správanie starého webu (formulár → notifikácia e-mailom Monike,
- * prípadne autoresponder klientovi).
- *
- * Kým toto nie je potvrdené, formulár NEODOSIELA e-maily naostro — iba
- * validuje vstup a zaloguje správu na serveri, aby sa dal front-end
- * otestovať end-to-end. Po potvrdení cieľa sem doplniť reálne odoslanie
- * (napr. cez Resend / Nodemailer + SMTP, alebo webhook do CRM) a nastaviť
- * príslušné premenné prostredia (napr. CONTACT_TO_EMAIL, RESEND_API_KEY).
+ * Momentálne nepoužívané — Monika sa rozhodla, že poptávky majú chodiť cez
+ * Facebook (pozri `siteConfig.facebook` a stránku `/kontakt`), nie cez
+ * formulár/e-mail. Tento route handler necháme v kóde nedotknutý pre
+ * prípad, že by sa neskôr predsa len rozhodla pre formulár/e-mail namiesto
+ * (alebo popri) Facebooku — treba naviazať `ContactForm` naspäť na
+ * stránku a doplniť reálne odoslanie (napr. cez Resend / Nodemailer +
+ * SMTP, alebo webhook do CRM) + príslušné premenné prostredia.
  */
 
 type ContactPayload = {

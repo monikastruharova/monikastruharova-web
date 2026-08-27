@@ -1,5 +1,9 @@
 import Link from "next/link";
 
+function isExternal(href: string) {
+  return href.startsWith("http://") || href.startsWith("https://");
+}
+
 export function CTABlock({
   eyebrow,
   heading,
@@ -45,6 +49,8 @@ export function CTABlock({
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <Link
             href={ctaHref}
+            target={isExternal(ctaHref) ? "_blank" : undefined}
+            rel={isExternal(ctaHref) ? "noopener noreferrer" : undefined}
             className="rounded-full bg-cream px-7 py-3 text-sm font-semibold text-clay-dark shadow-sm transition hover:bg-white"
           >
             {ctaLabel}
@@ -52,6 +58,8 @@ export function CTABlock({
           {secondaryLabel && secondaryHref ? (
             <Link
               href={secondaryHref}
+              target={isExternal(secondaryHref) ? "_blank" : undefined}
+              rel={isExternal(secondaryHref) ? "noopener noreferrer" : undefined}
               className="rounded-full border border-cream/60 px-7 py-3 text-sm font-semibold text-cream transition hover:bg-white/10"
             >
               {secondaryLabel}

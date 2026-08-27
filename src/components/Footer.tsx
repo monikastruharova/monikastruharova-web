@@ -36,14 +36,20 @@ export function Footer() {
           <p className="text-xs font-semibold tracking-wide text-ink-soft uppercase">Kontakt</p>
           <ul className="mt-4 space-y-2 text-sm text-ink-soft">
             <li>
+              <a
+                href={siteConfig.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium hover:text-ink"
+              >
+                Facebook — Cestou srdca
+              </a>
+            </li>
+            <li>
               {/* TODO: potvrdiť finálny kontaktný e-mail */}
               <a href={`mailto:${siteConfig.email}`} className="hover:text-ink">
                 {siteConfig.email}
               </a>
-            </li>
-            <li>
-              {/* TODO: doplniť odkaz na Facebook stránku/udalosti */}
-              <span className="opacity-70">Facebook — odkaz čaká na doplnenie</span>
             </li>
             <li>
               <Link href="/ochrana-osobnych-udajov" className="hover:text-ink">

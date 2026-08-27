@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { mainNav } from "@/data/site";
+import { mainNav, siteConfig } from "@/data/site";
 import { Container } from "./Container";
 
 export function Header() {
@@ -72,7 +72,9 @@ export function Header() {
 
         <div className="hidden lg:block">
           <Link
-            href="/kontakt"
+            href={siteConfig.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-clay px-5 py-2.5 text-sm font-semibold text-cream transition hover:bg-clay-dark"
           >
             Objednať sa
@@ -121,7 +123,9 @@ export function Header() {
               </div>
             ))}
             <Link
-              href="/kontakt"
+              href={siteConfig.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
               className="mt-3 rounded-full bg-clay px-5 py-3 text-center text-sm font-semibold text-cream"
             >

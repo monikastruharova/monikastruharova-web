@@ -238,11 +238,9 @@ Stačí, ak sa na chvíľu zastavíš, obrátiš pozornosť do svojho vnútra a 
         <Container>
           <CTABlock
             heading="Pozri si najbližšie termíny"
-            body="Termíny tanečných večerov nájdeš aktuálne na Facebooku, alebo mi napíš priamo."
+            body="Termíny tanečných večerov aj možnosť napísať mi priamo nájdeš na Facebooku."
             ctaLabel="Pozrieť si najbližšie termíny"
-            ctaHref={siteConfig.facebookEvents || "/kontakt"}
-            secondaryLabel="Napísať správu"
-            secondaryHref="/kontakt"
+            ctaHref={siteConfig.facebookEvents}
           />
         </Container>
       </section>

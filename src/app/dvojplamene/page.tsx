@@ -4,6 +4,7 @@ import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { testimonialsFor } from "@/data/testimonials";
+import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Dvojplamene",
@@ -181,7 +182,7 @@ export default function DvojplamenePage() {
             heading="Prijmi moje pozvanie na stretnutie"
             body="Napíš mi o svojej téme Dvojplameňa — spoločne nájdeme cestu k tvojej vnútornej slobode."
             ctaLabel="Chcem sa objednať na sedenie"
-            ctaHref="/kontakt"
+            ctaHref={siteConfig.facebook}
           />
         </Container>
       </section>

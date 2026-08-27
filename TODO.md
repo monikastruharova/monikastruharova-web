@@ -15,23 +15,31 @@ Služby obsahujú: `/sluzby/terapia-cesta`, `/sluzby/harmonizacia-cakier`, `/slu
 **Potvrdiť aktuálne platné ceny.** Miesta v kóde: `src/app/sluzby/terapia-cesta/page.tsx`,
 `src/app/sluzby/harmonizacia-cakier/page.tsx` (hľadaj komentár `TODO (sekcia 14, bod 2)`).
 
-## 3. Kontaktný formulár → kam majú chodiť poptávky
-Formulár (`src/components/ContactForm.tsx` → `src/app/api/kontakt/route.ts`) je
-funkčný na strane frontendu, ale **zámerne neodosiela e-maily naostro** —
-zatiaľ len validuje a loguje. Potrebné potvrdiť:
-- cieľový e-mail / CRM, kam majú poptávky chodiť,
-- či má odchádzať aj autoresponder klientovi,
-a doplniť reálne odoslanie (napr. Resend/Nodemailer) + env premenné.
+## 3. ~~Kontaktný formulár~~ → poptávky vedú na Facebook — VYRIEŠENÉ
+Monika sa rozhodla, že poptávky majú chodiť cez Facebook, nie cez formulár/
+e-mail. Všetky "Objednať sa" / "Chcem sa objednať..." CTA po webe (header,
+`/kontakt`, závery stránok služieb aj Dvojplameňov) teraz vedú na
+`siteConfig.facebook` = `https://www.facebook.com/cestou.srdca` (nová
+karta). `/kontakt` stránka ponúka FB ako hlavnú možnosť + e-mail ako
+záložný kontakt (TODO: potvrdiť finálny e-mail).
+
+Pôvodný `ContactForm` + `/api/kontakt` route zostávajú v kóde nenapojené
+(pozri komentár na začiatku oboch súborov) pre prípad, že by sa Monika
+neskôr rozhodla pre formulár/e-mail popri Facebooku.
 
 ## 4. Videá Brandon Bays (stránka Terapia Cesta)
-Potrebné embed odkazy z pôvodnej podstránky starého webu. Miesto v kóde:
-`src/app/sluzby/terapia-cesta/page.tsx`, sekcia "Spoznaj silu Cesty priamo od
-jej autorky" — momentálne 2 vyznačené placeholder boxy.
+Pripravené 3 sloty (`src/components/YouTubeEmbed.tsx`, použité v
+`src/app/sluzby/terapia-cesta/page.tsx`) — stačí doplniť YouTube odkaz do
+`url` pre každé video a automaticky sa prehrá priamo na stránke (bez
+odchodu na YouTube). Zatiaľ bez odkazov, zobrazuje sa placeholder.
 
-## 5. Facebook odkazy
-Potrebné aktuálne URL na FB udalosti/skupiny ("Cestou srdca", "Dvojplameň
-lásky" a pod.). Momentálne `siteConfig.facebookEvents` v `src/data/site.ts`
-je prázdne — všetky odkazy na FB v UI to zobrazujú ako `#` / TODO.
+## 5. Facebook odkazy — čiastočne vyriešené
+Hlavný profil `https://www.facebook.com/cestou.srdca` je doplnený a
+používa sa všade (kontakt, hlavičky, pätička, "Aktuálne podujatia").
+TODO: ak časom vznikne samostatná FB udalosť/skupina len pre podujatia
+(napr. "Dvojplameň lásky"), doplniť jej vlastné URL do
+`siteConfig.facebookEvents` v `src/data/site.ts` (zatiaľ ukazuje na ten
+istý profil).
 
 ## 6. Logo
 Chýba súbor loga. Momentálne v hlavičke a v pätičke nahradené jednoduchým

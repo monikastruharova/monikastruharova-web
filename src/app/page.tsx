@@ -230,7 +230,7 @@ Prijmi teda odo mňa túto krátku meditáciu ako malý darček na tvoju cestu k
             heading="Cieľom života nie je prežívať v ochrannej ulite."
             body="Cieľom života je postaviť sa do svojej sily a naozaj žiť. Ak cítiš, že nastal čas ukončiť pasívne čakanie a chceš premeniť svoju bolesť na vnútornú slobodu, bude mi cťou ťa sprevádzať."
             ctaLabel="Chcem sa objednať na sedenie"
-            ctaHref="/kontakt"
+            ctaHref={siteConfig.facebook}
           />
         </Container>
       </section>

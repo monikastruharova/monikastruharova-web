@@ -4,7 +4,9 @@ import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { TestimonialCard } from "@/components/TestimonialCard";
+import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import { testimonialsFor } from "@/data/testimonials";
+import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Terapia Cesta",
@@ -110,15 +112,14 @@ export default function TerapiaCestaPage() {
             metódy, s nesmiernou ľahkosťou a hĺbkou vysvetľuje, ako dokáže Cesta prebudiť
             samoliečiace schopnosti tvojho tela.
           </p>
-          {/* TODO: doplniť embed videí Brandon Bays z pôvodnej podstránky (sekcia 14, bod 4) */}
-          <div className="mt-6 grid gap-6 sm:grid-cols-2">
-            {[1, 2].map((n) => (
-              <div
-                key={n}
-                className="flex aspect-video items-center justify-center rounded-2xl border border-dashed border-sand bg-cream-dark/50 text-center text-sm text-ink-soft"
-              >
-                TODO: video embed Brandon Bays #{n}
-              </div>
+          {/* TODO (sekcia 14, bod 4): doplniť YouTube odkazy na videá Brandon Bays — stačí vyplniť `url` nižšie. */}
+          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { title: "Brandon Bays o metóde Cesta #1", url: undefined },
+              { title: "Brandon Bays o metóde Cesta #2", url: undefined },
+              { title: "Brandon Bays o metóde Cesta #3", url: undefined },
+            ].map((video) => (
+              <YouTubeEmbed key={video.title} title={video.title} url={video.url} />
             ))}
           </div>
         </Container>
@@ -218,7 +219,11 @@ export default function TerapiaCestaPage() {
 
       <section className="pt-6 pb-20 md:pb-28">
         <Container>
-          <CTABlock heading="Chcem sa objednať" ctaLabel="Chcem sa objednať" ctaHref="/kontakt" />
+          <CTABlock
+            heading="Chcem sa objednať"
+            ctaLabel="Chcem sa objednať"
+            ctaHref={siteConfig.facebook}
+          />
         </Container>
       </section>
     </>

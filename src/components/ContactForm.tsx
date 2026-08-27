@@ -1,5 +1,14 @@
 "use client";
 
+/**
+ * Momentálne nepoužívané na žiadnej stránke — Monika sa rozhodla, že
+ * poptávky majú chodiť cez Facebook (pozri `siteConfig.facebook` a
+ * stránku `/kontakt`), nie cez tento formulár/e-mail. Komponent a
+ * príslušný `/api/kontakt` route handler necháme v kóde pre prípad, že by
+ * sa neskôr predsa len rozhodla pre formulár/e-mail — stačí ich znova
+ * vložiť na stránku.
+ */
+
 import { useState, type FormEvent } from "react";
 
 const services = [
