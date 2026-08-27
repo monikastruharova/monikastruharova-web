@@ -54,8 +54,9 @@ Pred produkciou nahradiť skutočnými súbormi:
 - [x] Portrét Moniky pre hero na Domove (`src/app/page.tsx`)
 - [x] Portrét Moniky pre Môj príbeh (`src/app/moj-pribeh/page.tsx`)
 - [x] Foto Moniky s Dalajlámom (nasadené na `/moj-pribeh` z roku 2008)
-- 3 fotografie certifikátov: Terapia Cesta, Reiki Master III., Kvantový dotyk
-  (`src/app/moj-pribeh/page.tsx`)
+- [x] 3 fotografie certifikátov: Terapia Cesta (The Journey), Reiki Master,
+  Kvantový dotyk (TKDM) — nasadené na `/moj-pribeh`, klikateľné na plnú
+  veľkosť
 - Vizuál/foto k Dvojplameňom (Domov + `/dvojplamene`)
 - Foto atmosféry ženského kruhu (`/sluzby/zenske-kruhy`)
 - Titulné fotografie ku každému blogovému článku

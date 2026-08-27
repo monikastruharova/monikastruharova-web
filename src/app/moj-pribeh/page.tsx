@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
-import { PlaceholderImage } from "@/components/PlaceholderImage";
 
 export const metadata: Metadata = {
   title: "Môj príbeh",
@@ -14,15 +13,21 @@ export const metadata: Metadata = {
 const certificates = [
   {
     title: "Akreditovaná terapeutka metódy Cesta (The Journey) podľa Brandon Bays",
-    imageLabel: "Certifikát — Terapia Cesta (The Journey)",
+    src: "/images/certifikat-terapia-cesta-journey.jpg",
+    width: 1057,
+    height: 1500,
   },
   {
     title: "Certifikovaná Reiki Master — III. stupeň",
-    imageLabel: "Certifikát — Reiki Master III.",
+    src: "/images/certifikat-reiki-master.jpg",
+    width: 1125,
+    height: 1500,
   },
   {
     title: "Technika kvantového dotyku",
-    imageLabel: "Certifikát — Kvantový dotyk",
+    src: "/images/certifikat-kvantovy-dotyk-tkdm.jpg",
+    width: 1500,
+    height: 1069,
   },
 ];
 
@@ -143,10 +148,24 @@ export default function MyStoryPage() {
           </h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-3">
             {certificates.map((cert) => (
-              <div key={cert.title} className="flex flex-col gap-4">
-                <PlaceholderImage label={cert.imageLabel} shape="rounded" tone="sand" />
+              <a
+                key={cert.title}
+                href={cert.src}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col gap-4"
+              >
+                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-sand bg-white shadow-sm transition group-hover:shadow-md">
+                  <Image
+                    src={cert.src}
+                    alt={cert.title}
+                    width={cert.width}
+                    height={cert.height}
+                    className="h-full w-full object-contain p-2"
+                  />
+                </div>
                 <p className="text-sm leading-snug text-ink-soft">{cert.title}</p>
-              </div>
+              </a>
             ))}
           </div>
 
