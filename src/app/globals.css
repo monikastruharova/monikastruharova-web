@@ -50,7 +50,9 @@
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
+  background-image: url("/images/mandala-bg-tile.png");
+  background-repeat: repeat;
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
 }
