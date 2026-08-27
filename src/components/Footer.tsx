@@ -17,10 +17,6 @@ export function Footer() {
             </span>
             <span className="font-serif text-lg text-ink">Monika Struhárová</span>
           </div>
-          <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-soft">
-            Terapeutka a lektorka. Sprevádzam ťa na ceste späť k tvojej vlastnej sile a
-            celistvosti.
-          </p>
         </div>
 
         <nav aria-label="Mapa stránok">

@@ -37,7 +37,7 @@ export const services: ServiceTeaser[] = [
     slug: "intuitivny-tanec",
     title: "Intuitívny tanec",
     teaser:
-      "Somatická cesta k sebe bez kroku, choreografie a výkonu — návrat k autentickému pohybu, ktorý si žiada tvoje telo.",
+      "Somatická Cesta k sebe bez naučených krokov, choreografie a tlaku na výkon. Návrat k autentickému pohybu, ktorý si žiada tvoje telo.",
     priceFrom: "20 €",
     href: "/sluzby/intuitivny-tanec",
   },
@@ -45,10 +45,10 @@ export const services: ServiceTeaser[] = [
 
 export const dvojplamenTeaser = {
   slug: "cesta-dvojplamena" as ServiceSlug,
-  title: "Cesta Dvojplameňa",
+  title: "Dvojplamene",
   teaser:
     "Hlboké zrkadlenie duší, ktoré prebúdza tvoju najčistejšiu podstatu. Spojenie, ktoré nezväzuje, ale transformuje, oslobodzuje a vedie ťa späť k sebe.",
-  href: "/sluzby/cesta-dvojplamena",
+  href: "/dvojplamene",
 };
 
 export function serviceBySlug(slug: ServiceSlug) {

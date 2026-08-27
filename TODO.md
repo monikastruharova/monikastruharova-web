@@ -4,11 +4,9 @@ Tento súbor sleduje otvorené otázky zo zadania (sekcia 14) a chýbajúce asse
 Web je funkčne aj obsahovo hotový (statický Next.js build), ale **nejde ho
 pustiť naostro**, kým nie sú tieto body vyriešené.
 
-## 1. Štruktúra stránok 5 / 7 / 8 (Dvojplameň / Ženské kruhy / Intuitívny tanec)
-Zaradenie a poradie v menu je moja interpretácia zadania (chýbali explicitné
-podklady k číslovaniu). Implementované ako:
-`/sluzby/cesta-dvojplamena`, `/sluzby/zenske-kruhy`, `/sluzby/intuitivny-tanec`.
-**Potvrdiť s Monikou pred spustením.**
+## 1. Štruktúra stránok — Dvojplamene / Ženské kruhy / Intuitívny tanec
+Dvojplamene sú vyčlenené ako samostatná téma / špecializácia v hlavnom menu na `/dvojplamene` (nie pod službami).
+Služby obsahujú: `/sluzby/terapia-cesta`, `/sluzby/harmonizacia-cakier`, `/sluzby/zenske-kruhy`, `/sluzby/intuitivny-tanec`.
 
 ## 2. Ceny — nesúlad medzi starým cenníkom a novým textom
 - Terapia Cesta: nový text 120 € (implementované), starý cenník 90 €.
@@ -53,12 +51,12 @@ SEO hodnotu. **Zatiaľ nie je implementované — nemáme zoznam starých URL.**
 Nasadené sú len jasne označené vizuálne "sloty"
 (`src/components/PlaceholderImage.tsx`) — žiadne umelo generované fotografie.
 Pred produkciou nahradiť skutočnými súbormi:
-- Portrét Moniky pre hero na Domove (`src/app/page.tsx`)
-- Portrét Moniky pre Môj príbeh (`src/app/moj-pribeh/page.tsx`)
-- Foto Moniky s Dalajlámom (`src/app/moj-pribeh/page.tsx`)
+- [x] Portrét Moniky pre hero na Domove (`src/app/page.tsx`)
+- [x] Portrét Moniky pre Môj príbeh (`src/app/moj-pribeh/page.tsx`)
+- [x] Foto Moniky s Dalajlámom (nasadené na `/moj-pribeh` z roku 2008)
 - 3 fotografie certifikátov: Terapia Cesta, Reiki Master III., Kvantový dotyk
   (`src/app/moj-pribeh/page.tsx`)
-- Vizuál/foto k Ceste Dvojplameňa (Domov + `/sluzby/cesta-dvojplamena`)
+- Vizuál/foto k Dvojplameňom (Domov + `/dvojplamene`)
 - Foto atmosféry ženského kruhu (`/sluzby/zenske-kruhy`)
 - Titulné fotografie ku každému blogovému článku
 - Logo (SVG/PNG, svetlá aj prípadne tmavá verzia)

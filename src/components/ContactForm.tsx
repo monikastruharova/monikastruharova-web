@@ -4,10 +4,10 @@ import { useState, type FormEvent } from "react";
 
 const services = [
   "Terapia Cesta",
-  "Cesta Dvojplameňa",
   "Harmonizácia čakier",
   "Ženské kruhy — Esencia Bohyne",
   "Intuitívny tanec",
+  "Téma Dvojplamene",
   "Neviem si vybrať / poradiť sa",
 ];
 

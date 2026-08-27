@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
 import { PlaceholderImage } from "@/components/PlaceholderImage";
@@ -41,7 +42,18 @@ export default function MyStoryPage() {
               Ukážem ti, ako premeniť vnútorný chaos na čistú životnú energiu.
             </p>
           </div>
-          <PlaceholderImage label="Portrét Moniky Struhárovej" className="mx-auto max-w-sm" />
+          <div className="relative mx-auto w-full max-w-sm">
+            <div className="overflow-hidden rounded-3xl border border-sand/80 bg-sand/20 shadow-md">
+              <Image
+                src="/images/monika-struharova-portret.jpg"
+                alt="Monika Struhárová"
+                width={384}
+                height={576}
+                priority
+                className="h-auto w-full object-cover"
+              />
+            </div>
+          </div>
         </Container>
       </section>
 
@@ -106,12 +118,20 @@ export default function MyStoryPage() {
                 </p>
               </div>
             </div>
-            <PlaceholderImage
-              label="Monika s Dalajlámom"
-              tone="gold"
-              shape="rounded"
-              className="max-w-xs"
-            />
+            <figure className="mx-auto flex flex-col items-center">
+              <div className="overflow-hidden rounded-3xl border border-sand/80 bg-sand/20 p-2 shadow-md transition hover:shadow-lg">
+                <Image
+                  src="/images/monika-dalajlama-2008.jpg"
+                  alt="Monika Struhárová s Jeho Svätosťou Dalajlámom, rok 2008"
+                  width={340}
+                  height={510}
+                  className="h-auto w-full max-w-xs rounded-2xl object-cover"
+                />
+              </div>
+              <figcaption className="mt-3 text-center font-serif text-xs italic text-ink-soft">
+                S Jeho Svätosťou Dalajlámom, 2008
+              </figcaption>
+            </figure>
           </div>
         </Container>
       </section>

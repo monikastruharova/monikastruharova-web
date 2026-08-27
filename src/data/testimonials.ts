@@ -82,6 +82,24 @@ export const testimonials: Testimonial[] = [
     author: "Marián",
     services: ["harmonizacia-cakier"],
   },
+  {
+    id: "marian-rastli-mi-kridla",
+    title: "Rástli mi krídla",
+    quote:
+      "Na tanec som prišiel bez očakávaní a netušil som, čo ma čaká. Hudba vo mne postupne otvorila napätie a silné emócie, ktoré vystriedal obrovský príval energie a radosti. V jednom momente som cítil neuveriteľnú ľahkosť, akoby som sa vznášal a rástli mi krídla. Pocit úplnej slobody. Bol to intenzívny a oslobodzujúci zážitok, ktorý sa nedá úplne opísať – treba ho zažiť.",
+    author: "Marián",
+    services: ["intuitivny-tanec"],
+    featured: true,
+  },
+  {
+    id: "kristina-oslobodzujuce-vypnut-hlavu",
+    title: "Bolo oslobodzujúce vypnúť hlavu",
+    quote:
+      "Intuitívny tanec bol pre mňa veľmi krásnym a príjemným zážitkom. ❤️ Zo začiatku som možno nevedela úplne, čo mám očakávať, ale postupne som sa dokázala uvoľniť a viac vnímať samu seba, svoje telo a svoje pocity. Bolo veľmi oslobodzujúce na chvíľu vypnúť hlavu, neriešiť nič okolo seba a jednoducho sa nechať viesť hudbou a vlastným telom. Páčila sa mi príjemná a bezpečná atmosféra, ktorú si vytvorila, a celý čas som sa cítila dobre a prijato. Odchádzala som s príjemným pocitom ľahkosti a pokoja. Určite by som intuitívny tanec odporučila každému, kto si chce oddýchnuť, uvoľniť emócie a na chvíľu sa viac spojiť sám so sebou. ❤️ Ďakujem za krásny zážitok. 🥰",
+    author: "Kristína",
+    services: ["intuitivny-tanec"],
+    featured: true,
+  },
 ];
 
 export function testimonialsFor(service: ServiceSlug, limit = 2): Testimonial[] {

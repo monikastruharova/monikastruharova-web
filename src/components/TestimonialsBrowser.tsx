@@ -7,7 +7,7 @@ import type { ServiceSlug, Testimonial } from "@/data/testimonials";
 const filters: { slug: ServiceSlug | "all"; label: string }[] = [
   { slug: "all", label: "Všetky" },
   { slug: "terapia-cesta", label: "Terapia Cesta" },
-  { slug: "cesta-dvojplamena", label: "Cesta Dvojplameňa" },
+  { slug: "cesta-dvojplamena", label: "Dvojplamene" },
   { slug: "harmonizacia-cakier", label: "Harmonizácia čakier" },
   { slug: "zenske-kruhy", label: "Ženské kruhy" },
   { slug: "intuitivny-tanec", label: "Intuitívny tanec" },

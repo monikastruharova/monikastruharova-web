@@ -20,7 +20,7 @@ const mulish = Mulish({
 export const metadata: Metadata = {
   metadataBase: new URL(`https://${siteConfig.domain}`),
   title: {
-    default: `${siteConfig.name} — terapeutka a lektorka`,
+    default: `${siteConfig.name} — Cestou srdca`,
     template: `%s | ${siteConfig.name}`,
   },
   description:

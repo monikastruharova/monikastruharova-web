@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
+import { TestimonialCard } from "@/components/TestimonialCard";
+import { testimonialsFor } from "@/data/testimonials";
 import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Intuitívny tanec",
   description:
-    "Intuitívny tanec je somatická cesta k sebe bez kroku, choreografie a výkonu — návrat k autentickému pohybu, ktorý si žiada tvoje telo.",
+    "Somatická Cesta k sebe bez naučených krokov, choreografie a tlaku na výkon. Návrat k autentickému pohybu, ktorý si žiada tvoje telo.",
   alternates: { canonical: "/sluzby/intuitivny-tanec" },
 };
 
@@ -39,6 +42,8 @@ const elements = [
 ];
 
 export default function IntuitivnyTanecPage() {
+  const reviews = testimonialsFor("intuitivny-tanec", 2);
+
   return (
     <>
       <section className="pt-14 pb-10 md:pt-20">
@@ -163,6 +168,36 @@ export default function IntuitivnyTanecPage() {
           <p className="font-medium text-ink">Ak máš telo a dýchaš, máš všetko, čo potrebuješ.</p>
         </Container>
       </section>
+
+      {reviews.length ? (
+        <section className="py-10 md:py-16">
+          <Container className="mx-auto max-w-3xl">
+            <h2 className="font-serif text-2xl text-ink md:text-3xl">
+              Skúsenosti z tanečného parketu
+            </h2>
+            <div className="mt-4 space-y-2 text-base leading-relaxed text-ink-soft md:text-lg">
+              <p>Osobná skúsenosť však povie viac než tisíc slov.</p>
+              <p>
+                Nahliadnite teda do autentických zážitkov žien a mužov, ktorí už objavili čaro
+                Intuitívneho tanca.
+              </p>
+            </div>
+            <div className="mt-8 grid gap-6 sm:grid-cols-2">
+              {reviews.map((t) => (
+                <TestimonialCard key={t.id} testimonial={t} />
+              ))}
+            </div>
+            <div className="mt-6 text-center">
+              <Link
+                href="/skusenosti-klientov"
+                className="text-sm font-semibold text-clay-dark underline underline-offset-4"
+              >
+                Viac skúseností klientov
+              </Link>
+            </div>
+          </Container>
+        </section>
+      ) : null}
 
       <section className="py-10 md:py-16">
         <Container className="mx-auto max-w-3xl">

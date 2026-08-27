@@ -6,10 +6,10 @@ import { TestimonialCard } from "@/components/TestimonialCard";
 import { testimonialsFor } from "@/data/testimonials";
 
 export const metadata: Metadata = {
-  title: "Cesta Dvojplameňa",
+  title: "Dvojplamene",
   description:
     "Stretnutie s Dvojplameňom prebúdza tvoju najčistejšiu podstatu. Sprevádzam ťa vedomým procesom odpútania sa — od prebudenia cez zrkadlenie až po vnútornú slobodu.",
-  alternates: { canonical: "/sluzby/cesta-dvojplamena" },
+  alternates: { canonical: "/dvojplamene" },
 };
 
 const phases = [
@@ -45,7 +45,7 @@ Je to ten moment, kedy sa obzrieš späť a už necítiš bolesť, hnev ani zúf
   },
 ];
 
-export default function CestaDvojplamenaPage() {
+export default function DvojplamenePage() {
   const reviews = testimonialsFor("cesta-dvojplamena", 2);
 
   return (
@@ -53,8 +53,9 @@ export default function CestaDvojplamenaPage() {
       <section className="pt-14 pb-10 md:pt-20">
         <Container className="mx-auto max-w-3xl">
           <p className="text-sm font-semibold tracking-[0.2em] text-sage-dark uppercase">
-            Cesta Dvojplameňa
+            Špecializácia
           </p>
+          <h1 className="mt-2 font-serif text-3xl text-ink md:text-5xl">Dvojplamene</h1>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft md:text-lg">
             <p>
               Stretnutie s Dvojplameňom nie je klasickým romantickým príbehom z rozprávok. Je to
@@ -132,9 +133,24 @@ export default function CestaDvojplamenaPage() {
             Máš odvahu premeniť tento oheň na svoju najväčšiu silu?
           </p>
           <p>
-            Ak cítiš, že nastal čas prestať len prežívať a chceš začať skutočne žiť, prijmi moje
-            pozvanie na stretnutie.
+            Ak prechádzaš touto cestou a potrebuješ podporu, vyber si niektorú z mojich služieb
+            alebo mi napíš a spoločne zvolíme ten najvhodnejší prístup.
           </p>
+
+          <div className="pt-4 flex flex-wrap gap-4">
+            <Link
+              href="/sluzby/terapia-cesta"
+              className="inline-flex items-center gap-2 rounded-full border border-clay bg-clay/10 px-5 py-2.5 text-sm font-semibold text-clay-dark hover:bg-clay hover:text-cream transition"
+            >
+              Terapia Cesta →
+            </Link>
+            <Link
+              href="/sluzby/harmonizacia-cakier"
+              className="inline-flex items-center gap-2 rounded-full border border-sage bg-sage/10 px-5 py-2.5 text-sm font-semibold text-sage-dark hover:bg-sage hover:text-cream transition"
+            >
+              Harmonizácia čakier →
+            </Link>
+          </div>
         </Container>
       </section>
 
@@ -163,7 +179,7 @@ export default function CestaDvojplamenaPage() {
           <CTABlock
             tone="sage"
             heading="Prijmi moje pozvanie na stretnutie"
-            body="Napíš mi o svojej ceste Dvojplameňa — spoločne nájdeme cestu k tvojej vnútornej slobode."
+            body="Napíš mi o svojej téme Dvojplameňa — spoločne nájdeme cestu k tvojej vnútornej slobode."
             ctaLabel="Chcem sa objednať na sedenie"
             ctaHref="/kontakt"
           />

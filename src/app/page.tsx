@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { ServiceCard } from "@/components/ServiceCard";
@@ -30,7 +31,7 @@ export default function HomePage() {
         <Container className="grid items-center gap-12 lg:grid-cols-2">
           <div>
             <p className="text-sm font-semibold tracking-[0.2em] text-clay-dark uppercase">
-              Terapeutka · Lektorka
+              Cestou srdca
             </p>
             <h1 className="mt-4 font-serif text-3xl leading-tight text-ink md:text-5xl">
               Staň sa tvorcom svojho života.
@@ -66,12 +67,18 @@ export default function HomePage() {
           </div>
 
           <div className="relative mx-auto w-full max-w-sm">
-            <PlaceholderImage
-              label="Portrét Moniky Struhárovej (hero fotografia)"
-              className="w-full"
-            />
-            {/* Meno vsadené priamo do hero vizuálu, viditeľné aj bez fotografie */}
-            <div className="absolute -bottom-5 left-1/2 w-[85%] -translate-x-1/2 rounded-2xl bg-cream px-5 py-4 text-center shadow-lg">
+            <div className="overflow-hidden rounded-3xl border border-sand/80 bg-sand/20 shadow-md">
+              <Image
+                src="/images/monika-struharova-portret.jpg"
+                alt="Monika Struhárová — Cestou srdca"
+                width={384}
+                height={576}
+                priority
+                className="h-auto w-full object-cover"
+              />
+            </div>
+            {/* Meno vsadené priamo do hero vizuálu */}
+            <div className="absolute -bottom-5 left-1/2 w-[85%] -translate-x-1/2 rounded-2xl border border-sand/60 bg-cream/95 px-5 py-4 text-center shadow-lg backdrop-blur">
               <p className="font-serif text-xl text-ink md:text-2xl">Monika Struhárová</p>
               <p className="text-xs tracking-wide text-ink-soft uppercase">
                 Terapia Cesta · Čakry · Ženské kruhy · Tanec
@@ -103,19 +110,19 @@ export default function HomePage() {
         </Container>
       </section>
 
-      {/* CESTA DVOJPLAMEŇA */}
+      {/* DVOJPLAMENE */}
       <section className="py-16 md:py-24">
         <Container>
           <div className="grid items-center gap-10 rounded-[2.5rem] border border-sand bg-white/50 p-8 md:grid-cols-2 md:p-14">
             <PlaceholderImage
-              label="Symbolický vizuál — Cesta Dvojplameňa"
+              label="Symbolický vizuál — Dvojplamene"
               tone="sage"
               shape="blob-alt"
               className="max-w-sm"
             />
             <div>
               <p className="text-xs font-semibold tracking-[0.2em] text-sage-dark uppercase">
-                Cesta Dvojplameňa
+                Dvojplamene
               </p>
               <p className="mt-4 text-lg leading-relaxed text-ink md:text-xl">
                 Hlboké zrkadlenie duší, ktoré prebúdza tvoju najčistejšiu podstatu. Spojenie,
@@ -123,9 +130,9 @@ export default function HomePage() {
               </p>
               <Link
                 href={dvojplamenTeaser.href}
-                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-clay-dark"
+                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-clay-dark hover:underline"
               >
-                Preskúmať Cestu Dvojplameňa <span aria-hidden>→</span>
+                Preskúmať tému Dvojplamene <span aria-hidden>→</span>
               </Link>
             </div>
           </div>

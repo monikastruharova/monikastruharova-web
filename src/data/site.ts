@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Monika Struhárová",
-  title: "Monika Struhárová — terapeutka a lektorka",
+  title: "Monika Struhárová — Cestou srdca",
   domain: "monikastruharova.sk",
   // TODO: potvrdiť s Monikou/Petrom skutočný kontaktný e-mail a telefón, kam majú chodiť poptávky.
   email: "info@monikastruharova.sk",
@@ -25,12 +25,12 @@ export const mainNav: NavItem[] = [
     href: "/sluzby",
     children: [
       { label: "Terapia Cesta", href: "/sluzby/terapia-cesta" },
-      { label: "Cesta Dvojplameňa", href: "/sluzby/cesta-dvojplamena" },
       { label: "Harmonizácia čakier", href: "/sluzby/harmonizacia-cakier" },
       { label: "Ženské kruhy — Esencia Bohyne", href: "/sluzby/zenske-kruhy" },
       { label: "Intuitívny tanec", href: "/sluzby/intuitivny-tanec" },
     ],
   },
+  { label: "Dvojplamene", href: "/dvojplamene" },
   { label: "Skúsenosti klientov", href: "/skusenosti-klientov" },
   { label: "Blog", href: "/blog" },
   { label: "Kontakt", href: "/kontakt" },
