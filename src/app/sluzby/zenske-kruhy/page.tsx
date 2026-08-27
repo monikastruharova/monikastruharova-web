@@ -4,6 +4,7 @@ import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { PlaceholderImage } from "@/components/PlaceholderImage";
+import { MandalaDivider } from "@/components/MandalaDivider";
 import { testimonialsFor } from "@/data/testimonials";
 import { siteConfig } from "@/data/site";
 
@@ -97,6 +98,8 @@ export default function ZenskeKruhyPage() {
           <PlaceholderImage label="Ženský kruh — atmosféra stretnutia" className="mx-auto max-w-xs" />
         </Container>
       </section>
+
+      <MandalaDivider />
 
       <section className="py-10 md:py-16">
         <Container className="mx-auto max-w-3xl space-y-4">

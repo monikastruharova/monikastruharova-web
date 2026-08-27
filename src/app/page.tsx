@@ -7,6 +7,7 @@ import { TestimonialCard } from "@/components/TestimonialCard";
 import { CTABlock } from "@/components/CTABlock";
 import { PlaceholderImage } from "@/components/PlaceholderImage";
 import { MeditationBlock } from "@/components/MeditationBlock";
+import { MandalaDivider } from "@/components/MandalaDivider";
 import { services, dvojplamenTeaser } from "@/data/services";
 import { testimonials } from "@/data/testimonials";
 import { blogPosts } from "@/data/blog";
@@ -110,6 +111,8 @@ export default function HomePage() {
           </div>
         </Container>
       </section>
+
+      <MandalaDivider />
 
       {/* MEDITÁCIA VĎAČNOSTI */}
       <section className="py-16 md:py-24">

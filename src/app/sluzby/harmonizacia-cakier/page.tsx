@@ -5,6 +5,7 @@ import { CTABlock } from "@/components/CTABlock";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { ChakraSymptomGrid } from "@/components/ChakraSymptomGrid";
 import { MeditationBlock } from "@/components/MeditationBlock";
+import { MandalaDivider } from "@/components/MandalaDivider";
 import { testimonialsFor } from "@/data/testimonials";
 import { siteConfig } from "@/data/site";
 
@@ -39,6 +40,8 @@ export default function HarmonizaciaCakierPage() {
           </div>
         </Container>
       </section>
+
+      <MandalaDivider />
 
       <section className="py-10 md:py-16">
         <Container className="mx-auto max-w-3xl">

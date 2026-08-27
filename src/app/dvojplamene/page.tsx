@@ -5,6 +5,7 @@ import { CTABlock } from "@/components/CTABlock";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { testimonialsFor } from "@/data/testimonials";
 import { siteConfig } from "@/data/site";
+import { MandalaDivider } from "@/components/MandalaDivider";
 
 export const metadata: Metadata = {
   title: "Dvojplamene",
@@ -73,6 +74,8 @@ export default function DvojplamenePage() {
           </div>
         </Container>
       </section>
+
+      <MandalaDivider />
 
       <section className="py-10 md:py-16">
         <Container className="mx-auto max-w-3xl">
