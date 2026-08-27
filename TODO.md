@@ -45,6 +45,19 @@ Ak sa rušia, treba nastaviť 301 presmerovania zo starých URL na relevantné
 nové stránky (pozri `next.config.ts` → `redirects()`), aby web neprišiel o
 SEO hodnotu. **Zatiaľ nie je implementované — nemáme zoznam starých URL.**
 
+## 8. Meditácie (audio/video)
+Pridané 3 nové sekcie s textom od Moniky (`src/components/MeditationBlock.tsx`):
+- Domov → "Meditácia vďačnosti"
+- Harmonizácia čakier → "Meditácia so šungitom"
+- Intuitívny tanec → "Ranná meditácia" (v texte opravené 2 zjavné preklepy:
+  "Tponúkam" → "Ponúkam", "obráťiš" → "obrátiš" — potvrdiť s Monikou, že to
+  tak malo byť)
+
+Chýba samotný súbor/odkaz na meditáciu (mp3, video, alebo embed napr.
+YouTube/SoundCloud) — momentálne len vizuálny placeholder prehrávača.
+Treba doplniť: formát (audio vs. video), samotný súbor/odkaz, a podľa toho
+nahradiť placeholder v `MeditationBlock.tsx` reálnym `<audio>`/`<iframe>`.
+
 ---
 
 ## Chýbajúce assety (fotografie, certifikáty)

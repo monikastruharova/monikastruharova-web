@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
 import { TestimonialCard } from "@/components/TestimonialCard";
+import { MeditationBlock } from "@/components/MeditationBlock";
 import { testimonialsFor } from "@/data/testimonials";
 import { siteConfig } from "@/data/site";
 
@@ -94,6 +95,22 @@ export default function IntuitivnyTanecPage() {
               mu už neslúži a nervový systém prechádza zo stavu pohotovosti do hlbokého uvoľnenia.
             </p>
           </div>
+        </Container>
+      </section>
+
+      <section className="py-10 md:py-16">
+        <Container className="mx-auto max-w-3xl">
+          <MeditationBlock
+            tone="gold"
+            title="Ranná meditácia"
+            text={`Intuitívny tanec začína v momente, keď sa prestaneme schovávať sami pred sebou.
+
+Skôr než sa roztancujeme, potrebujeme sa v tichu stretnúť so svojou vlastnou podstatou.
+
+Ponúkam ti malú ochutnávku takéhoto hlbokého spojenia.
+
+Stačí, ak sa na chvíľu zastavíš, obrátiš pozornosť do svojho vnútra a do nového dňa vykročíš s čistou energiou.`}
+          />
         </Container>
       </section>
 

@@ -4,6 +4,7 @@ import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { ChakraSymptomGrid } from "@/components/ChakraSymptomGrid";
+import { MeditationBlock } from "@/components/MeditationBlock";
 import { testimonialsFor } from "@/data/testimonials";
 import { siteConfig } from "@/data/site";
 
@@ -125,6 +126,16 @@ export default function HarmonizaciaCakierPage() {
           </Container>
         </section>
       ) : null}
+
+      <section className="py-10 md:py-16">
+        <Container className="mx-auto max-w-3xl">
+          <MeditationBlock
+            tone="sage"
+            title="Meditácia so šungitom"
+            text="Kým sa stretneme naživo, vyskúšaj si pocit uvoľnenia a silu energetického stíšenia v pohodlí svojho domova. Táto vedená meditácia ti pomôže ukotviť sa a opäť nájsť rovnováhu tela a duše."
+          />
+        </Container>
+      </section>
 
       <section className="py-10 md:py-16">
         <Container className="mx-auto max-w-3xl">

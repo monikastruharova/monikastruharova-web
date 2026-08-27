@@ -6,6 +6,7 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { CTABlock } from "@/components/CTABlock";
 import { PlaceholderImage } from "@/components/PlaceholderImage";
+import { MeditationBlock } from "@/components/MeditationBlock";
 import { services, dvojplamenTeaser } from "@/data/services";
 import { testimonials } from "@/data/testimonials";
 import { blogPosts } from "@/data/blog";
@@ -107,6 +108,20 @@ export default function HomePage() {
               <ServiceCard key={service.slug} service={service} />
             ))}
           </div>
+        </Container>
+      </section>
+
+      {/* MEDITÁCIA VĎAČNOSTI */}
+      <section className="py-16 md:py-24">
+        <Container>
+          <MeditationBlock
+            title="Meditácia vďačnosti"
+            text={`Chceš urobiť prvý krok k sebe hneď teraz?
+
+Vedomé tvorenie života začína vždy v prítomnom okamihu. A vďačnosť je najrýchlejšia cesta, ako sa preladiť z nedostatku na hojnosť.
+
+Prijmi teda odo mňa túto krátku meditáciu ako malý darček na tvoju cestu k hojnosti.`}
+          />
         </Container>
       </section>
 
