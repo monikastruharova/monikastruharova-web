@@ -104,8 +104,15 @@ pripravené ako TODO/koncept.
   citácie, zoznamy, miesta pre fotografie). Na žiadosť **nie sú splácané
   do jedného zoznamu** — každá stará rubrika má vlastné pole
   `subcategory` a na `/blog` sa zobrazuje ako samostatná sekcia s
-  vlastným nadpisom ("Chanelingy" / "Keď oči prehovoria"), tanečné
-  články zostávajú bez podsekcie.
+  vlastným nadpisom ("Chanelingy" / "Keď oči prehovoria"). Tanečné
+  články dostali vlastnú podsekciu "Tanec" pre symetriu so zvyškom
+  (predtým boli bez nej).
+- [x] `/blog` prerobený z dlhého scrollovania na preklikávacie záložky
+  (nový `BlogBrowser` komponent, rovnaký vzor ako filter na
+  `/skusenosti-klientov`) — "Všetky" ukáže prehľad po sekciách, kliknutím
+  na konkrétnu záložku (Tanec / Chanelingy / Keď oči prehovoria / Tajomný
+  svet dvojplameňov) sa zobrazí iba jej mriežka článkov, bez nutnosti
+  scrollovať cez všetko.
   - Chanelingy: "Prečo venujeme viac pozornosti iným než sebe?", "Vojna
     v nás – Sloboda v nás", "Naučme sa dôverovať životu", "Čo pre nás
     znamená láska?"

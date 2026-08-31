@@ -37,6 +37,7 @@ export const blogPosts: BlogPost[] = [
     slug: "tanec-srdca-1-z-parketu-do-ambulancie",
     title: "Tanec srdca 1 — Z parketu do ambulancie",
     category: "pribehy-zo-zivota",
+    subcategory: "Tanec",
     excerpt:
       "Príbeh o tom, ako sa telo prihovára rečou pohybu skôr, než sa mu prihovorí myseľ. TODO: doplniť plný text z podkladov.",
     ctaLabel: "Spoznaj Intuitívny tanec",
@@ -47,6 +48,7 @@ export const blogPosts: BlogPost[] = [
     slug: "tanec-srdca-2-necakaj-a-plni-si-sny",
     title: "Tanec srdca 2 — Nečakaj a plň si sny",
     category: "pribehy-zo-zivota",
+    subcategory: "Tanec",
     excerpt:
       "Pokračovanie príbehu o odvahe vykročiť za tým, po čom srdce skutočne túži. TODO: doplniť plný text z podkladov.",
     ctaLabel: "Spoznaj Intuitívny tanec",
@@ -57,6 +59,7 @@ export const blogPosts: BlogPost[] = [
     slug: "slzy-na-parkete",
     title: "Slzy na parkete",
     category: "pribehy-zo-zivota",
+    subcategory: "Tanec",
     excerpt:
       "O tom, čo sa uvoľní, keď dovolíme telu plakať pohybom. TODO: doplniť plný text z podkladov.",
     ctaLabel: "Spoznaj Intuitívny tanec",
@@ -67,6 +70,7 @@ export const blogPosts: BlogPost[] = [
     slug: "co-je-intuitivny-tanec",
     title: "Čo je Intuitívny tanec?",
     category: "pribehy-zo-zivota",
+    subcategory: "Tanec",
     excerpt:
       "Úvod do somatickej cesty k sebe — bez kroku, choreografie a výkonu. TODO: doplniť plný text z podkladov.",
     ctaLabel: "Spoznaj Intuitívny tanec",
@@ -425,4 +429,44 @@ export function postsByCategory(category: BlogCategory) {
 
 export function postBySlug(slug: string) {
   return blogPosts.find((p) => p.slug === slug);
+}
+
+// Jedna "sekcia" = kategória, alebo (ak kategória má podsekcie) jedna
+// podsekcia v rámci nej — použité na vykreslenie preklikávacích záložiek na
+// /blog namiesto dlhého scrollovania cez všetko naraz.
+export type BlogSection = {
+  key: string;
+  title: string;
+  category: BlogCategory;
+  subcategory?: string;
+};
+
+export function blogSections(): BlogSection[] {
+  const sections: BlogSection[] = [];
+  for (const cat of blogCategories) {
+    const postsInCategory = blogPosts.filter((p) => p.category === cat.slug);
+    const subcategories = Array.from(
+      new Set(postsInCategory.map((p) => p.subcategory).filter((s): s is string => Boolean(s))),
+    );
+    const ungrouped = postsInCategory.some((p) => !p.subcategory);
+
+    if (ungrouped) {
+      sections.push({ key: cat.slug, title: cat.title, category: cat.slug });
+    }
+    for (const subcategory of subcategories) {
+      sections.push({ key: `${cat.slug}__${subcategory}`, title: subcategory, category: cat.slug, subcategory });
+    }
+    // Kategória bez príspevkov (napr. zatiaľ prázdny "Tajomný svet
+    // dvojplameňov") má stále dostať svoju záložku, aby bola vidno.
+    if (postsInCategory.length === 0) {
+      sections.push({ key: cat.slug, title: cat.title, category: cat.slug });
+    }
+  }
+  return sections;
+}
+
+export function postsInSection(section: BlogSection) {
+  return blogPosts.filter(
+    (p) => p.category === section.category && p.subcategory === section.subcategory,
+  );
 }
