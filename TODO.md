@@ -131,6 +131,28 @@ pripravené ako TODO/koncept.
   Prvý/Druhý/Tretí/Štvrtý roh…, "Stretnutie s Jerrym", "Náš úžasný
   orgán"…) sú moja formulácia, nie doslovný text od Moniky — voľne k
   úprave.
+- [x] Ďalších 10 článkov dodaných a nasadených (`src/data/blog.ts`):
+  "Srí Lanka mojimi očami", "Komfortná zóna a 5 krokov, ako z nej
+  vystúpiť", "Strach", "Otvorme sa svojmu skutočnému potenciálu", "Do
+  kedy ešte?", séria "Ako si správne želať 1–4" (vlastná podsekcia,
+  zoskupená v záložkách), "Tým, že niečo odmietame, tomu dávame silu".
+  3 duplicity z rovnakej dávky podkladov ("Život začína za hranicami
+  kontroly", "Vojna v nás – Sloboda v nás", "Naučme sa dôverovať
+  životu") preskočené, boli už na webe.
+  Rovnaké pravidlá ako predtým: opravené len zjavné preklepy/medzery
+  (napr. "vvždy"→"vždy", "predsalen"→"predsa len", "Zpanikárime"→
+  "Spanikárime", "naddomovom"→"nad domovom"), artefakty vložených
+  obrázkov v pôvodnom texte ("sri-lanka-2", "strach-ako-priatel",
+  "strach-zo-straty-kontroly", "raj") nahradené PlaceholderImage slotmi.
+  **Potvrdenie od Moniky, že "Ako si správne želať" a "Srí Lanka…" majú
+  ostať v kategórii "Príbehy zo života"** (nebolo v zadaní explicitne
+  povedané, len predpokladám podľa toho, ako boli dodané) — ak nie,
+  ľahko presunúť do inej kategórie/podsekcie v `src/data/blog.ts`.
+- **Otvorená otázka k podkladom:** posledná dávka textov sa v správe
+  odťala na 50 000 znakoch uprostred článku "Naučme sa dôverovať
+  životu" (ten duplicitný text sme už mali, nič sa nestratilo) — ale
+  nevieme, či za ním nemali nasledovať ešte ďalšie články. Ak áno,
+  pošli zvyšok, doplníme.
 - Stále chýba: zvyšok "Tajomného sveta dvojplameňov" — nemáme jeho
   tituly ani text.
 
