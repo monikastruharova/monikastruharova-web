@@ -158,8 +158,15 @@ finálny text.
   životu" (ten duplicitný text sme už mali, nič sa nestratilo) — ale
   nevieme, či za ním nemali nasledovať ešte ďalšie články. Ak áno,
   pošli zvyšok, doplníme.
-- Stále chýba: zvyšok "Tajomného sveta dvojplameňov" — nemáme jeho
-  tituly ani text.
+- [x] "Tajomný svet dvojplameňov" — kategória už nie je prázdna, dodaných
+  a nasadených 7 článkov: "Ako sa teda prejaví táto zmena v našom
+  živote?", "Dvojplameň a bolesť transformácie", "Kto je dvojplameň?"
+  (opravený preklep v názve, pôvodne "dvoj plameň"), "Dva kľúčové
+  faktory cesty dvojplameňa", "Dvojplameň – peklo alebo raj", "Kniha o
+  dvojplameňoch", "Z obete do svojej sily". Rovnaké pravidlá: opravené
+  len zjavné preklepy/medzery, artefakty vložených obrázkov z pôvodného
+  textu ("dvojplamene-2", "cesta dvojplameňa") nahradené PlaceholderImage
+  slotmi. CTA na všetkých vedie na `/dvojplamene`.
 
 ## Staršie referencie zo starého webu
 Zadanie spomína referencie k Terapii Cesta a k Ceste Dvojplameňa z pôvodného
