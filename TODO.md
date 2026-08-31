@@ -93,10 +93,15 @@ Pred produkciou nahradiť skutočnými súbormi:
 - [x] Favicon — nasadený z rovnakého loga
 
 ## Chýbajúci obsah blogu
-Plný text 4 nových článkov ("Tanec srdca 1", "Tanec srdca 2", "Slzy na
+Plný text 4 tanečných článkov ("Tanec srdca 1", "Tanec srdca 2", "Slzy na
 parkete", "Čo je Intuitívny tanec?") nebol súčasťou dodaných podkladov do
-tohto promptu — v `src/data/blog.ts` a na stránkach `/blog/[slug]` sú
-pripravené ako TODO/koncept.
+tohto promptu — v `src/data/blog.ts` majú `pending: true` a čakajú na
+finálny text.
+[x] Na žiadosť odstránené viditeľné slovo "TODO" z verejnej časti webu
+  (excerpty aj stránka `/blog/[slug]`) — bolo omylom vidieť aj
+  návštevníkom, nielen vo vývoji. Nahradené neutrálnym textom "Tento
+  článok pripravujeme." Interná poznámka o chýbajúcom texte zostala len
+  ako kódový komentár (neviditeľný na webe) + tu v TODO.md.
 
 - [x] 4 staré "Chanelingy" články + 4 staré "Keď oči prehovoria" články
   dodané a nasadené v kategórii "Príbehy zo života" (`src/data/blog.ts`,

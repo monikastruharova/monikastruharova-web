@@ -69,16 +69,12 @@ export default async function BlogPostPage({
           {post.body ? (
             <BlogBody blocks={post.body} />
           ) : post.pending ? (
-            <div className="rounded-[1.75rem] border border-dashed border-sand bg-cream-dark/40 p-6 text-sm text-ink-soft md:p-8">
-              <p className="font-semibold text-ink">
-                TODO: plný text tohto článku ešte čaká na dodanie.
-              </p>
+            // Interná poznámka pre vývoj (nie je vidieť na webe): plný text tohto
+            // článku ešte čaká na dodanie od Moniky — pozri TODO.md.
+            <div className="rounded-[1.75rem] border border-sand bg-cream-dark/40 p-6 text-sm text-ink-soft md:p-8">
+              <p className="font-serif text-lg text-ink">Tento článok pripravujeme.</p>
               <p className="mt-2">{post.excerpt}</p>
-              <p className="mt-2">
-                Podľa zadania (sekcia 13) má byť článok bohato ilustrovaný fotografiami a
-                formátovaný s medzititulkami a zvýraznenými citáciami — pripravené na vloženie
-                finálneho textu od Moniky.
-              </p>
+              <p className="mt-2">Čoskoro sa sem vrátime s jeho plným znením.</p>
             </div>
           ) : null}
         </Container>

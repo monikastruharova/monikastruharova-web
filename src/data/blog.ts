@@ -38,8 +38,7 @@ export const blogPosts: BlogPost[] = [
     title: "Tanec srdca 1 — Z parketu do ambulancie",
     category: "pribehy-zo-zivota",
     subcategory: "Tanec",
-    excerpt:
-      "Príbeh o tom, ako sa telo prihovára rečou pohybu skôr, než sa mu prihovorí myseľ. TODO: doplniť plný text z podkladov.",
+    excerpt: "Príbeh o tom, ako sa telo prihovára rečou pohybu skôr, než sa mu prihovorí myseľ.",
     ctaLabel: "Spoznaj Intuitívny tanec",
     ctaHref: "/sluzby/intuitivny-tanec",
     pending: true,
@@ -49,8 +48,7 @@ export const blogPosts: BlogPost[] = [
     title: "Tanec srdca 2 — Nečakaj a plň si sny",
     category: "pribehy-zo-zivota",
     subcategory: "Tanec",
-    excerpt:
-      "Pokračovanie príbehu o odvahe vykročiť za tým, po čom srdce skutočne túži. TODO: doplniť plný text z podkladov.",
+    excerpt: "Pokračovanie príbehu o odvahe vykročiť za tým, po čom srdce skutočne túži.",
     ctaLabel: "Spoznaj Intuitívny tanec",
     ctaHref: "/sluzby/intuitivny-tanec",
     pending: true,
@@ -60,8 +58,7 @@ export const blogPosts: BlogPost[] = [
     title: "Slzy na parkete",
     category: "pribehy-zo-zivota",
     subcategory: "Tanec",
-    excerpt:
-      "O tom, čo sa uvoľní, keď dovolíme telu plakať pohybom. TODO: doplniť plný text z podkladov.",
+    excerpt: "O tom, čo sa uvoľní, keď dovolíme telu plakať pohybom.",
     ctaLabel: "Spoznaj Intuitívny tanec",
     ctaHref: "/sluzby/intuitivny-tanec",
     pending: true,
@@ -71,8 +68,7 @@ export const blogPosts: BlogPost[] = [
     title: "Čo je Intuitívny tanec?",
     category: "pribehy-zo-zivota",
     subcategory: "Tanec",
-    excerpt:
-      "Úvod do somatickej cesty k sebe — bez kroku, choreografie a výkonu. TODO: doplniť plný text z podkladov.",
+    excerpt: "Úvod do somatickej cesty k sebe — bez kroku, choreografie a výkonu.",
     ctaLabel: "Spoznaj Intuitívny tanec",
     ctaHref: "/sluzby/intuitivny-tanec",
     pending: true,
