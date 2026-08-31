@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 /**
- * Momentálne nepoužívané — Monika sa rozhodla, že poptávky majú chodiť cez
+ * Momentálne nepoužívané — Monika sa rozhodla, že požiadavky majú chodiť cez
  * Facebook (pozri `siteConfig.facebook` a stránku `/kontakt`), nie cez
  * formulár/e-mail. Tento route handler necháme v kóde nedotknutý pre
  * prípad, že by sa neskôr predsa len rozhodla pre formulár/e-mail namiesto
@@ -43,7 +43,7 @@ export async function POST(request: Request) {
   }
 
   // Zámerne len log — pozri TODO vyššie.
-  console.info("[kontaktný formulár] nová poptávka (odosielanie e-mailu zatiaľ nie je napojené):", {
+  console.info("[kontaktný formulár] nová požiadavka (odosielanie e-mailu zatiaľ nie je napojené):", {
     ...payload,
     receivedAt: new Date().toISOString(),
   });

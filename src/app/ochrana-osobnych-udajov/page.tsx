@@ -42,7 +42,7 @@ export default function PrivacyPolicyPage() {
             <h2 className="font-serif text-xl text-ink">Aké údaje spracúvame</h2>
             <p className="mt-2">
               Údaje, ktoré nám dobrovoľne poskytneš pri komunikácii na Facebooku (meno/profil,
-              obsah správy) za účelom vybavenia tvojej poptávky. Spracovanie správ prostredníctvom
+              obsah správy) za účelom vybavenia tvojej požiadavky. Spracovanie správ prostredníctvom
               Facebook Messengeru sa riadi aj zásadami ochrany súkromia spoločnosti Meta.
             </p>
           </div>

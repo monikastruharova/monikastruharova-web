@@ -15,8 +15,8 @@ Služby obsahujú: `/sluzby/terapia-cesta`, `/sluzby/harmonizacia-cakier`, `/slu
 **Potvrdiť aktuálne platné ceny.** Miesta v kóde: `src/app/sluzby/terapia-cesta/page.tsx`,
 `src/app/sluzby/harmonizacia-cakier/page.tsx` (hľadaj komentár `TODO (sekcia 14, bod 2)`).
 
-## 3. ~~Kontaktný formulár~~ → poptávky vedú na Facebook — VYRIEŠENÉ
-Monika sa rozhodla, že poptávky majú chodiť cez Facebook, nie cez formulár/
+## 3. ~~Kontaktný formulár~~ → požiadavky vedú na Facebook — VYRIEŠENÉ
+Monika sa rozhodla, že požiadavky majú chodiť cez Facebook, nie cez formulár/
 e-mail. Všetky "Objednať sa" / "Chcem sa objednať..." CTA po webe (header,
 `/kontakt`, závery stránok služieb aj Dvojplameňov) teraz vedú na
 `siteConfig.facebook` = `https://www.facebook.com/cestou.srdca` (nová
@@ -105,8 +105,10 @@ Zadanie spomína referencie k Terapii Cesta a k Ceste Dvojplameňa z pôvodného
 webu, ktoré sa majú preniesť na `/skusenosti-klientov` — plný text nebol
 súčasťou podkladov, treba doplniť (`src/data/testimonials.ts`).
 
-## Ochrana osobných údajov
-Stránka `/ochrana-osobnych-udajov` je len orientačná kostra (nebola súčasťou
-zadania, doplnená ako praktická nutnosť ku cookie lište) — pred produkciou
-skontrolovať/doplniť, ideálne s právnym poradenstvom, najmä pasáž o
-príjemcovi údajov z kontaktného formulára (nadväzuje na bod 3 vyššie).
+## Ochrana osobných údajov — obsah schválený Monikou
+Monika si stránku `/ochrana-osobnych-udajov` pozrela a text (mimo drobnej
+jazykovej opravy "poptávka" → "požiadavka") jej vyhovuje. Výslovne si
+zatiaľ neželá pridávať viac kontaktov, než mala na pôvodnom webe — takže
+sa tu už nemá dopĺňať napr. telefón ani e-mail, iba ak si to sama vyžiada.
+Zostávajúce TODO: doplniť fakturačné/IČO údaje pri "Prevádzkovateľ", ak sú
+relevantné (pozri komentár priamo v `page.tsx`).

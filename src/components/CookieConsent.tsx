@@ -31,8 +31,8 @@ export function CookieConsent() {
     <div className="fixed inset-x-0 bottom-0 z-50 p-4 md:p-6">
       <div className="mx-auto flex max-w-3xl flex-col gap-4 rounded-[1.75rem] border border-sand bg-cream/95 p-6 shadow-lg backdrop-blur md:flex-row md:items-center md:justify-between">
         <p className="text-sm leading-relaxed text-ink-soft">
-          Táto stránka používa cookies pre základné fungovanie a — iba s tvojím súhlasom — aj na
-          zlepšovanie webu. Viac v{" "}
+          Používam drobné súbory cookies, aby tento web fungoval plynule a v súlade s tvojou
+          energiou. Môžeš ich prijať všetky, alebo si vybrať len to, čo ti vyhovuje. Viac v{" "}
           <Link href="/ochrana-osobnych-udajov" className="underline underline-offset-2">
             zásadách ochrany osobných údajov
           </Link>
