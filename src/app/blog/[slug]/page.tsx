@@ -46,6 +46,7 @@ export default async function BlogPostPage({
           </Link>
           <p className="mt-4 text-xs font-semibold tracking-wide text-sage-dark uppercase">
             {category?.title}
+            {post.subcategory ? ` — ${post.subcategory}` : ""}
           </p>
           <h1 className="mt-2 font-serif text-3xl leading-tight text-ink md:text-5xl">
             {post.title}

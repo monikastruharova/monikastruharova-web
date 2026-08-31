@@ -98,24 +98,34 @@ parkete", "Čo je Intuitívny tanec?") nebol súčasťou dodaných podkladov do
 tohto promptu — v `src/data/blog.ts` a na stránkach `/blog/[slug]` sú
 pripravené ako TODO/koncept.
 
-- [x] 4 staré "Chanelingy" články dodané a nasadené do kategórie "Príbehy
-  zo života" (`src/data/blog.ts`, formátované cez nový `BlogBody`
-  komponent — medzititulky, zvýraznené citácie, zoznamy, miesta pre
-  fotografie): "Prečo venujeme viac pozornosti iným než sebe?", "Vojna v
-  nás – Sloboda v nás", "Naučme sa dôverovať životu", "Čo pre nás znamená
-  láska?". Pri vkladaní boli opravené zjavné preklepy/medzery
-  ("selý"→"celý", "žeak"→"že ak", "niekym"→"niekým" a pod.) a odstránené
-  2 zjavné artefakty vloženého obrázku v pôvodnom texte ("žena pred
-  zrkadlomExistuje…", "obrazok2A v poslednom rohu…") — z týchto miest sa
-  namiesto toho stali PlaceholderImage sloty. **Potvrdiť s Monikou:**
-  jedna veta ostala nejasná a nebola opravovaná ("...až keď naplno vstúpi
-  lido svojej energie..." v článku "Naučme sa dôverovať životu") — asi
-  ide o preklep, ale nechali sme pôvodné znenie, kým nepríde spresnenie.
-  Pridané medzititulky v článku "Prečo venujeme viac pozornosti iným než
-  sebe?" (Prvý/Druhý/Tretí/Štvrtý roh…) sú moja formulácia, nie doslovný
-  text od Moniky — voľne k úprave.
-- Stále chýbajú: staré články z kategórie "Keď oči prehovoria" a zvyšok
-  "Tajomného sveta dvojplameňov" — nemáme ich tituly ani text.
+- [x] 4 staré "Chanelingy" články + 4 staré "Keď oči prehovoria" články
+  dodané a nasadené v kategórii "Príbehy zo života" (`src/data/blog.ts`,
+  formátované cez nový `BlogBody` komponent — medzititulky, zvýraznené
+  citácie, zoznamy, miesta pre fotografie). Na žiadosť **nie sú splácané
+  do jedného zoznamu** — každá stará rubrika má vlastné pole
+  `subcategory` a na `/blog` sa zobrazuje ako samostatná sekcia s
+  vlastným nadpisom ("Chanelingy" / "Keď oči prehovoria"), tanečné
+  články zostávajú bez podsekcie.
+  - Chanelingy: "Prečo venujeme viac pozornosti iným než sebe?", "Vojna
+    v nás – Sloboda v nás", "Naučme sa dôverovať životu", "Čo pre nás
+    znamená láska?"
+  - Keď oči prehovoria: "Život začína za hranicami kontroly", "Boj o
+    prežitie", "Ako vlastne vidíš?", "Tajomstvo"
+  Pri vkladaní boli opravené zjavné preklepy/medzery (napr.
+  "selý"→"celý", "žeak"→"že ak", "niekym"→"niekým", "urdžať"→"udržať",
+  "víked"→"víkend", "starni"→"stajni" a pod.) a v "Chanelingoch"
+  odstránené 2 zjavné artefakty vloženého obrázku v pôvodnom texte
+  ("žena pred zrkadlomExistuje…", "obrazok2A v poslednom rohu…") — z
+  týchto miest sa namiesto toho stali PlaceholderImage sloty.
+  **Potvrdiť s Monikou:** jedna veta ostala nejasná a nebola opravovaná
+  ("...až keď naplno vstúpi lido svojej energie..." v článku "Naučme sa
+  dôverovať životu") — asi ide o preklep, ale nechali sme pôvodné
+  znenie, kým nepríde spresnenie. Pridané medzititulky (napr.
+  Prvý/Druhý/Tretí/Štvrtý roh…, "Stretnutie s Jerrym", "Náš úžasný
+  orgán"…) sú moja formulácia, nie doslovný text od Moniky — voľne k
+  úprave.
+- Stále chýba: zvyšok "Tajomného sveta dvojplameňov" — nemáme jeho
+  tituly ani text.
 
 ## Staršie referencie zo starého webu
 Zadanie spomína referencie k Terapii Cesta a k Ceste Dvojplameňa z pôvodného
