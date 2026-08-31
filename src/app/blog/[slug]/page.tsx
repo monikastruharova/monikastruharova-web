@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
 import { PlaceholderImage } from "@/components/PlaceholderImage";
+import { BlogBody } from "@/components/BlogBody";
 import { blogCategories, blogPosts, postBySlug } from "@/data/blog";
 
 export function generateStaticParams() {
@@ -64,7 +65,9 @@ export default async function BlogPostPage({
 
       <section className="py-6 md:py-10">
         <Container className="mx-auto max-w-3xl">
-          {post.pending ? (
+          {post.body ? (
+            <BlogBody blocks={post.body} />
+          ) : post.pending ? (
             <div className="rounded-[1.75rem] border border-dashed border-sand bg-cream-dark/40 p-6 text-sm text-ink-soft md:p-8">
               <p className="font-semibold text-ink">
                 TODO: plný text tohto článku ešte čaká na dodanie.

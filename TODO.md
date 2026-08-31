@@ -96,9 +96,26 @@ Pred produkciou nahradiť skutočnými súbormi:
 Plný text 4 nových článkov ("Tanec srdca 1", "Tanec srdca 2", "Slzy na
 parkete", "Čo je Intuitívny tanec?") nebol súčasťou dodaných podkladov do
 tohto promptu — v `src/data/blog.ts` a na stránkach `/blog/[slug]` sú
-pripravené ako TODO/koncept. Rovnako chýbajú staré články zo starého webu
-(kategórie "Keď oči prehovoria", "Chanelingy", "Tajomný svet dvojplameňov")
-— nemáme ich tituly ani text, treba dodať na migráciu.
+pripravené ako TODO/koncept.
+
+- [x] 4 staré "Chanelingy" články dodané a nasadené do kategórie "Príbehy
+  zo života" (`src/data/blog.ts`, formátované cez nový `BlogBody`
+  komponent — medzititulky, zvýraznené citácie, zoznamy, miesta pre
+  fotografie): "Prečo venujeme viac pozornosti iným než sebe?", "Vojna v
+  nás – Sloboda v nás", "Naučme sa dôverovať životu", "Čo pre nás znamená
+  láska?". Pri vkladaní boli opravené zjavné preklepy/medzery
+  ("selý"→"celý", "žeak"→"že ak", "niekym"→"niekým" a pod.) a odstránené
+  2 zjavné artefakty vloženého obrázku v pôvodnom texte ("žena pred
+  zrkadlomExistuje…", "obrazok2A v poslednom rohu…") — z týchto miest sa
+  namiesto toho stali PlaceholderImage sloty. **Potvrdiť s Monikou:**
+  jedna veta ostala nejasná a nebola opravovaná ("...až keď naplno vstúpi
+  lido svojej energie..." v článku "Naučme sa dôverovať životu") — asi
+  ide o preklep, ale nechali sme pôvodné znenie, kým nepríde spresnenie.
+  Pridané medzititulky v článku "Prečo venujeme viac pozornosti iným než
+  sebe?" (Prvý/Druhý/Tretí/Štvrtý roh…) sú moja formulácia, nie doslovný
+  text od Moniky — voľne k úprave.
+- Stále chýbajú: staré články z kategórie "Keď oči prehovoria" a zvyšok
+  "Tajomného sveta dvojplameňov" — nemáme ich tituly ani text.
 
 ## Staršie referencie zo starého webu
 Zadanie spomína referencie k Terapii Cesta a k Ceste Dvojplameňa z pôvodného
