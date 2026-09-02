@@ -110,10 +110,13 @@ Pred produkciou nahradiť skutočnými súbormi:
 - [x] Favicon — nasadený z rovnakého loga
 
 ## Chýbajúci obsah blogu
-Plný text 4 tanečných článkov ("Tanec srdca 1", "Tanec srdca 2", "Slzy na
-parkete", "Čo je Intuitívny tanec?") nebol súčasťou dodaných podkladov do
-tohto promptu — v `src/data/blog.ts` majú `pending: true` a čakajú na
-finálny text.
+- [x] "Tanec srdca 1 — Z parketu do ambulancie" a "Tanec srdca 2 —
+  Nečakaj a plň si sny" dodané a nasadené (`pending: false`,
+  `src/data/blog.ts`). Zámerne **bez obrázkov v texte** (na žiadosť) —
+  titulná fotka článku ostáva placeholder, rovnako ako u ostatných 27
+  článkov (pozri "3 · Titulné fotky článkov" v checkliste).
+- Stále chýba plný text pre "Slzy na parkete" a "Čo je Intuitívny
+  tanec?" — v `src/data/blog.ts` majú `pending: true`.
 [x] Na žiadosť odstránené viditeľné slovo "TODO" z verejnej časti webu
   (excerpty aj stránka `/blog/[slug]`) — bolo omylom vidieť aj
   návštevníkom, nielen vo vývoji. Nahradené neutrálnym textom "Tento
