@@ -103,6 +103,7 @@ export default function IntuitivnyTanecPage() {
           <MeditationBlock
             tone="gold"
             title="Ranná meditácia"
+            videoUrl="https://youtu.be/RfzGQ1Uegys"
             text={`Intuitívny tanec začína v momente, keď sa prestaneme schovávať sami pred sebou.
 
 Skôr než sa roztancujeme, potrebujeme sa v tichu stretnúť so svojou vlastnou podstatou.

@@ -212,7 +212,6 @@ export default function TerapiaCestaPage() {
             <p className="mt-1 text-sm text-ink-soft">
               Cena zahŕňa jednu 60-minútovú konzultáciu 3 dni po terapii.
             </p>
-            {/* TODO (sekcia 14, bod 2): potvrdiť aktuálnu cenu — starý cenník uvádzal 90 €. */}
           </div>
         </Container>
       </section>

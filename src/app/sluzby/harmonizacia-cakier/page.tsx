@@ -135,6 +135,7 @@ export default function HarmonizaciaCakierPage() {
           <MeditationBlock
             tone="sage"
             title="Meditácia so šungitom"
+            videoUrl="https://youtu.be/r5753H1sQ_8"
             text="Kým sa stretneme naživo, vyskúšaj si pocit uvoľnenia a silu energetického stíšenia v pohodlí svojho domova. Táto vedená meditácia ti pomôže ukotviť sa a opäť nájsť rovnováhu tela a duše."
           />
         </Container>
@@ -160,7 +161,6 @@ export default function HarmonizaciaCakierPage() {
                 <p className="mt-1 font-serif text-2xl text-clay-dark">25 €</p>
               </div>
             </div>
-            {/* TODO (sekcia 14, bod 2): potvrdiť aktuálne ceny — starý cenník uvádzal 25 €. */}
           </div>
         </Container>
       </section>

@@ -1,22 +1,24 @@
+import { YouTubeEmbed } from "./YouTubeEmbed";
+
 /**
  * Blok s vedenou meditáciou — text + prehrávač.
  *
- * `src` zatiaľ nie je k dispozícii (žiadny audio/video súbor ani embed
- * odkaz nebol dodaný), preto sa vždy vykresľuje jasne označený placeholder
- * "slot" namiesto reálneho prehrávača. Akonáhle bude k dispozícii súbor
- * (mp3/mp4) alebo embed odkaz (napr. YouTube, SoundCloud), stačí doplniť
- * `src` a nahradiť placeholder skutočným <audio>/<iframe> prehrávačom.
+ * Ak je `videoUrl` k dispozícii, vloží sa priamo prehrateľné YouTube video
+ * (cez YouTubeEmbed). Bez neho sa vykresľuje jasne označený placeholder
+ * "slot", aby bolo vidieť, kam video neskôr príde.
  */
 export function MeditationBlock({
   eyebrow = "Darček pre teba",
   title,
   text,
   tone = "clay",
+  videoUrl,
 }: {
   eyebrow?: string;
   title: string;
   text: string;
   tone?: "clay" | "sage" | "gold";
+  videoUrl?: string;
 }) {
   const toneClasses: Record<string, string> = {
     clay: "border-clay/30 bg-clay/5",
@@ -39,17 +41,8 @@ export function MeditationBlock({
         {text}
       </p>
 
-      {/* TODO: nahradiť skutočným audio/video prehrávačom, keď bude k dispozícii súbor/odkaz. */}
-      <div className="mt-6 flex max-w-md items-center gap-4 rounded-2xl border border-dashed border-sand bg-white/60 p-4">
-        <span
-          aria-hidden
-          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-lg shadow-sm"
-        >
-          ▶
-        </span>
-        <p className="text-xs leading-snug text-ink-soft">
-          {title} — audio/video meditácia čaká na nahratie.
-        </p>
+      <div className="mt-6 max-w-md">
+        <YouTubeEmbed url={videoUrl} title={title} placeholderLabel={`${title} — video čaká na nahratie.`} />
       </div>
     </div>
   );

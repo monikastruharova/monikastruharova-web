@@ -119,6 +119,7 @@ export default function HomePage() {
         <Container>
           <MeditationBlock
             title="Meditácia vďačnosti"
+            videoUrl="https://youtu.be/ZuomJD3jE7s"
             text={`Chceš urobiť prvý krok k sebe hneď teraz?
 
 Vedomé tvorenie života začína vždy v prítomnom okamihu. A vďačnosť je najrýchlejšia cesta, ako sa preladiť z nedostatku na hojnosť.

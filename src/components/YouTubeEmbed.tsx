@@ -41,7 +41,7 @@ export function YouTubeEmbed({
         <span aria-hidden className="text-2xl">
           ▶
         </span>
-        <p className="text-sm text-ink-soft">{placeholderLabel ?? `TODO: video „${title}“ — čaká na YouTube odkaz`}</p>
+        <p className="text-sm text-ink-soft">{placeholderLabel ?? `Video „${title}“ čaká na doplnenie.`}</p>
       </div>
     );
   }

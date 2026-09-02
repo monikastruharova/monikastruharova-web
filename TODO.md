@@ -8,12 +8,12 @@ pustiť naostro**, kým nie sú tieto body vyriešené.
 Dvojplamene sú vyčlenené ako samostatná téma / špecializácia v hlavnom menu na `/dvojplamene` (nie pod službami).
 Služby obsahujú: `/sluzby/terapia-cesta`, `/sluzby/harmonizacia-cakier`, `/sluzby/zenske-kruhy`, `/sluzby/intuitivny-tanec`.
 
-## 2. Ceny — nesúlad medzi starým cenníkom a novým textom
-- Terapia Cesta: nový text 120 € (implementované), starý cenník 90 €.
-- Harmonizácia čakier: nový text 40 € / 25 € (skupina) (implementované),
-  starý cenník 25 €.
-**Potvrdiť aktuálne platné ceny.** Miesta v kóde: `src/app/sluzby/terapia-cesta/page.tsx`,
-`src/app/sluzby/harmonizacia-cakier/page.tsx` (hľadaj komentár `TODO (sekcia 14, bod 2)`).
+## 2. ~~Ceny~~ — VYRIEŠENÉ
+Potvrdené (Petr): ostávajú vyššie/novšie ceny. Terapia Cesta 120 €,
+Harmonizácia čakier 40 € individuálne / 25 € skupinové. Staré ceny
+z pôvodného cenníka (90 € / 25 €) sú neplatné, žiadna zmena v kóde
+nebola potrebná (nový text bol už takto nasadený) — len odstránené
+TODO komentáre.
 
 ## 3. ~~Kontaktný formulár~~ → požiadavky vedú na Facebook — VYRIEŠENÉ
 Monika sa rozhodla, že požiadavky majú chodiť cez Facebook, nie cez formulár/
@@ -61,18 +61,23 @@ Ak sa rušia, treba nastaviť 301 presmerovania zo starých URL na relevantné
 nové stránky (pozri `next.config.ts` → `redirects()`), aby web neprišiel o
 SEO hodnotu. **Zatiaľ nie je implementované — nemáme zoznam starých URL.**
 
-## 8. Meditácie (audio/video)
-Pridané 3 nové sekcie s textom od Moniky (`src/components/MeditationBlock.tsx`):
-- Domov → "Meditácia vďačnosti"
-- Harmonizácia čakier → "Meditácia so šungitom"
-- Intuitívny tanec → "Ranná meditácia" (v texte opravené 2 zjavné preklepy:
-  "Tponúkam" → "Ponúkam", "obráťiš" → "obrátiš" — potvrdiť s Monikou, že to
-  tak malo byť)
+## 8. ~~Meditácie (video)~~ — VYRIEŠENÉ
+`MeditationBlock` teraz vie priamo prehrať YouTube video (znovupoužíva
+`YouTubeEmbed`, rovnaká komponenta ako pri Terapii Cesta). Dodané 3
+odkazy nasadené:
+- Domov → "Meditácia vďačnosti" — https://youtu.be/ZuomJD3jE7s
+- Intuitívny tanec → "Ranná meditácia" — https://youtu.be/RfzGQ1Uegys
+- Harmonizácia čakier → "Meditácia so šungitom" — https://youtu.be/r5753H1sQ_8
+  (Petr poslal tento odkaz pod názvom „Nalaďte si výnimočnú energiu" —
+  to nesedí s nadpisom "Meditácia so šungitom" ani s textom o šungite,
+  ktorý už bol na stránke. Video som napriek tomu vložil sem, keďže je
+  to jediné voľné miesto z 3 odkazov, ale **potvrdiť s Monikou**, či ide
+  o správne video pre túto sekciu, alebo či sa mal nadpis/text zmeniť na
+  „Nalaďte si výnimočnú energiu".)
 
-Chýba samotný súbor/odkaz na meditáciu (mp3, video, alebo embed napr.
-YouTube/SoundCloud) — momentálne len vizuálny placeholder prehrávača.
-Treba doplniť: formát (audio vs. video), samotný súbor/odkaz, a podľa toho
-nahradiť placeholder v `MeditationBlock.tsx` reálnym `<audio>`/`<iframe>`.
+V texte "Ranná meditácia" ostávajú opravené 2 zjavné preklepy: "Tponúkam"
+→ "Ponúkam", "obráťiš" → "obrátiš" — potvrdiť s Monikou, že to tak malo
+byť (pozri aj bod nižšie o "Naučme sa dôverovať životu").
 
 ---
 
