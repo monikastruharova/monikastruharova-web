@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/Container";
+import { PlaceholderImage } from "@/components/PlaceholderImage";
 import { ServiceCard } from "@/components/ServiceCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { CTABlock } from "@/components/CTABlock";
@@ -69,14 +70,7 @@ export default function HomePage() {
 
           <div className="relative mx-auto w-full max-w-sm">
             <div className="overflow-hidden rounded-3xl border border-sand/80 bg-sand/20 shadow-md">
-              <Image
-                src="/images/monika-struharova-portret.jpg"
-                alt="Monika Struhárová — Cestou srdca"
-                width={384}
-                height={576}
-                priority
-                className="h-auto w-full object-cover"
-              />
+              <PlaceholderImage label="Portrét Moniky Struhárovej" shape="rounded" tone="clay" />
             </div>
             {/* Meno vsadené priamo do hero vizuálu */}
             <div className="absolute -bottom-5 left-1/2 w-[85%] -translate-x-1/2 rounded-2xl border border-sand/60 bg-cream/95 px-5 py-4 text-center shadow-lg backdrop-blur">

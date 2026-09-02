@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
@@ -48,20 +49,34 @@ export default function IntuitivnyTanecPage() {
   return (
     <>
       <section className="pt-14 pb-10 md:pt-20">
-        <Container className="mx-auto max-w-3xl">
-          <h1 className="font-serif text-3xl leading-tight text-ink md:text-5xl">
-            Zabudni na kroky. Keď vypneš kontrolu, roztancuješ svoj život.
-          </h1>
-          <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft md:text-lg">
-            <p>
-              Nemusíš mať talent od Boha, nemusíš mať ani rytmus v krvi a pokojne môžeš mať aj obe
-              nohy ľavé...
-            </p>
-            <p>Intuitívny tanec nie je o technike, choreografii ani o perfektnom výkone.</p>
-            <p>
-              Intuitívny tanec je návratom k tvojmu najprirodzenejšiemu jazyku — k autentickému
-              pohybu, ktorý nevymýšľa hlava, ale ktorý si žiada tvoje telo.
-            </p>
+        <Container className="grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <h1 className="font-serif text-3xl leading-tight text-ink md:text-5xl">
+              Zabudni na kroky. Keď vypneš kontrolu, roztancuješ svoj život.
+            </h1>
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft md:text-lg">
+              <p>
+                Nemusíš mať talent od Boha, nemusíš mať ani rytmus v krvi a pokojne môžeš mať aj
+                obe nohy ľavé...
+              </p>
+              <p>Intuitívny tanec nie je o technike, choreografii ani o perfektnom výkone.</p>
+              <p>
+                Intuitívny tanec je návratom k tvojmu najprirodzenejšiemu jazyku — k autentickému
+                pohybu, ktorý nevymýšľa hlava, ale ktorý si žiada tvoje telo.
+              </p>
+            </div>
+          </div>
+          <div className="relative mx-auto w-full max-w-sm">
+            <div className="overflow-hidden rounded-3xl border border-sand/80 bg-sand/20 shadow-md">
+              <Image
+                src="/images/monika-struharova-portret.jpg"
+                alt="Monika Struhárová — Intuitívny tanec"
+                width={384}
+                height={576}
+                priority
+                className="h-auto w-full object-cover"
+              />
+            </div>
           </div>
         </Container>
       </section>

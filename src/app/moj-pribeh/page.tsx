@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
+import { PlaceholderImage } from "@/components/PlaceholderImage";
 import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -50,14 +51,7 @@ export default function MyStoryPage() {
           </div>
           <div className="relative mx-auto w-full max-w-sm">
             <div className="overflow-hidden rounded-3xl border border-sand/80 bg-sand/20 shadow-md">
-              <Image
-                src="/images/monika-struharova-portret.jpg"
-                alt="Monika Struhárová"
-                width={384}
-                height={576}
-                priority
-                className="h-auto w-full object-cover"
-              />
+              <PlaceholderImage label="Portrét Moniky Struhárovej" shape="rounded" tone="clay" />
             </div>
           </div>
         </Container>
