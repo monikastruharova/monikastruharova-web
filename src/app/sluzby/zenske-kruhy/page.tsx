@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
 import { TestimonialCard } from "@/components/TestimonialCard";
-import { PlaceholderImage } from "@/components/PlaceholderImage";
 import { MandalaDivider } from "@/components/MandalaDivider";
 import { testimonialsFor } from "@/data/testimonials";
 import { siteConfig } from "@/data/site";
@@ -95,7 +95,15 @@ export default function ZenskeKruhyPage() {
               všetky Ženy, Bohyne.
             </p>
           </div>
-          <PlaceholderImage label="Ženský kruh — atmosféra stretnutia" className="mx-auto max-w-xs" />
+          <div className="mx-auto max-w-xs overflow-hidden rounded-3xl border border-sand/80 shadow-md">
+            <Image
+              src="/images/h2-zenske-kruhy-atmosfera.jpg"
+              alt="Ženský kruh — atmosféra stretnutia"
+              width={1300}
+              height={867}
+              className="h-auto w-full object-cover"
+            />
+          </div>
         </Container>
       </section>
 

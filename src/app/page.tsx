@@ -5,7 +5,6 @@ import { Container } from "@/components/Container";
 import { ServiceCard } from "@/components/ServiceCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { CTABlock } from "@/components/CTABlock";
-import { PlaceholderImage } from "@/components/PlaceholderImage";
 import { MeditationBlock } from "@/components/MeditationBlock";
 import { MandalaDivider } from "@/components/MandalaDivider";
 import { services, dvojplamenTeaser } from "@/data/services";
@@ -133,12 +132,15 @@ Prijmi teda odo mňa túto krátku meditáciu ako malý darček na tvoju cestu k
       <section className="py-16 md:py-24">
         <Container>
           <div className="grid items-center gap-10 rounded-[2.5rem] border border-sand bg-white/50 p-8 md:grid-cols-2 md:p-14">
-            <PlaceholderImage
-              label="Symbolický vizuál — Dvojplamene"
-              tone="sage"
-              shape="blob-alt"
-              className="max-w-sm"
-            />
+            <div className="mx-auto max-w-sm overflow-hidden blob-alt">
+              <Image
+                src="/images/h1-dvojplamene-vizual.jpg"
+                alt="Symbolický vizuál — Dvojplamene"
+                width={1300}
+                height={867}
+                className="h-auto w-full object-cover"
+              />
+            </div>
             <div>
               <p className="text-xs font-semibold tracking-[0.2em] text-sage-dark uppercase">
                 Dvojplamene

@@ -6,14 +6,15 @@ export const blogCategories: { slug: BlogCategory; title: string }[] = [
 ];
 
 // Stavebné bloky pre formátovaný text článku — odstavec, medzititulok,
-// zvýraznená citácia, odrážkový zoznam a miesto pre fotografiu (zatiaľ len
-// PlaceholderImage "slot", kým Monika nedodá konkrétne obrázky).
+// zvýraznená citácia, odrážkový zoznam a miesto pre fotografiu. Kým nemá
+// obrázkový blok `src`, vykreslí sa PlaceholderImage "slot" namiesto
+// skutočnej fotky.
 export type BlogBlock =
   | { type: "p"; text: string }
   | { type: "h2"; text: string }
   | { type: "quote"; text: string }
   | { type: "list"; items: string[] }
-  | { type: "image"; label: string };
+  | { type: "image"; label: string; src?: string; width?: number; height?: number };
 
 export type BlogPost = {
   slug: string;
@@ -93,7 +94,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Tiež patríte medzi obetavé mamy, ktoré dávajú všetok drahocenný čas svojmu dieťaťu, pričom zanedbávajú vlastný odpočinok a zabúdajú sa najesť? Alebo ste tým zodpovedným otcom, čo v snahe zabezpečiť rodinu dobrovoľne pracuje dlhé nadčasy, a preto chodieva domov až po zotmení?" },
       { type: "p", text: "Možno ste boli tým starším súrodencom, ktorý bol nútený vzdať sa svojich záľub, lebo musel pomáhať mladšiemu bratovi či sestre s domácimi úlohami. A možno ste ženou, tou bútľavou vŕbou, ktorá stále rieši neriešiteľné problémy svojho partnera, miesto toho, aby myslela viac na seba." },
       { type: "p", text: "Či ste skôr natoľko loajálnym zamestnancom, že ochotne súhlasíte s každou novou úlohou, aj keď máte práce vyše hlavy, len aby ste nesklamali nadriadeného? Alebo sa radšej vzdáte svojho názoru, len aby ste nevyčnievali z davu a zachovali harmóniu v tíme?" },
-      { type: "image", label: "Žena pred zrkadlom" },
+      { type: "image", label: "Žena pred zrkadlom", src: "/images/blog-zena-pred-zrkadlom.jpg", width: 917, height: 832 },
       { type: "p", text: "Existuje mnoho dôvodov, ktoré nás podnecujú k tomu, aby sme sa zaujímali viac o životy iných ako o ten svoj. A ako v dobrej detektívke, poďme si ich predstaviť a podložiť dôkazmi ukrytými v štyroch záhadných rohoch miestnosti, ktorá uchováva príbehy nášho života. Tieto tmavé kúty sú často neviditeľné, no napriek tomu vplývajú na naše rozhodnutia a činy. Ktorý z nich teda odhalí to najväčšie prekvapenie?" },
       { type: "h2", text: "Prvý roh: reťaze prostredia" },
       { type: "p", text: "V prvom, najbližšom rohu ležia pevné reťaze, ktoré nás zväzujú a nedovolia nám slobodne dýchať." },
@@ -114,7 +115,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Veríme, že ak sa o niekoho postaráme, na oplátku dostaneme prijatie a uznanie. Túžba po chýbajúcej láske nás preto ambiciózne ženie vpred. Nedokážeme si ju dať sami a tak ju zúfalo potrebujeme od iných. A robíme všetko, aby sme prázdnotu v srdci rýchlo vyplnili." },
       { type: "p", text: "Ak trpíme nízkym sebavedomím, máme tendenciu porovnávať sa s inými. Prevláda v nás pocit, že nie sme dosť dobrí a to nás motivuje viac sa starať o druhých než o seba. A paradoxne, čím viac sa snažíme získať uznanie od druhých, tým viac si potvrdzujeme vlastnú nízku hodnotu." },
       { type: "h2", text: "Štvrtý roh: nekončiaci bežiaci pás" },
-      { type: "image", label: "Ilustračný obrázok k článku" },
+      { type: "image", label: "Ilustračný obrázok k článku", src: "/images/blog-stvrty-roh.jpg", width: 832, height: 832 },
       { type: "p", text: "A v poslednom rohu čaká nekončiaci bežiaci pás. Keď naň nastúpime, rýchlosť sa začne zvyšovať. A keď spomalíme, spadneme." },
       { type: "p", text: "Je to situácia podobná životu: čím viac urobíme, tým viac sa od nás vyžaduje." },
       { type: "p", text: "V dnešnej dobe sa kladie veľký dôraz na úspech, produktivitu a neustále zvyšovanie výkonu." },
@@ -169,7 +170,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Strach úplne pominul. A my len padáme. Pomaly a pokojne. A z ničoho nič pocítime niečo nové. Jemné a krehké. No zároveň nesmierne silné." },
       { type: "quote", text: "V našom srdci začína pomaličky narastať viera. Viera, ktorá vie, čo je v nás. Vidí silu, ktorej sme sa tak dlho bránili." },
       { type: "p", text: "Silu, ktorej sme neverili. Zabudli sme na to, kým naozaj sme. Na to, že svoju slobodu máme vo vlastných rukách. A nikto na svete nám ju nemôže vziať. Žiada nás iba o to, aby sme jej verili. Aby sme nezradili seba. A aby sme ostali tým, čím sme v hĺbke svojej duše vždy boli. Slobodnými a silnými." },
-      { type: "image", label: "Ilustračný obrázok k článku" },
+      { type: "image", label: "Ilustračný obrázok k článku", src: "/images/blog-vojna-v-nas.jpg", width: 1200, height: 800 },
       { type: "p", text: "Vojna, ktorá sa odohráva okolo nás, začína vojnou v našom srdci. Vyzýva nás, aby sme nazreli za oponu svojich strachov a urobili niečo zmysluplné. A ak sa pýtame, čo môžeme urobiť, aby sme túto skazu ľudstva zastavili, pozrime sa do seba. Vedzme, že naša maličkosť je oveľa silnejšia, ako sme si dokázali predstaviť." },
       { type: "p", text: "Upokojme vojnu v sebe. Nájdime svoju vlastnú slobodu. A dovoľme, aby sa udial zázrak aj vo svete navôkol. To, že vyliečime seba, má nesmierny vplyv na pokoj sveta, v ktorom žijeme." },
       { type: "p", text: "Dôverujme sebe." },
@@ -199,7 +200,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Naučila som sa držať svoj život pod kontrolou. Verila som, že ak ho budem riadiť, nájdem šťastie a naplnenie. Až keď sa moja potreba rozhodovať rozplynula, uvedomila som si, že som bránila životu v hojnosti. Zrazu mi bolo úplne jasné, že život mi ponúka neporovnateľne viac, ako som si dokázala predstaviť. Stačilo mu iba dovoliť, aby tak urobil. Stačilo sa prestať hýbať v medziach očakávaní. Otvoriť srdce a prijať nemožné." },
       { type: "p", text: "Keď padneme na kolená, pokúsme sa v sebe nájsť vďaku za to, že sa to stalo práve nám. Vedzme, že náš pád je darom z nebies a preto má svoje posolstvo. Neostaňme teda ležať na zemi v slzách utrpenia. No nesnažme sa so životom ani tvrdohlavo bojovať, pretože túto vojnu nemôžme vyhrať." },
       { type: "p", text: "Nájdime štrbinku pomedzi a odhaľme hlbokú pravdu, ktorá sa za našim pádom ukrýva. Tento pohľad bude kľúčom k tomu, aby sme opäť neklesli k zemi a mohli kráčať ďalej s ľahkosťou a radostným úsmevom." },
-      { type: "image", label: "Ilustračný obrázok k článku" },
+      { type: "image", label: "Ilustračný obrázok k článku", src: "/images/blog-naucme-sa-doverovat.jpg", width: 1200, height: 800 },
       { type: "p", text: "Život mnohých z nás nie je jednoduchý. A je iba otázkou času, kedy pochopíme, že je presne taký, aký má byť. Poskytuje nám všetko k tomu, aby mohol náš domček z karát raz pevne stáť a aby ho nič nedokázalo zboriť. Už sa nebudeme triasť a každá naša bunka bude ladiť s ostatnými. Nebudeme si na pery lepiť očakávaný úsmev. Budeme sami sebou." },
       { type: "quote", text: "Budeme vedieť, kým sme. Budeme stáť pevne zakotvení vo svojom srdci a prijímať svoju esenciu, svoju podstatu a jedinečnosť." },
       { type: "p", text: "Budeme dôverovať tomu, čo je v nás a prijímať nielen svoju lásku, ale aj neistotu. Už sa nebudeme báť padnúť na kolená, pretože budeme vedieť, že ak sa tak stane, bude tu niekto, kto nám podá pomocnú ruku. A tým niekým bude naša milujúca duša. Duša odovzdaná životu." },
@@ -225,7 +226,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Pod ťarchou nekonečných starostí zovšednela. A možno sa úplne stratila. Stala sa slovom, ktoré sme začali používať, keď sme od niekoho potrebovali niečo získať. Pohladenie, porozumenie, podporu či fyzické potešenie. Lásku sme ohraničili svojimi potrebami a očakávaniami." },
       { type: "p", text: "Láska sa stáva iba slovom, ak sa dostane do rúk našej mysle. Je to láska, ktorá kladie podmienky. Je to tá láska, ktorá hovorí, že ak chceme, aby nás niekto miloval, musíme preto niečo urobiť. Musíme vyhovieť, zmeniť sa, byť lepší." },
       { type: "p", text: "Je však toto naozaj láska? Alebo len naháňanie niečoho, čo nie je? Je to láska, čo nás núti presviedčať niekoho, že sme hodní jeho pozornosti? Prečo si želáme, aby nám niekto lásku neustále dokazoval?" },
-      { type: "image", label: "Ilustračný obrázok k článku" },
+      { type: "image", label: "Ilustračný obrázok k článku", src: "/images/blog-co-je-laska.jpg", width: 1200, height: 800 },
       { type: "quote", text: "Skutočná láska predsa nič nemusí." },
       { type: "p", text: "Láska, ktorá pramení v srdci sa nepotrebuje vtesnať do tabuliek, ktoré ktosi vytvoril. Pravá láska si nekladie podmienky a nemá žiadne hranice. Nekáže, že ak niekoho milujeme, musíme byť s ním." },
       { type: "p", text: "Táto láska nás vezme na prechádzku a hoci po našom boku nebude kráčať nikto, pocit milujúceho srdca nám bude robiť spoločnosť. Pretože táto láska je navždy ukotvená v nás. Iba s ňou si užívame každý nádych. A kráčame v ústrety životu." },
@@ -252,7 +253,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Riešením tejto zamotanej situácie bolo pre mňa to, že sa pripravím na každý možný krok a zladím ho s dôverou, že sa to skončí dobre. Možno to znie vtipne, ale ten tlak, ktorý na mňa moja myseľ vynakladala, bol enormný." },
       { type: "p", text: "A tak som sa rozhodla ísť vlakom, ktorý má konečnú v Leviciach, pre prípad, aby som ani náhodou nepremeškala stanicu, kde mám vystúpiť. Naplánovala som si, že sa opýtam sprievodcu, na ktorej strane vlaku mám v Leviciach vystúpiť. Ale aj veľa iných drobností, ktoré sa mi na ceste s veľkou krabicou môžu stať." },
       { type: "p", text: "Všetko bolo premyslené a ja som sa s dôverou, ale aj strachom, ktorý som sa snažila ukočírovať, vydala na cestu." },
-      { type: "image", label: "Cesta vlakom" },
+      { type: "image", label: "Cesta vlakom", src: "/images/blog-cesta-vlakom.jpg", width: 1300, height: 865 },
       { type: "p", text: "Keď som vstúpila do budovy stanice, zmeravela som." },
       { type: "p", text: "Na tabuli s odchodmi vlakov svietila informácia, že na trase zo Šurian do Levíc je výluka a cestujúci musia z vlaku prestúpiť do autobusov." },
       { type: "p", text: "V mojej hlave nastalo prepočítavanie, ako keď musí navigácia v idúcom aute nájsť novú cestu do cieľa. Všetky pripravené plány zrazu stroskotali a ja som musela v ultra krátkom čase nájsť nové riešenia." },
@@ -318,7 +319,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "V mojom tele sa odohrávala explózia atómovej bomby, ktorú som nevedela udržať pod kontrolou. Pocity, ktoré mnou lomcovali, boli extrémne silné. A neprichádzali jeden po druhom, ako keď si ich dovolíme v procese cítiť. Vybuchli všetky naraz. A zvalcovali ma." },
       { type: "p", text: "Všetko spustil obrovský šok, keď som si náhle uvedomila, čo sa deje. Strach okamžite nabral najväčšiu rýchlosť a tlak, ktorý som na sebe vyvinula, nemal obdoby." },
       { type: "p", text: "Cítila som, ako každá moja bunka zmeravela, a pritom chcela ujsť. Moja hlava išla prasknúť a z očí kričala panika. Bol to jasný vnútorný boj o prežitie. No ja som nevedela vôbec nič urobiť. Len som tam stála ako soľný stĺp." },
-      { type: "image", label: "Kone na ranči" },
+      { type: "image", label: "Kone na ranči", src: "/images/blog-kone-na-ranci.jpg", width: 1024, height: 684 },
       { type: "quote", text: "Toto sú okamihy, keď logický úsudok nemá šancu dostať sa k slovu." },
       { type: "p", text: "Jerry si iba šiel po maškrtu, ktorú tak miloval. A vôbec nemal v úmysle vraziť do mňa. Práve naopak, keď sa ku mne priblížil, bezpečne spomalil a asi desať metrov predo mnou postál." },
       { type: "p", text: "Vo chvíli, keď som pocítila, že som v bezpečí, všetky tie silné emócie sa zo mňa doslova vyliali. Moje telo horelo a z očí mi tiekli slzy. Boli to slzy úľavy. Prežila som!" },
@@ -361,7 +362,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "No ak nám začnú zaspávať alebo odumierať bunky sietnice, náš už aj tak poškodený obraz začne prichádzať o jednotlivé svoje časti. Presne ako keď nám chýbajú časti puzzle. A čím ďalej, tým ich bude chýbať viac. Niekedy sú to časti zo stredu nášho obrazu, inokedy sú to tie po okraji." },
       { type: "p", text: "V momente, keď začneme prichádzať o svoje drahocenné bunky v sietnici, začíname vidieť ako cez sito. Miesto, kde naše bunky prestali fungovať správne, ostane prázdne a priesvitné. Alebo stmavne a vyplní sa černotou. Inokedy sa čierna farba skombinuje s bielou a náš obraz pripomína zrnenie po skončení televízneho vysielania." },
       { type: "p", text: "A nakoniec sa náš pohľad môže úplne zahaliť tmavou černotou alebo svetlou belobou pripomínajúcou hustú mliečnu hmlu." },
-      { type: "image", label: "Ilustračný obrázok k článku" },
+      { type: "image", label: "Ilustračný obrázok k článku", src: "/images/blog-ako-vlastne-vidis.jpg", width: 1300, height: 868 },
       { type: "quote", text: "Svet nášho oka je skutočne zázračný. Je až neuveriteľné, akými rozmanitými spôsobmi môžeme vidieť, respektíve nevidieť." },
       { type: "p", text: "Tieto možnosti sú tými, s ktorými som sa stretla ja. No určite ich je oveľa viac. Môžu fungovať jednotlivo, ale aj spolu. Často je to, hlavne pri zložitejších diagnózach, kombinácia mnohých spôsobov nevidenia." },
       { type: "p", text: "A my si hľadáme štrbinku, cez ktorú ešte dokážeme niečo zachytiť. Vidieť tak ako kedysi." },
@@ -404,7 +405,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Aby som dokázala, že nie som o nič horšia ako ostatní, snažila som sa všetko si zapamätať. A miesto čítania toho, čo mám na papieri napísané, som iba hovorila, čo som si pamätala. Bez čítania." },
       { type: "p", text: "Úprimne, neviem, či je to tragické alebo komické. Teraz, s odstupom času mi to príde ako tragikomická scéna z Chaplinovho filmu." },
       { type: "p", text: "Ale čo človek neurobí, aby obhájil svoju ťažko vydobenú pozíciu?" },
-      { type: "image", label: "Ilustračný obrázok k článku" },
+      { type: "image", label: "Ilustračný obrázok k článku", src: "/images/blog-tajomstvo.jpg", width: 1024, height: 683 },
       { type: "p", text: "Časom začalo podobných situácií pribúdať. A ja som stále viac bojovala. Lenže boj, ktorý sa prejavoval navonok, bol v skutočnosti tvrdým bojom, ktorý som viedla vo svojom vnútri." },
       { type: "p", text: "Väčšina mojich známych vedela, že mám niečo s očami, no na mne to nebolo vôbec vidieť. Správala som sa rovnako ako predtým. Pozerala som sa ľuďom do očí rovnako ako predtým. V priestore som sa orientovala rovnako ako predtým. A to všetci videli." },
       { type: "quote", text: "Ale nikto nevidel to, čo som prežívala vo svojom vnútri." },
@@ -429,7 +430,7 @@ export const blogPosts: BlogPost[] = [
     body: [
       { type: "p", text: "Hovorí sa, že ako na Nový rok, tak po celý rok… 😁" },
       { type: "p", text: "🎆 Tak, nech sa tak stane! 😃" },
-      { type: "image", label: "Srí Lanka" },
+      { type: "image", label: "Srí Lanka", src: "/images/blog-sri-lanka.jpg", width: 675, height: 900 },
       { type: "p", text: "Môj rok 2025 začal absolútne úchvatne! Odvážne, odhodlane, odovzdane, s prijatím a láskou k tomuto nádhernému svetu, a hlavne k sebe, s nadšením, pokorou, nekonečnými zážitkami a hlbokým vnútorným pokojom, ktorý ma sprevádzal deň za dňom. 🙏" },
       { type: "p", text: "Keď mnohí ešte dospávali prebdenú silvestrovskú noc, u mňa už začínala nezabudnuteľná cesta do srdca ďalekej krajiny zaliatej slnkom, ktorá má tvar slzy, exotickej Srí Lanky. 🌏 🛫" },
       { type: "p", text: "Roky rokúce som túžila po ajurvéde na tomto neobyčajnom ostrove, ale vždy tu bolo nejaké ALE, kvôli ktorému som túto cestu stále odkladala na neurčito. 🤨" },
@@ -553,7 +554,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Je to mechanizmus, ktorý nám poskytuje ochranu pred nebezpečenstvom. Je našou inštinktívnou reakciou pred blížiacou sa hrozbou. Pomáha nám chrániť sa pred ublížením a snaží sa udržať nás v bezpečí." },
       { type: "p", text: "Prečo sa ale niekedy necháme chápadlami strachu úplne zdeformovať, a v horšom prípade nadobro zničiť?" },
       { type: "h2", text: "Strach ako priateľ" },
-      { type: "image", label: "Strach ako priateľ" },
+      { type: "image", label: "Strach ako priateľ", src: "/images/blog-strach-priatel.jpg", width: 900, height: 900 },
       { type: "p", text: "Vieme, že oheň nám môže spôsobiť popálenie, preto sa ho nedotýkame. No ak sa oheň začne nekontrolovane približovať, môže nás zachvátiť triaška." },
       { type: "p", text: "Opatrnosť nás na vysokohorskom chodníku vedie čo najbezpečnejším úsekom, no ak pod sebou zbadáme hlbočizný strmý zráz, začneme sa potiť a zrýchli sa nám tep." },
       { type: "p", text: "Zdravý rozum nám teda správne napovie, čomu sa vyhnúť, aby sme sa nezranili. Ak sa však prekročia hranice nášho racionálneho úsudku, prejaví sa to automatickou psychickou či fyzickou reakciou. Spanikárime, zmeravieme, alebo utečieme." },
@@ -576,7 +577,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Spôsobujú ich rôzne faktory, ako stres, depresia, úzkosť, nízke sebavedomie, alebo už spomínané traumy z detstva." },
       { type: "p", text: "Ak nás však ovládnu, ľahko sa môžu stať deštruktívnymi." },
       { type: "h2", text: "Strach zo straty kontroly" },
-      { type: "image", label: "Strach zo straty kontroly" },
+      { type: "image", label: "Strach zo straty kontroly", src: "/images/blog-strach-kontrola.jpg", width: 900, height: 900 },
       { type: "p", text: "V dnešnej rýchlej a neistej dobe nás čoraz viac ovplyvňuje rastúci strach, že stratíme kontrolu nad svojím životom." },
       { type: "p", text: "Je to komplexný fenomén, ktorý môže mať hlboký dopad na rôzne aspekty života, ako vzťahy, práca, financie alebo zdravie." },
       { type: "p", text: "Môže nám brániť v tom, aby sme si plnili sny a aby sme boli ochotní niečo zmeniť. Neoblomne nás núti, aby sme svoju snahu hodili za hlavu a držali sa toho, čo dobre poznáme, aj keď nám to vôbec nevyhovuje." },
@@ -586,7 +587,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Ľudia, ktorí mali v minulosti väčšiu kontrolu nad domovom, boli ochotnejší chrániť ho a bojovať za svoje prežitie. Tento spôsob správania následne odovzdávali svojim deťom." },
       { type: "p", text: "Neznáme prostredie a nepredvídateľné okolnosti znamenali často veľkú hrozbu, lebo boli zdrojom nebezpečenstva. Chaos a neporiadok zas mohli viesť k násiliu, konfliktom a strate majetku." },
       { type: "h2", text: "Zastavme svoj strach" },
-      { type: "image", label: "Ilustračný obrázok k článku" },
+      { type: "image", label: "Ilustračný obrázok k článku", src: "/images/blog-zastavme-strach.jpg", width: 900, height: 900 },
       { type: "p", text: "Nech je náš inštinkt strachu spôsobený čímkoľvek, poznaným či nepoznaným, spoľahlivo sa udomácnil v našich bunkách." },
       { type: "p", text: "Ale skôr, než sa dostaneme do bodu, keď začneme pomýšľať na ukončenie svojho utrpenia, pokúsme sa na chvíľu zastaviť. Nájdime to, možno malé a slabé, ale stále bdelé svetielko na konci tunela. Práve toto svetlo si žiada našu pozornosť, lebo jedine my mu dokážeme vdýchnuť život." },
       { type: "p", text: "Vyvedie nás z beznádeje a pustí sa s nami do pátrania za pôvodom nášho strachu a hlbšou pravdou, ktorú sme dosiaľ nevideli." },
@@ -852,7 +853,7 @@ export const blogPosts: BlogPost[] = [
       ] },
       { type: "p", text: "V ktorej z týchto možností ste sa našli?" },
       { type: "p", text: "A do akej miery dôverujete tomu, čo sa deje a svojmu vnútornému hlasu?" },
-      { type: "image", label: "Ilustračný obrázok k článku" },
+      { type: "image", label: "Ilustračný obrázok k článku", src: "/images/blog-dvojplamene-zmena.jpg", width: 1400, height: 933 },
       { type: "p", text: "Staré končí, aby mohlo nové začať. Znamená to obrovský kvantový skok, ktorý má hlboký zmysel, kľúčový pre duchovný rast a osobnú transformáciu." },
       { type: "p", text: "Je úplne prirodzené, že nová životná situácia so sebou prináša strach. Strach zo zlyhania, neschopnosti, odmietnutia, sklamania, samoty, pádu či straty a neistoty." },
       { type: "p", text: "Každá veľká transformácia v našom živote si však vyžaduje zmenu v našom vnútri. A my sme na ňu už pripravení. Tak jej dovoľme vstúpiť do našich dní a zveľadiť našu energiu." },
@@ -880,7 +881,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Bolesť zažívame vtedy, ak bránime svojej duši v posune, vedomiu v raste a svojmu telu v liečení." },
       { type: "p", text: "Energia dvojplameňov nás žiada o navýšenie svojej vibrácie. A to sa nezaobíde bez opustenia nezdravých presvedčení a nefungujúcich vzorcov správania. Akonáhle sa ich prestaneme nasilu držať, zmizne aj bolesť a nahradí ju bezpodmienečná láska." },
       { type: "h2", text: "Ako dlho to ešte bude trvať?" },
-      { type: "image", label: "Ilustračný obrázok — cesta dvojplameňa" },
+      { type: "image", label: "Ilustračný obrázok — cesta dvojplameňa", src: "/images/blog-dvojplamen-bolest.jpg", width: 1200, height: 800 },
       { type: "p", text: "Čím viac sa bránime vzostupu, tým viac trpíme a tým dlhšie nám bude trvať, kým dosiahneme vnútornú harmóniu." },
       { type: "p", text: "V každej inkarnácii máme za úlohu naučiť sa niektoré z veľkých životných lekcií. A naša duša presne vie, ako a kedy ju predostrieť." },
       { type: "p", text: "Ak našej milujúcej duši nebudeme vzdorovať a s dôverou sa odovzdáme jej božskému vedeniu, čoskoro sa dočkáme dňa, keď naše srdce zaplaví nekonečný pokoj, hlboká láska a oslobodzujúce prijatie očarujúcich darov cesty dvojplameňa." },

@@ -91,9 +91,21 @@ Pred produkciou nahradiť skutočnými súbormi:
 - [x] 3 fotografie certifikátov: Terapia Cesta (The Journey), Reiki Master,
   Kvantový dotyk (TKDM) — nasadené na `/moj-pribeh`, klikateľné na plnú
   veľkosť
-- Vizuál/foto k Dvojplameňom (Domov + `/dvojplamene`)
-- Foto atmosféry ženského kruhu (`/sluzby/zenske-kruhy`)
-- Titulné fotografie ku každému blogovému článku
+- [x] Vizuál k Dvojplameňom na Domove — ruky držiace srdce (`src/app/page.tsx`,
+  `public/images/h1-dvojplamene-vizual.jpg`)
+- [x] Foto atmosféry ženského kruhu (`/sluzby/zenske-kruhy`,
+  `public/images/h2-zenske-kruhy-atmosfera.jpg`) — voľnejšia symbolická
+  fotka (žena s rozpaženými rukami v poli), nie priamo fotka z reálneho
+  kruhu
+- [x] 15 obrázkov v texte blogových článkov (Chanelingy, Keď oči
+  prehovoria, Strach, Srí Lanka, Dvojplamene) — nasadené v
+  `src/data/blog.ts`, zoznam pozri v pracovnom "Fotky na web" checkliste
+  (artefakt zdieľaný v konverzácii). Zdrojové súbory dodané už
+  pomenované presne podľa kódov z checklistu (H1, H2, B1–B15).
+- Stále chýba: titulné fotografie na vrchu každého z 29 blogových
+  článkov (`PlaceholderImage` v `src/app/blog/[slug]/page.tsx`) — v
+  checkliste vedené ako sekcia "3 · Titulné fotky článkov", zatiaľ
+  zámerne odložené ("Na fotky od C sa zatiaľ vykašleme").
 - [x] Logo — nasadené (mandala), pozri bod 6 vyššie
 - [x] Favicon — nasadený z rovnakého loga
 

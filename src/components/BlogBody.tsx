@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PlaceholderImage } from "./PlaceholderImage";
 import type { BlogBlock } from "@/data/blog";
 
@@ -40,7 +41,16 @@ export function BlogBody({ blocks }: { blocks: BlogBlock[] }) {
               </ul>
             );
           case "image":
-            return (
+            return block.src && block.width && block.height ? (
+              <Image
+                key={i}
+                src={block.src}
+                alt={block.label}
+                width={block.width}
+                height={block.height}
+                className="h-auto w-full rounded-2xl border border-sand object-cover shadow-sm"
+              />
+            ) : (
               <PlaceholderImage
                 key={i}
                 label={block.label}
