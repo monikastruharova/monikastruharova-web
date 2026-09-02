@@ -173,6 +173,16 @@ Zadanie spomína referencie k Terapii Cesta a k Ceste Dvojplameňa z pôvodného
 webu, ktoré sa majú preniesť na `/skusenosti-klientov` — plný text nebol
 súčasťou podkladov, treba doplniť (`src/data/testimonials.ts`).
 
+- [x] 14 krátkych citátov o koučingu Dvojplameňov dodaných a nasadených
+  (`src/data/dvojplamenQuotes.ts`, komponent `QuoteWall.tsx`, sekcia
+  "Toto ste povedali o koučingu Dvojplameňov" na `/dvojplamene`).
+  Na rozdiel od `testimonials.ts` **nemajú meno autora** (pôsobia ako
+  útržky súkromných správ) — preto sa zobrazujú anonymne ako samostatná
+  "stena citátov", nie ako plnohodnotné referencie s menom. Ak by
+  Monika chcela k niektorým doplniť meno, presunúť ich radšej do
+  `testimonials.ts` s `services: ["cesta-dvojplamena"]`.
+  Opravené 2 preklepy ("Prišľa"→"Prišla", "intezívna"→"intenzívna").
+
 ## Ochrana osobných údajov — obsah schválený Monikou
 Monika si stránku `/ochrana-osobnych-udajov` pozrela a text (mimo drobnej
 jazykovej opravy "poptávka" → "požiadavka") jej vyhovuje. Výslovne si

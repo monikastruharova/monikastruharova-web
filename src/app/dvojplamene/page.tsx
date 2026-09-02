@@ -3,7 +3,9 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
 import { TestimonialCard } from "@/components/TestimonialCard";
+import { QuoteWall } from "@/components/QuoteWall";
 import { testimonialsFor } from "@/data/testimonials";
+import { dvojplamenQuotes } from "@/data/dvojplamenQuotes";
 import { siteConfig } from "@/data/site";
 import { MandalaDivider } from "@/components/MandalaDivider";
 
@@ -177,6 +179,17 @@ export default function DvojplamenePage() {
           </Container>
         </section>
       ) : null}
+
+      <section className="py-10 md:py-16">
+        <Container className="mx-auto max-w-4xl">
+          <h2 className="text-center font-serif text-2xl text-ink md:text-3xl">
+            Toto ste povedali o koučingu Dvojplameňov
+          </h2>
+          <div className="mt-8">
+            <QuoteWall quotes={dvojplamenQuotes} />
+          </div>
+        </Container>
+      </section>
 
       <section className="pt-6 pb-20 md:pb-28">
         <Container>
