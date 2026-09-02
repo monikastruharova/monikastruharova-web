@@ -44,7 +44,6 @@ export const blogPosts: BlogPost[] = [
     slug: "tanec-srdca-1-z-parketu-do-ambulancie",
     title: "Tanec srdca 1 — Z parketu do ambulancie",
     category: "pribehy-zo-zivota",
-    subcategory: "Tanec",
     excerpt: "Príbeh o tom, ako sa telo prihovára rečou pohybu skôr, než sa mu prihovorí myseľ.",
     ctaLabel: "Spoznaj Intuitívny tanec",
     ctaHref: "/sluzby/intuitivny-tanec",
@@ -85,7 +84,6 @@ export const blogPosts: BlogPost[] = [
     slug: "tanec-srdca-2-necakaj-a-plni-si-sny",
     title: "Tanec srdca 2 — Nečakaj a plň si sny",
     category: "pribehy-zo-zivota",
-    subcategory: "Tanec",
     excerpt: "Pokračovanie príbehu o odvahe vykročiť za tým, po čom srdce skutočne túži.",
     ctaLabel: "Spoznaj Intuitívny tanec",
     ctaHref: "/sluzby/intuitivny-tanec",
@@ -123,7 +121,6 @@ export const blogPosts: BlogPost[] = [
     slug: "slzy-na-parkete",
     title: "Slzy na parkete",
     category: "pribehy-zo-zivota",
-    subcategory: "Tanec",
     excerpt: "O tom, čo sa uvoľní, keď dovolíme telu plakať pohybom.",
     ctaLabel: "Spoznaj Intuitívny tanec",
     ctaHref: "/sluzby/intuitivny-tanec",
@@ -163,8 +160,7 @@ export const blogPosts: BlogPost[] = [
     slug: "co-je-intuitivny-tanec",
     title: "Čo je Intuitívny tanec?",
     category: "pribehy-zo-zivota",
-    subcategory: "Tanec",
-    excerpt: "Úvod do somatickej cesty k sebe — bez kroku, choreografie a výkonu.",
+    excerpt: "Úvod do somatickej cesty k sebe bez choreografie a tlaku na výkon.",
     ctaLabel: "Spoznaj Intuitívny tanec",
     ctaHref: "/sluzby/intuitivny-tanec",
     pending: false,
@@ -210,7 +206,6 @@ export const blogPosts: BlogPost[] = [
     slug: "preco-venujeme-viac-pozornosti-inym-nez-sebe",
     title: "Prečo venujeme viac pozornosti iným než sebe?",
     category: "pribehy-zo-zivota",
-    subcategory: "Chanelingy",
     excerpt:
       "Kedy naposledy ste si našli čas len pre seba? Prečo tak často dávame iným všetko, no nám musia stačiť omrvinky — a ako sa z tejto pasce vymaniť.",
     ctaLabel: "Objav terapiu Cesta",
@@ -284,9 +279,8 @@ export const blogPosts: BlogPost[] = [
     slug: "vojna-v-nas-sloboda-v-nas",
     title: "Vojna v nás – Sloboda v nás",
     category: "pribehy-zo-zivota",
-    subcategory: "Chanelingy",
     excerpt:
-      "Keď drvivé správy o vojne dorazia k hraniciam našej mysle, spustia búrku v tele aj v duši. Cesta cez strach k viere, že sloboda je vždy vo vlastných rukách.",
+      "Keď drvivé správy o vojne dorazia k hraniciam našej mysle, spustia búrku v tele aj v duši. Cesta cez strach k viere, že sloboda je v našich vlastných rukách.",
     ctaLabel: "Objav terapiu Cesta",
     ctaHref: "/sluzby/terapia-cesta",
     pending: false,
@@ -313,7 +307,6 @@ export const blogPosts: BlogPost[] = [
     slug: "naucme-sa-doverovat-zivotu",
     title: "Naučme sa dôverovať životu",
     category: "pribehy-zo-zivota",
-    subcategory: "Chanelingy",
     excerpt:
       "Dôvera neznamená mať všetko pod kontrolou. Príbeh o tom, ako sa naučiť pustiť domček z karát a dôverovať tomu, že aj pád má svoje posolstvo.",
     ctaLabel: "Objav terapiu Cesta",
@@ -342,9 +335,8 @@ export const blogPosts: BlogPost[] = [
     slug: "co-pre-nas-znamena-laska",
     title: "Čo pre nás znamená láska?",
     category: "pribehy-zo-zivota",
-    subcategory: "Chanelingy",
     excerpt:
-      "„Láska je len slovo,“ znela kedysi téma školskej úvahy. O tom, ako láska stráca iskru pod ťarchou očakávaní — a ako vyzerá tá, ktorá si nekladie podmienky.",
+      "„Láska je len slovo,“ znela kedysi téma školskej úvahy. O tom, ako láska stráca iskru pod ťarchou očakávaní — a ako vyzerá láska, ktorá si nekladie podmienky.",
     ctaLabel: "Spoznaj Dvojplamene",
     ctaHref: "/dvojplamene",
     pending: false,
@@ -368,9 +360,8 @@ export const blogPosts: BlogPost[] = [
     slug: "zivot-zacina-za-hranicami-kontroly",
     title: "Život začína za hranicami kontroly",
     category: "pribehy-zo-zivota",
-    subcategory: "Keď oči prehovoria",
     excerpt:
-      "Cesta vlakom a autobusom k narodeninovej oslave sa zmenila na skúšku dôvery — a na pripomienku, že skutočný, farebný život začína práve tam, kde končí kontrola.",
+      "Cesta na narodeninovú oslavu sa zmenila na skúšku dôvery — a na pripomienku, že skutočný, farebný život začína práve tam, kde končí kontrola.",
     ctaLabel: "Objav terapiu Cesta",
     ctaHref: "/sluzby/terapia-cesta",
     pending: false,
@@ -421,7 +412,6 @@ export const blogPosts: BlogPost[] = [
     slug: "boj-o-prezitie",
     title: "Boj o prežitie",
     category: "pribehy-zo-zivota",
-    subcategory: "Keď oči prehovoria",
     excerpt:
       "Nezbedný kôň menom Jerry sa jedného dňa dostal z ohrady priamo k stajni, kde nič netušiac stála Monika. Pár sekúnd, ktoré naučili viac než roky snahy ovládnuť strach.",
     ctaLabel: "Objav terapiu Cesta",
@@ -463,7 +453,6 @@ export const blogPosts: BlogPost[] = [
     slug: "ako-vlastne-vidis",
     title: "Ako vlastne vidíš?",
     category: "pribehy-zo-zivota",
-    subcategory: "Keď oči prehovoria",
     excerpt:
       "„Tak ako teda vidíš, keď nevidíš?“ Pohľad do sveta zrakového postihnutia, ktorý je oveľa pestrejší, než si väčšina ľudí dokáže predstaviť.",
     ctaLabel: "Spoznaj môj príbeh",
@@ -506,7 +495,6 @@ export const blogPosts: BlogPost[] = [
     slug: "tajomstvo",
     title: "Tajomstvo",
     category: "pribehy-zo-zivota",
-    subcategory: "Keď oči prehovoria",
     excerpt:
       "Volá sa dystrofia sietnice. O rozhodnutí prestať skrývať to, čo si dlho nechávala len pre seba — a o tichom, každodennom boji, ktorý nikto nevidí.",
     ctaLabel: "Spoznaj môj príbeh",
@@ -555,7 +543,7 @@ export const blogPosts: BlogPost[] = [
     title: "Srí Lanka mojimi očami – slza v srdci ajurvédy",
     category: "pribehy-zo-zivota",
     excerpt:
-      "Nový rok, ktorý sa začal odvahou a odovzdaním — cesta za ajurvédou do krajiny v tvare slzy, plná vďačnosti, chuti čili a nezabudnuteľných stretnutí.",
+      "Nový rok, ktorý sa začal odvahou a odovzdaním — cesta za ajurvédou do krajiny v tvare slzy, plná vďačnosti, chutí a nezabudnuteľných stretnutí.",
     ctaLabel: "Spoznaj môj príbeh",
     ctaHref: "/moj-pribeh",
     pending: false,
@@ -810,7 +798,6 @@ export const blogPosts: BlogPost[] = [
     slug: "ako-si-spravne-zelat-1",
     title: "Ako si správne želať 1",
     category: "pribehy-zo-zivota",
-    subcategory: "Ako si správne želať",
     excerpt:
       "Prvá skúsenosť so zákonom príťažlivosti — a lekcia o tom, že vesmír nepotrebuje detailný zoznam, len jasné, dôverujúce srdce.",
     ctaLabel: "Objav terapiu Cesta",
@@ -838,7 +825,6 @@ export const blogPosts: BlogPost[] = [
     slug: "ako-si-spravne-zelat-2",
     title: "Ako si správne želať 2",
     category: "pribehy-zo-zivota",
-    subcategory: "Ako si správne želať",
     excerpt:
       "Ak sami nevieme, čo chceme, nemôžeme čakať, že nám to príde do života. O jasnosti želania a odvahe ísť za tým, čo nás napĺňa.",
     ctaLabel: "Objav terapiu Cesta",
@@ -865,7 +851,6 @@ export const blogPosts: BlogPost[] = [
     slug: "ako-si-spravne-zelat-3",
     title: "Ako si správne želať 3",
     category: "pribehy-zo-zivota",
-    subcategory: "Ako si správne želať",
     excerpt:
       "Naša nádoba snov musí byť najprv prázdna, aby sme do nej mohli naliať niečo nové. O pustení starého, aby mohlo prísť to, po čom túžime.",
     ctaLabel: "Objav terapiu Cesta",
@@ -891,7 +876,6 @@ export const blogPosts: BlogPost[] = [
     slug: "ako-si-spravne-zelat-4",
     title: "Ako si správne želať 4",
     category: "pribehy-zo-zivota",
-    subcategory: "Ako si správne želať",
     excerpt:
       "Príbehy želaní, ktoré sa splnili bez chybičky — od vysnívanej práce až po nový vzťah. Dôkaz, že vesmír vždy odpovie.",
     ctaLabel: "Objav terapiu Cesta",
@@ -921,7 +905,7 @@ export const blogPosts: BlogPost[] = [
     title: "Tým, že niečo odmietame, tomu dávame silu",
     category: "pribehy-zo-zivota",
     excerpt:
-      "Podivný pocit po stretnutí odhalil hlbokú pravdu — čím viac niečo odmietame, tým viac sile dávame rásť. O uvedomení, ktoré prichádza, keď prestaneme odmietať.",
+      "Podivný pocit po stretnutí odhalil hlbokú pravdu — čím viac niečo odmietame, tým viac to rastie. O uvedomení, ktoré prichádza, keď prestaneme odmietať.",
     ctaLabel: "Objav terapiu Cesta",
     ctaHref: "/sluzby/terapia-cesta",
     pending: false,
