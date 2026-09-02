@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
-import { PlaceholderImage } from "@/components/PlaceholderImage";
 import { BlogBody } from "@/components/BlogBody";
 import { blogCategories, blogPosts, postBySlug } from "@/data/blog";
 
@@ -54,15 +54,20 @@ export default async function BlogPostPage({
         </Container>
       </section>
 
-      <section className="py-6 md:py-10">
-        <Container className="mx-auto max-w-3xl">
-          <PlaceholderImage
-            label={`Titulná fotografia — ${post.title}`}
-            shape="rounded"
-            className="mx-auto aspect-video max-w-none"
-          />
-        </Container>
-      </section>
+      {post.coverSrc && post.coverWidth && post.coverHeight ? (
+        <section className="py-6 md:py-10">
+          <Container className="mx-auto max-w-3xl">
+            <Image
+              src={post.coverSrc}
+              alt={post.title}
+              width={post.coverWidth}
+              height={post.coverHeight}
+              priority
+              className="mx-auto h-auto w-full rounded-2xl border border-sand object-cover shadow-sm"
+            />
+          </Container>
+        </section>
+      ) : null}
 
       <section className="py-6 md:py-10">
         <Container className="mx-auto max-w-3xl">

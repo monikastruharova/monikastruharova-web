@@ -31,6 +31,12 @@ export type BlogPost = {
   // ako TODO/koncept a čaká na finálny text a fotografie od Moniky.
   pending: boolean;
   body?: BlogBlock[];
+  // Titulná fotografia na vrchu článku — kým nie je dodaná, stránka
+  // jednoducho tento blok vynechá (žiadny placeholder), aby nepôsobila
+  // ako rozbitá. Pozri "3 · Titulné fotky článkov" v pracovnom checkliste.
+  coverSrc?: string;
+  coverWidth?: number;
+  coverHeight?: number;
 };
 
 export const blogPosts: BlogPost[] = [
