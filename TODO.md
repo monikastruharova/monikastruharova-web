@@ -115,8 +115,11 @@ Pred produkciou nahradiť skutočnými súbormi:
   `src/data/blog.ts`). Zámerne **bez obrázkov v texte** (na žiadosť) —
   titulná fotka článku ostáva placeholder, rovnako ako u ostatných 27
   článkov (pozri "3 · Titulné fotky článkov" v checkliste).
-- Stále chýba plný text pre "Slzy na parkete" a "Čo je Intuitívny
-  tanec?" — v `src/data/blog.ts` majú `pending: true`.
+- [x] "Slzy na parkete" a "Čo je Intuitívny tanec?" dodané a nasadené
+  (`pending: false`) — rovnako bez obrázkov v texte, titulná fotka
+  ostáva placeholder. **Celá séria "Tanec srdca" (4 články) je teraz
+  kompletná**, blog už nemá žiadny rozpracovaný ("pripravuje sa")
+  článok.
 [x] Na žiadosť odstránené viditeľné slovo "TODO" z verejnej časti webu
   (excerpty aj stránka `/blog/[slug]`) — bolo omylom vidieť aj
   návštevníkom, nielen vo vývoji. Nahradené neutrálnym textom "Tento
