@@ -941,14 +941,24 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ako-sa-prejavi-tato-zmena-v-nasom-zivote",
-    title: "Ako sa teda prejaví táto zmena v našom živote?",
+    title: "Dvojplamene a veľká transformácia 2023",
     category: "tajomny-svet-dvojplamenov",
     excerpt:
-      "Nové stretnutia, nová práca, sťahovanie, duchovné prebudenie — cesta dvojplameňa sa v našom živote prejavuje mnohými spôsobmi. V ktorej z nich ste sa našli vy?",
+      "Cyklicita sprevádza svet dvojplameňov na každom kroku. Veľký portál zjednotenia sa otvoril začiatkom roka 2022 a uzavrie sa koncom roka 2023 — ako sa táto zmena prejaví v našom živote?",
     ctaLabel: "Preskúmať tému Dvojplamene",
     ctaHref: "/dvojplamene",
     pending: false,
     body: [
+      { type: "p", text: "Všetko vo vesmíre je v neustálom pohybe a zmena je jeho prirodzenou súčasťou." },
+      { type: "p", text: "V rôznych oblastiach života sa opakovane vraciame k určitým témam alebo výzvam, aby sme ich mohli postupne spracovať a integrovať do svojho života." },
+      { type: "p", text: "Z duchovného hľadiska je to spôsob, vďaka ktorému sa učíme a rastieme. Každý cyklus predstavuje lekciu, ktorá nám pomáha rozvýjať naše vedomie." },
+      { type: "p", text: "Cyklicita sa nevyhýba ani svetu dvojplameňov a sprevádza nás na každom kroku. Keď si ju uvedomíme, môžeme ju využiť na svoj ďalší rast a rozvoj. Môžeme sa naučiť prijímať zmeny ako súčasť života a pochopiť ich skutočný zmysel." },
+      { type: "p", text: "Stretnutia dvojplameňov nie sú náhodné a to, čo sa v našich životoch deje, je odrazom kolektívnej energie našich sŕdc." },
+      { type: "p", text: "Niektorí z Vás možno už vedia, že energia dvojplameňov sa zjednocuje, nie náhodne, raz za 7 rokov. A tento čas je práve teraz." },
+      { type: "p", text: "Veľký portál zjednotenia sa otvoril začiatkom roka 2022 a uzavrie sa koncom roka 2023." },
+      { type: "p", text: "V rozmedzí týchto dvoch rokov prišlo a ešte prichádza k výrazným a veľmi významným zmenám na našej ceste. A v momente, keď sa na všetky tieto zásadné udalosti pozrieme z vyššej perspektívy, nedá sa nevidieť, že sme neoddeliteľnou súčasťou niečoho oveľa väčšieho, ako sme my sami." },
+      { type: "p", text: "Cesta každého dvojplameňa smeruje k prelomu. Pre niekoho ním môže byť stretnutie s duchovným dvojčaťom a započatie najdobrodružnejšej cesty života. A pre iného, kto už touto cestou nejakú dobu putuje, môže nastať vymodlené, a aj vybojované zjednotenie v sebe." },
+      { type: "h2", text: "Ako sa teda prejaví táto zmena v našom živote?" },
       { type: "p", text: "U každého inak, no bude to mať zásadný a veľmi dôležitý vplyv na náš ďalší posun." },
       { type: "p", text: "Našu cestu môže obohatiť:" },
       { type: "list", items: [

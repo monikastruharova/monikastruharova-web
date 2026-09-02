@@ -125,16 +125,14 @@ Pred produkciou nahradiť skutočnými súbormi:
   niečo odmietame tomu dávame silu, Čo je Intuitívny tanec?, Vojna v
   nás — Sloboda v nás, Čo pre nás znamená láska?, Život začína za
   hranicami kontroly.
-- **NEVYRIEŠENÉ — čaká sa na podklad od Moniky:** článok "Ako sa teda
-  prejaví táto zmena v našom živote?" (kategória Tajomný svet
-  dvojplameňov) je podľa Moniky **neúplný**. Na starom webe mal ísť o
-  článok s názvom "Dvojplamene a veľká transformácia 2023" a na nový
-  web sa dostala iba jeho časť. Potrebujeme od Moniky buď (a) zvyšok
-  pôvodného článku na doplnenie k tomu, čo už je na webe, alebo (b)
-  celý pôvodný text "Dvojplamene a veľká transformácia 2023" nanovo —
-  a potvrdenie, či sa má článok premenovať späť na tento pôvodný názov,
-  alebo ostať pod terajším ("Ako sa teda prejaví táto zmena v našom
-  živote?").
+- [x] Článok "Ako sa teda prejaví táto zmena v našom živote?" doplnený
+  o chýbajúci úvod a premenovaný späť na pôvodný názov "Dvojplamene a
+  veľká transformácia 2023" (Monika dodala celý pôvodný text). Pôvodné
+  medzinadpisy "Ako sa teda prejaví táto zmena v našom živote?" a
+  "dvojplamene-2" zostali zachované ako štruktúra článku (prvý ako
+  medzititulok `h2`, druhý bol názov obrázka, nie text — nezobrazuje
+  sa). Slug ostal nezmenený (`ako-sa-prejavi-tato-zmena-v-nasom-zivote`),
+  aby sa nerozbili prípadné existujúce odkazy.
 - [x] "Tanec srdca 1 — Z parketu do ambulancie" a "Tanec srdca 2 —
   Nečakaj a plň si sny" dodané a nasadené (`pending: false`,
   `src/data/blog.ts`). Zámerne **bez obrázkov v texte** (na žiadosť) —
@@ -207,8 +205,10 @@ Pred produkciou nahradiť skutočnými súbormi:
   nevieme, či za ním nemali nasledovať ešte ďalšie články. Ak áno,
   pošli zvyšok, doplníme.
 - [x] "Tajomný svet dvojplameňov" — kategória už nie je prázdna, dodaných
-  a nasadených 7 článkov: "Ako sa teda prejaví táto zmena v našom
-  živote?", "Dvojplameň a bolesť transformácie", "Kto je dvojplameň?"
+  a nasadených 7 článkov: "Dvojplamene a veľká transformácia 2023"
+  (pôvodne nasadený neúplný, pod dočasným názvom "Ako sa teda prejaví
+  táto zmena v našom živote?" — doplnený a premenovaný, pozri vyššie),
+  "Dvojplameň a bolesť transformácie", "Kto je dvojplameň?"
   (opravený preklep v názve, pôvodne "dvoj plameň"), "Dva kľúčové
   faktory cesty dvojplameňa", "Dvojplameň – peklo alebo raj", "Kniha o
   dvojplameňoch", "Z obete do svojej sily". Rovnaké pravidlá: opravené
