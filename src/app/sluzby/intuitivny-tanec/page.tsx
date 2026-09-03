@@ -215,7 +215,7 @@ Stačí, ak sa na chvíľu zastavíš, obrátiš pozornosť do svojho vnútra a 
                 Intuitívneho tanca.
               </p>
             </div>
-            <div className="mt-8 grid gap-6 sm:grid-cols-2">
+            <div className="mt-8 columns-1 gap-6 sm:columns-2 [&>*]:mb-6 [&>*]:break-inside-avoid">
               {reviews.map((t) => (
                 <TestimonialCard key={t.id} testimonial={t} />
               ))}

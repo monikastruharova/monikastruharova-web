@@ -160,7 +160,7 @@ Prijmi teda odo mňa túto krátku meditáciu ako malý darček na tvoju cestu k
           <h2 className="text-center font-serif text-2xl text-ink md:text-3xl">
             Povedali o mne…
           </h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <div className="mt-10 columns-1 gap-6 md:columns-2 [&>*]:mb-6 [&>*]:break-inside-avoid">
             {featuredTestimonials.map((t) => (
               <TestimonialCard key={t.id} testimonial={t} />
             ))}
