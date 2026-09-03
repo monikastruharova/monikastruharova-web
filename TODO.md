@@ -234,6 +234,24 @@ súčasťou podkladov, treba doplniť (`src/data/testimonials.ts`).
   Monika chcela k niektorým doplniť meno, presunúť ich radšej do
   `testimonials.ts` s `services: ["cesta-dvojplamena"]`.
   Opravené 2 preklepy ("Prišľa"→"Prišla", "intezívna"→"intenzívna").
+- [x] **29 ďalších referencií dodaných a nasadených** (`src/data/testimonials.ts`):
+  6× Ženské kruhy (predtým táto kategória nemala žiadnu referenciu —
+  teraz sa zobrazujú aj na `/sluzby/zenske-kruhy`), 13× Terapia Cesta,
+  9× Harmonizácia čakier, plus 1 samostatný klient podpísaný krstným
+  menom "Monika" (zhoda mena s terapeutkou — 1:1 podľa podkladu,
+  neprevažoval som ho). Dlhšie viacodsekové referencie (napr. "Udial sa
+  zázrak", "Bolo treba otvoriť okno a vyvetrať") si zachovali pôvodné
+  odseky — `TestimonialCard` má teraz `whitespace-pre-line`. Opravené
+  len zjavné preklepy/medzery/úvodzovky (napr. "skovaný"→"schovaný",
+  "obvinovaniu"→"obviňovaniu", chýbajúce "som"/čiarky); jedna referencia
+  (Ľubomír, "Kalné vody sa upokojili") mala v podklade zalomené riadky
+  uprostred viet (typicky pri kopírovaní z e-mailu) — preformátované na
+  súvislé vety, obsah nezmenený.
+  Ďalších **9 krátkych anonymných "momentiek"** o Harmonizácii čakier
+  (bez mena autora) nasadených ako nová "stena citátov"
+  (`src/data/harmonizaciaCakierQuotes.ts`, sekcia "A na záver vaše
+  autentické momentky" na `/sluzby/harmonizacia-cakier`) — rovnaký
+  princíp ako `dvojplamenQuotes.ts`.
 
 ## Ochrana osobných údajov — obsah schválený Monikou
 Monika si stránku `/ochrana-osobnych-udajov` pozrela a text (mimo drobnej

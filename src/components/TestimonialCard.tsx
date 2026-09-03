@@ -8,7 +8,7 @@ export function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
       </span>
       <blockquote className="mt-1 flex-1">
         <p className="font-serif text-lg text-ink md:text-xl">{testimonial.title}</p>
-        <p className="mt-3 text-sm leading-relaxed text-ink-soft md:text-base">
+        <p className="mt-3 text-sm leading-relaxed whitespace-pre-line text-ink-soft md:text-base">
           {testimonial.quote}
         </p>
       </blockquote>

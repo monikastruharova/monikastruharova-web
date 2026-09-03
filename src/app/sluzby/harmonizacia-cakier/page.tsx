@@ -6,7 +6,9 @@ import { TestimonialCard } from "@/components/TestimonialCard";
 import { ChakraSymptomGrid } from "@/components/ChakraSymptomGrid";
 import { MeditationBlock } from "@/components/MeditationBlock";
 import { MandalaDivider } from "@/components/MandalaDivider";
+import { QuoteWall } from "@/components/QuoteWall";
 import { testimonialsFor } from "@/data/testimonials";
+import { harmonizaciaCakierQuotes } from "@/data/harmonizaciaCakierQuotes";
 import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -129,6 +131,17 @@ export default function HarmonizaciaCakierPage() {
           </Container>
         </section>
       ) : null}
+
+      <section className="py-10 md:py-16">
+        <Container className="mx-auto max-w-4xl">
+          <h2 className="text-center font-serif text-2xl text-ink md:text-3xl">
+            A na záver vaše autentické momentky
+          </h2>
+          <div className="mt-8">
+            <QuoteWall quotes={harmonizaciaCakierQuotes} />
+          </div>
+        </Container>
+      </section>
 
       <section className="py-10 md:py-16">
         <Container className="mx-auto max-w-3xl">
