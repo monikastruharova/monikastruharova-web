@@ -35,7 +35,11 @@ export default function PrivacyPolicyPage() {
               <a href={siteConfig.facebook} target="_blank" rel="noopener noreferrer" className="underline">
                 Facebook — Cestou srdca
               </a>{" "}
-              (TODO: doplniť fakturačné/IČO údaje, ak sú relevantné).
+              alebo{" "}
+              <a href={`mailto:${siteConfig.email}`} className="underline">
+                {siteConfig.email}
+              </a>
+              . (TODO: doplniť fakturačné/IČO údaje, ak sú relevantné).
             </p>
           </div>
           <div>

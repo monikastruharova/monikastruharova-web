@@ -15,27 +15,50 @@ z pôvodného cenníka (90 € / 25 €) sú neplatné, žiadna zmena v kóde
 nebola potrebná (nový text bol už takto nasadený) — len odstránené
 TODO komentáre.
 
+**Aktualizácia (na žiadosť Moniky):**
+- Pri každej cene odstránené doplnkové slovné spojenia "energetická
+  výmena" a "/ osoba" — pri cene je teraz už len suma (Terapia Cesta,
+  Harmonizácia čakier, Ženské kruhy, Intuitívny tanec).
+- Pri Terapii Cesta a Harmonizácii čakier doplnená informácia
+  "Osobne alebo online." (tieto 2 služby robí Monika oboma spôsobmi).
+- Pri Harmonizácii čakier vymazaná veta "Skupinové harmonizácie
+  organizujem príležitostne."
+
 ## 3. ~~Kontaktný formulár~~ → požiadavky vedú na Facebook — VYRIEŠENÉ
 Monika sa rozhodla, že požiadavky majú chodiť cez Facebook, nie cez formulár/
 e-mail. Všetky "Objednať sa" / "Chcem sa objednať..." CTA po webe (header,
 `/kontakt`, závery stránok služieb aj Dvojplameňov) teraz vedú na
 `siteConfig.facebook` = `https://www.facebook.com/cestou.srdca` (nová
-karta). Kontaktný e-mail bol na výslovnú žiadosť úplne odstránený z webu
-(pätička, `/kontakt`, `/ochrana-osobnych-udajov`) — Facebook je teraz
-jediný uvedený kontaktný kanál. Položka "Kontakt" bola na žiadosť
-odstránená aj z hlavnej navigácie (`src/data/site.ts` → `mainNav`) —
-stránka `/kontakt` naďalej existuje (napr. pre priamy odkaz), len už nie
-je v menu ani v pätičke.
+karta). Položka "Kontakt" bola na žiadosť odstránená aj z hlavnej
+navigácie (`src/data/site.ts` → `mainNav`) — stránka `/kontakt` naďalej
+existuje (napr. pre priamy odkaz), len už nie je v menu ani v pätičke.
 
 Pôvodný `ContactForm` + `/api/kontakt` route zostávajú v kóde nenapojené
 (pozri komentár na začiatku oboch súborov) pre prípad, že by sa Monika
 neskôr rozhodla pre formulár/e-mail popri Facebooku.
+
+**Aktualizácia:** Kontaktný e-mail bol pôvodne na žiadosť úplne
+odstránený, no Monika si to rozmyslela a požiadala o jeho vrátenie —
+ako doplnkový kontakt **za** Facebookom (Facebook zostáva primárny/prvý).
+Obnovené v pätičke, na `/kontakt` (pod FB tlačidlom) aj v
+`/ochrana-osobnych-udajov` (kontakt na prevádzkovateľa). Použitá je
+pôvodná adresa `info@monikastruharova.sk` (rovnaká, aká bola na webe
+predtým, kým sa neodstránila) — `siteConfig.email` v `src/data/site.ts`.
 
 ## 4. Videá Brandon Bays (stránka Terapia Cesta)
 Pripravené 3 sloty (`src/components/YouTubeEmbed.tsx`, použité v
 `src/app/sluzby/terapia-cesta/page.tsx`) — stačí doplniť YouTube odkaz do
 `url` pre každé video a automaticky sa prehrá priamo na stránke (bez
 odchodu na YouTube). Zatiaľ bez odkazov, zobrazuje sa placeholder.
+
+**Skúšané dohľadať zo starého webu (na žiadosť), nepodarilo sa:** starý
+web `monikastruharova.sk/terapia-cesta/` má sekciu "Videá s Brandon
+Bays", no jej YouTube odkazy sa načítavajú dynamicky cez JavaScript
+(pravdepodobne slider/widget) — automatizovaný prístup k stránke ich
+nevidí, len nadpis sekcie. Nechcel som hádať/dosadiť náhodné verejné
+video o Brandon Bays z YouTube namiesto tých, čo Monika skutočne
+vybrala. **Potrebujem od Moniky priamo 3 YouTube odkazy** (rovnako, ako
+poslala pri predošlých 3 meditačných videách) — potom ich hneď doplním.
 
 ## 5. Facebook odkazy — čiastočne vyriešené
 Hlavný profil `https://www.facebook.com/cestou.srdca` je doplnený a
@@ -263,6 +286,40 @@ postupne dodala plný text všetkých referencií (`src/data/testimonials.ts`)
   preklepoch ako doteraz (len zjavné opravy, napr. "Neboľo"→"Nebolo",
   chýbajúce medzery/čiarky po interpunkcii). Referencie zo starého webu
   sú týmto **kompletne spracované**.
+
+## Kurátorstvo referencií — presné umiestnenie podľa Moniky
+Na žiadosť sme prestali spoliehať na automatický výber "prvé 2 podľa
+poradia v poli" a namiesto toho je presne určené, čo sa kde zobrazuje:
+
+- **Kategória "Dvojplamene" v referenciách úplne zrušená**
+  (`ServiceSlug` už neobsahuje `"cesta-dvojplamena"`, zmizla aj záložka
+  v `TestimonialsBrowser`). Jediná referencia, čo v nej bola (Zlatica,
+  "Navraciam sa do vlastnej sily"), presunutá k `"terapia-cesta"`.
+  Sekcia s referenciami na `/dvojplamene` (predtým `testimonialsFor
+  ("cesta-dvojplamena", 2)`) bola preto úplne odstránená — na stránke
+  zostala len "stena citátov" (momenty), tá dostala aj nový nadpis
+  a úvodnú vetu, pozri nižšie.
+- **Domov ("Povedali o mne…"):** teraz ručne vybrané 2 referencie podľa
+  `id`, nezávisle od `featured` — nová funkcia `testimonialsByIds()` v
+  `src/data/testimonials.ts`. Zobrazené: "V toľkých rokoch som sa
+  znova zrodil!" (Rado) a "Som vnútorne šťastný" (Marián). Predtým tam
+  bola "Život je niečo fantastické!" (Peter) — tá bola na žiadosť
+  presunutá **na úplný koniec** zoznamu referencií (`testimonials.ts`),
+  aby nebola nikde prvá.
+- **Terapia Cesta:** zobrazené 2 referencie sú teraz "Udial sa zázrak"
+  (Lenka) a "Rozviazala mi ruky" (Juraj) — nastavené cez `featured`.
+  Predtým zobrazované "Život je niečo fantastické!" (Peter) a "Dokázala
+  som ísť hlbšie..." (Diana) už `featured` nemajú.
+- **Harmonizácia čakier:** zobrazené 2 referencie "Mojím telom znovu
+  začínal pretekať život" (Zuzana, tá tam bola už predtým) a "Kalné
+  vody sa upokojili" (Ľubomír, novo pridané `featured`).
+- Ženské kruhy a Intuitívny tanec neboli spomenuté, zostali bez zmeny.
+
+## Vaše aha-momenty na ceste Dvojplameňov (predtým iný nadpis)
+Na žiadosť premenovaný nadpis sekcie so "stenou citátov" na
+`/dvojplamene` z "Toto ste povedali o koučingu Dvojplameňov" na "Vaše
+aha-momenty na ceste Dvojplameňov" a doplnená chýbajúca úvodná veta
+(predtým nadpis prechádzal rovno do citátov bez kontextu).
 
 ## Ochrana osobných údajov — obsah schválený Monikou
 Monika si stránku `/ochrana-osobnych-udajov` pozrela a text (mimo drobnej

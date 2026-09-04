@@ -207,10 +207,9 @@ export default function TerapiaCestaPage() {
             </p>
             <div className="mt-6 flex flex-wrap items-baseline gap-3">
               <span className="font-serif text-3xl text-clay-dark">120 €</span>
-              <span className="text-sm text-ink-soft">energetická výmena</span>
             </div>
             <p className="mt-1 text-sm text-ink-soft">
-              Cena zahŕňa jednu 60-minútovú konzultáciu 3 dni po terapii.
+              Osobne alebo online. Cena zahŕňa jednu 60-minútovú konzultáciu 3 dni po terapii.
             </p>
           </div>
         </Container>

@@ -30,6 +30,12 @@ export default function ContactPage() {
             Napísať mi na Facebooku <span aria-hidden>↗</span>
           </a>
         </div>
+        <p className="mt-5 text-sm text-ink-soft">
+          Alebo mi napíš na{" "}
+          <a href={`mailto:${siteConfig.email}`} className="font-medium text-clay-dark underline underline-offset-4">
+            {siteConfig.email}
+          </a>
+        </p>
       </Container>
     </section>
   );

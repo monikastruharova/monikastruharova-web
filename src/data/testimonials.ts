@@ -1,6 +1,5 @@
 export type ServiceSlug =
   | "terapia-cesta"
-  | "cesta-dvojplamena"
   | "harmonizacia-cakier"
   | "zenske-kruhy"
   | "intuitivny-tanec";
@@ -18,22 +17,12 @@ export type Testimonial = {
 // (bez priezviska) kvôli súkromiu klientov — tak to bolo zachované aj doteraz.
 export const testimonials: Testimonial[] = [
   {
-    id: "peter-zivot-fantasticke",
-    title: "Život je niečo fantastické!",
-    quote:
-      "Bol som sám prekvapený, že keď som ochorel, tak som bol psychicky v pohode... Myslím, že obdobie temnej duše mám za sebou. Už ma to nehádže psychicky dole.",
-    author: "Peter",
-    services: ["terapia-cesta"],
-    featured: true,
-  },
-  {
     id: "zlatica-navraciam-sa",
     title: "Navraciam sa do vlastnej sily",
     quote:
       "Prechádzam si cestou dvojplameňa, ktorá je veľmi náročná. Monika mi je obrovskou oporou... Po každom rozhovore s ňou sa navraciam do vlastnej sily.",
     author: "Zlatica",
-    services: ["cesta-dvojplamena"],
-    featured: true,
+    services: ["terapia-cesta"],
   },
   {
     id: "marian-vnutorne-stastny",
@@ -57,7 +46,6 @@ export const testimonials: Testimonial[] = [
       "Terapia Cesta bola pre mňa výnimočným zážitkom... Zo sedenia som odišla s pocitom ľahkosti a väčšieho prepojenia so sebou samou.",
     author: "Diana",
     services: ["terapia-cesta"],
-    featured: true,
   },
   {
     id: "peter-duasa-ziari",
@@ -191,6 +179,7 @@ export const testimonials: Testimonial[] = [
       "Som nesmierne vďačný, že som sa k terapii dostal. Vniesla do môjho života pokoj a vzala napätie, v ktorom som dlho žil.",
     author: "Juraj",
     services: ["terapia-cesta"],
+    featured: true,
   },
   {
     id: "barbora-vysledok-za-to-stoji",
@@ -314,6 +303,7 @@ export const testimonials: Testimonial[] = [
       "Popísať verbálne hĺbku oceánu je veľmi jednoduché a zároveň pre človeka, ktorý neprežil túto skúsenosť, veľmi ťažko predstaviteľné. Ak sa však telo odovzdá a myseľ ukľudní, zážitok je naozaj hlboký, pokoj je iný, pretrváva. Svet okolo vás akoby prestal dávať zmysel. Čo bolo pred vami je už za vami. Prázdnota dáva zmysel a vy sa máte radi, aj keď vás iní opúšťajú.\nDovolím si jeden citát, aj keď neviem, kto to už povedal, ale znie asi takto nejak: „Keď je žiak pripravený, učiteľ sa vždy objaví.“\nPani Monike som sa pri tzv. procese čistenia čakier odovzdal, vnímal a prijímal som každý moment bez očakávaní. Výsledok bol energický, kalné vody sa upokojili a ja som hneď pochopil silu lásky, nevinnosť a malichernosť svojho ega.\nĎakujem, zmenili ste mi život. Začal som byť pokojnejší, vnímavejší. Aj keď sú v živote situácie, kedy moje ego stále bojuje o pozornosť, učím sa prijímať a milovať sa aj v týchto momentoch. Ďakujem.\nAk cítite a nielen myslíte, ak vás ťahá niečo, čo ešte nechápete a je to silnejšie a silnejšie, je namieste splynúť s prúdom energie a dôverovať sebe, iným, životu. Tak neváhajte a odovzdajte sa životu.",
     author: "Ľubomír",
     services: ["harmonizacia-cakier"],
+    featured: true,
   },
   {
     id: "silvia-slobodne-dychat",
@@ -445,10 +435,29 @@ export const testimonials: Testimonial[] = [
     author: "Petra",
     services: ["terapia-cesta"],
   },
+
+  // Presunuté na koniec zoznamu na žiadosť (nemá byť ako prvá referencia).
+  {
+    id: "peter-zivot-fantasticke",
+    title: "Život je niečo fantastické!",
+    quote:
+      "Bol som sám prekvapený, že keď som ochorel, tak som bol psychicky v pohode... Myslím, že obdobie temnej duše mám za sebou. Už ma to nehádže psychicky dole.",
+    author: "Peter",
+    services: ["terapia-cesta"],
+  },
 ];
 
 export function testimonialsFor(service: ServiceSlug, limit = 2): Testimonial[] {
   const matches = testimonials.filter((t) => t.services.includes(service));
   const featuredFirst = [...matches].sort((a, b) => Number(!!b.featured) - Number(!!a.featured));
   return featuredFirst.slice(0, limit);
+}
+
+// Ručný výber konkrétnych referencií podľa id (napr. pre výber na Domov),
+// nezávislý od `featured`/poradia v poli — takto sa dá kedykoľvek presne
+// zmeniť, čo sa kde zobrazuje, bez vplyvu na výber na iných stránkach.
+export function testimonialsByIds(ids: string[]): Testimonial[] {
+  return ids
+    .map((id) => testimonials.find((t) => t.id === id))
+    .filter((t): t is Testimonial => Boolean(t));
 }

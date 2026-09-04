@@ -162,7 +162,7 @@ export default function HarmonizaciaCakierPage() {
             </h2>
             <p className="mt-4 text-base leading-relaxed text-ink-soft md:text-lg">
               Ponúkam ti sedenie zamerané na očistu tvojho energetického systému a hlboké
-              uvoľnenie, ktoré trvá približne 60 minút.
+              uvoľnenie, ktoré trvá približne 60 minút. Osobne alebo online.
             </p>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               <div className="rounded-2xl bg-cream-dark/60 p-5">
@@ -180,7 +180,6 @@ export default function HarmonizaciaCakierPage() {
 
       <section className="py-6 md:py-10">
         <Container className="mx-auto max-w-3xl text-center">
-          <p className="text-sm text-ink-soft">Skupinové harmonizácie organizujem príležitostne.</p>
           {/* TODO: doplniť reálny odkaz na FB udalosti */}
           <Link
             href={siteConfig.facebookEvents || "#"}

@@ -228,7 +228,6 @@ export default function ZenskeKruhyPage() {
             </p>
             <div className="mt-6 flex items-baseline gap-3">
               <span className="font-serif text-3xl text-clay-dark">25 €</span>
-              <span className="text-sm text-ink-soft">energetická výmena</span>
             </div>
           </div>
         </Container>

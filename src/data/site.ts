@@ -4,6 +4,8 @@ export const siteConfig = {
   domain: "monikastruharova.sk",
   phone: "",
   instagram: "",
+  // Doplnkový kontakt — na žiadosť zobrazovaný v kontaktoch až za Facebookom.
+  email: "info@monikastruharova.sk",
   // Hlavný kontaktný kanál — všetky "Objednať sa" CTA po webe vedú sem.
   facebook: "https://www.facebook.com/cestou.srdca",
   // TODO: ak vznikne samostatná FB udalosť/skupina pre podujatia, doplniť

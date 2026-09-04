@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
-import { TestimonialCard } from "@/components/TestimonialCard";
 import { QuoteWall } from "@/components/QuoteWall";
-import { testimonialsFor } from "@/data/testimonials";
 import { dvojplamenQuotes } from "@/data/dvojplamenQuotes";
 import { siteConfig } from "@/data/site";
 import { MandalaDivider } from "@/components/MandalaDivider";
@@ -50,8 +48,6 @@ Je to ten moment, kedy sa obzrieš späť a už necítiš bolesť, hnev ani zúf
 ];
 
 export default function DvojplamenePage() {
-  const reviews = testimonialsFor("cesta-dvojplamena", 2);
-
   return (
     <>
       <section className="pt-14 pb-10 md:pt-20">
@@ -160,31 +156,15 @@ export default function DvojplamenePage() {
         </Container>
       </section>
 
-      {reviews.length ? (
-        <section className="py-10 md:py-16">
-          <Container className="mx-auto max-w-3xl">
-            <div className="columns-1 gap-6 sm:columns-2 [&>*]:mb-6 [&>*]:break-inside-avoid">
-              {reviews.map((t) => (
-                <TestimonialCard key={t.id} testimonial={t} />
-              ))}
-            </div>
-            <div className="mt-6 text-center">
-              <Link
-                href="/skusenosti-klientov"
-                className="text-sm font-semibold text-sage-dark underline underline-offset-4"
-              >
-                Viac skúseností klientov
-              </Link>
-            </div>
-          </Container>
-        </section>
-      ) : null}
-
       <section className="py-10 md:py-16">
         <Container className="mx-auto max-w-4xl">
           <h2 className="text-center font-serif text-2xl text-ink md:text-3xl">
-            Toto ste povedali o koučingu Dvojplameňov
+            Vaše aha-momenty na ceste Dvojplameňov
           </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-base leading-relaxed text-ink-soft md:text-lg">
+            Toto sú krátke odkazy a postrehy, ktoré mi počas koučingu Dvojplameňov napísali
+            klienti — presne tak, ako mi prišli, v momente, keď im to v srdci „cvaklo“.
+          </p>
           <div className="mt-8">
             <QuoteWall quotes={dvojplamenQuotes} />
           </div>

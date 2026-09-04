@@ -9,7 +9,7 @@ import { CTABlock } from "@/components/CTABlock";
 import { MeditationBlock } from "@/components/MeditationBlock";
 import { MandalaDivider } from "@/components/MandalaDivider";
 import { services, dvojplamenTeaser } from "@/data/services";
-import { testimonials } from "@/data/testimonials";
+import { testimonialsByIds } from "@/data/testimonials";
 import { blogPosts } from "@/data/blog";
 import { siteConfig } from "@/data/site";
 
@@ -23,7 +23,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-const featuredTestimonials = testimonials.filter((t) => t.featured).slice(0, 2);
+// Ručne vybrané 2 referencie pre Domov (na žiadosť Moniky) — nezávislé od
+// toho, čo je "featured" na jednotlivých stránkach služieb.
+const featuredTestimonials = testimonialsByIds(["rado-znova-zrodil", "marian-vnutorne-stastny"]);
 
 export default function HomePage() {
   return (

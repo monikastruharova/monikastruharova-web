@@ -244,7 +244,6 @@ Stačí, ak sa na chvíľu zastavíš, obrátiš pozornosť do svojho vnútra a 
             </p>
             <div className="mt-6 flex items-baseline gap-3">
               <span className="font-serif text-3xl text-clay-dark">20 €</span>
-              <span className="text-sm text-ink-soft">/ osoba, energetická výmena</span>
             </div>
           </div>
         </Container>
