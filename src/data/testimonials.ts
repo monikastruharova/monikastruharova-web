@@ -339,6 +339,112 @@ export const testimonials: Testimonial[] = [
     author: "Jozef",
     services: ["harmonizacia-cakier"],
   },
+
+  // Posledná dávka referencií (poznámka: podklad obsahoval na začiatku aj
+  // duplicitu už nasadenej dávky Harmonizácie čakier — tá sem nebola znova
+  // pridaná, pozri TODO.md). Rovnaké pravidlá: text 1:1, opravené len
+  // zjavné preklepy/medzery/úvodzovky.
+
+  // Ženské kruhy
+  {
+    id: "andrea-dusa-naplnena-laskou",
+    title: "Moja duša je naplnená láskou",
+    quote:
+      "Naše ženské kruhy mi dávajú obrovské pochopenie, spoznanie samej seba. Moja duša je viac a viac naplnená krásnou energiou lásky a porozumenia.\nObrovská vďaka tebe, Monika, že ma učíš byť lepším človekom a pochopiť svet okolo seba. Je to úžasné! Ďakujem ti 🤗",
+    author: "Andrea",
+    services: ["zenske-kruhy"],
+  },
+  {
+    id: "petra-krasna-dusa",
+    title: "Užívať si svoju krásnu dušu",
+    quote:
+      "Mne prinášajú kruhy zo všetkého trošku, hlavne vnímať prítomnosť bez Ega, stíšiť sa a užívať si svoju krásnu dušu ❤️",
+    author: "Petra",
+    services: ["zenske-kruhy"],
+  },
+  {
+    id: "michaela-citia-to-aj-najblizsi",
+    title: "Cítia to aj naši najbližší",
+    quote:
+      "Tieto stretnutia mi pomohli zbaviť sa strachu. Odkedy som bola prvý krát, už ho nemám! A najúžasnejšie na tom je, že ten obrovský príval energie, lásky a sebaprijatia pretrváva a cítia ho aj naši najbližší. ♥️",
+    author: "Michaela",
+    services: ["zenske-kruhy"],
+  },
+  {
+    id: "eva-bolo-mi-dobre",
+    title: "Bolo mi dobre",
+    quote:
+      "Nebolo ľahké rozhodnúť sa a ísť. Bála som sa, že sa nedokážem uvoľniť.\nAle keď som ťa počas meditácie počúvala, ani neviem ako, prestala som myslieť. Uvoľnila som sa a bolo mi dobre.",
+    author: "Eva",
+    services: ["zenske-kruhy"],
+  },
+  {
+    id: "viera-najviac-tvoje-meditacie",
+    title: "Najviac sa mi páčia tvoje meditácie",
+    quote:
+      "Nikdy som nemeditovala. Ale teraz sa už snažím robiť to čo najčastejšie. Skúšam rôzne meditácie, ako si mi povedala. Ale najviac sa mi páčia tie tvoje. ☺️",
+    author: "Viera",
+    services: ["zenske-kruhy"],
+  },
+  {
+    id: "denisa-citila-som-sa-vyborne",
+    title: "Cítila som sa výborne",
+    quote:
+      "Keď som prišla domov, môj syn sa ma spýtal, čo sme tam robili. Tak som sa snažila nejako mu vysvetliť, že sme meditovali. Cítila som sa výborne! A on mi na to hovorí, že nabudúce pôjde aj on. 😃❤️",
+    author: "Denisa",
+    services: ["zenske-kruhy"],
+  },
+  {
+    id: "linda-hned-som-vedela",
+    title: "Hneď som vedela, že tam chcem ísť",
+    quote:
+      "Pre mňa to znamenalo veľký pokrok, veľký krok vpred. Zmenil sa mi na veľa vecí názor. Vidím a cítim veci, ktoré som predtým neregistrovala.\nDalo mi to veľký vnútorný pokoj. Ceniť si svet a život. Vďaka tebe aj Andy, ktorá ma zavolala na toto stretnutie. A zaujímavé bolo, že hneď som vedela a cítila, že tam chcem ísť.\nUž som to veľmi potrebovala. A pomáha mi to uvedomiť si a prekonať isté veci. A ja ti za to nesmierne ďakujem. Som vďačná Bohu, že som ťa mohla spoznať. Si veľmi cenný, dobrý a obetavý človek ❤️🙏",
+    author: "Linda",
+    services: ["zenske-kruhy"],
+  },
+
+  // Harmonizácia čakier
+  {
+    id: "juraj-cenny-zazitok",
+    title: "Bol to pre mňa veľmi cenný zážitok",
+    quote:
+      "Ešte raz veľká vďaka za dnešné stretnutie.\nBol to pre mňa veľmi cenný zážitok 🙏😇 Rád prídem aj nabudúce a už si vezmem aj podložku, je dobré ležať pri takýchto vedených meditáciách alebo hudbe.",
+    author: "Juraj",
+    services: ["harmonizacia-cakier"],
+  },
+  {
+    id: "erika-plnohodnotny-cas",
+    title: "Bol to plnohodnotne strávený čas s úžasnými ľuďmi",
+    quote:
+      "Ďakujem, Monika, že som mala tú česť sa zúčastniť tohoto stretnutia… ❤️\n…za spoločný čas plný emócií a hľadania toho správneho nasmerovania na cestu životom…\nBol to plnohodnotne strávený čas s úžasnými ľuďmi 😉 ešte raz obrovská vďaka ❤️👍",
+    author: "Erika",
+    services: ["harmonizacia-cakier"],
+  },
+  {
+    id: "ingrid-skvely-den",
+    title: "Skvelý deň",
+    quote: "Ďakujem, Monika, za skvelý deň. ❤️ Som rada, že sa veci tak vyvinuli, že som mohla ísť.",
+    author: "Ingrid",
+    services: ["harmonizacia-cakier"],
+  },
+  {
+    id: "petra-pritomny-okamih",
+    title: "Boli sme v prítomnom okamihu",
+    quote:
+      "Bolo to veľmi poučné a umožnilo nám to, myslím, že môžem hovoriť v množnom čísle, byť na sto percent v prítomnom okamihu a sami so sebou. Umožnilo nám to stretnutie s vnútorným dieťaťom a taktiež aj so ženskou a mužskou stránkou, našou energiou a pomohlo nám ju pochopiť, respektíve emócie, ktoré sme práve v danom okamihu riešili a plne si ich mohli dovoliť aj cítiť, čiže prežiť.\nMôžem povedať za seba, že určite by som to v budúcnosti absolvovala zas a znovu 😊",
+    author: "Petra",
+    services: ["harmonizacia-cakier"],
+  },
+
+  // Terapia Cesta
+  {
+    id: "petra-silne-zazitky",
+    title: "Mala som silné zážitky",
+    quote:
+      "Drahá Monika,\nbolo to skvelé!\nSom veľmi vďačná za túto skúsenosť a skúsenosť s tebou. Nemala som pred začiatkom žiadne predstavy, len očakávania, alebo skôr vieru, že ma bude čakať určite niečo nové, a tešila som sa na to, no s rešpektom.\nVeľmi silné osobné zážitky som mala počas našich sedení, a nikdy by ma ani len nenapadlo, kam ma sprevádzanie s tebou, Monika, a vnímanie energie a mojich pocitov zavedie.\nĎakujem 😉 určite to stojí za vyskúšanie a absolvovanie, ak človek túži spoznať sám seba lepšie a nahliadnuť do svojej duše a srdca.",
+    author: "Petra",
+    services: ["terapia-cesta"],
+  },
 ];
 
 export function testimonialsFor(service: ServiceSlug, limit = 2): Testimonial[] {

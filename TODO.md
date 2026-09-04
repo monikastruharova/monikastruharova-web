@@ -220,10 +220,11 @@ Pred produkciou nahradiť skutočnými súbormi:
   textu ("dvojplamene-2", "cesta dvojplameňa") nahradené PlaceholderImage
   slotmi. CTA na všetkých vedie na `/dvojplamene`.
 
-## Staršie referencie zo starého webu
-Zadanie spomína referencie k Terapii Cesta a k Ceste Dvojplameňa z pôvodného
-webu, ktoré sa majú preniesť na `/skusenosti-klientov` — plný text nebol
-súčasťou podkladov, treba doplniť (`src/data/testimonials.ts`).
+## ~~Staršie referencie zo starého webu~~ — VYRIEŠENÉ
+Zadanie spomínalo referencie k Terapii Cesta a k Ceste Dvojplameňa z
+pôvodného webu, ktoré sa mali preniesť na `/skusenosti-klientov`. Monika
+postupne dodala plný text všetkých referencií (`src/data/testimonials.ts`)
+— viď body nižšie.
 
 - [x] 14 krátkych citátov o koučingu Dvojplameňov dodaných a nasadených
   (`src/data/dvojplamenQuotes.ts`, komponent `QuoteWall.tsx`, sekcia
@@ -252,6 +253,16 @@ súčasťou podkladov, treba doplniť (`src/data/testimonials.ts`).
   (`src/data/harmonizaciaCakierQuotes.ts`, sekcia "A na záver vaše
   autentické momentky" na `/sluzby/harmonizacia-cakier`) — rovnaký
   princíp ako `dvojplamenQuotes.ts`.
+- [x] **Ešte 12 posledných referencií dodaných a nasadených**: 7×
+  Ženské kruhy (Andrea, Petra, Michaela, Eva, Viera, Denisa, Linda),
+  4× Harmonizácia čakier (Juraj, Erika, Ingrid, Petra), 1× Terapia
+  Cesta (Petra). Podklad k tejto dávke na začiatku obsahoval aj
+  doslovnú duplicitu už nasadenej dávky Harmonizácie čakier (9
+  referencií + 9 momentiek z bodu vyššie) — tá nebola znova pridaná,
+  aby nevznikli duplicity v `testimonials.ts`. Rovnaké pravidlo pri
+  preklepoch ako doteraz (len zjavné opravy, napr. "Neboľo"→"Nebolo",
+  chýbajúce medzery/čiarky po interpunkcii). Referencie zo starého webu
+  sú týmto **kompletne spracované**.
 
 ## Ochrana osobných údajov — obsah schválený Monikou
 Monika si stránku `/ochrana-osobnych-udajov` pozrela a text (mimo drobnej
