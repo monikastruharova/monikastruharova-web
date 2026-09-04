@@ -45,20 +45,17 @@ Obnovené v pätičke, na `/kontakt` (pod FB tlačidlom) aj v
 pôvodná adresa `info@monikastruharova.sk` (rovnaká, aká bola na webe
 predtým, kým sa neodstránila) — `siteConfig.email` v `src/data/site.ts`.
 
-## 4. Videá Brandon Bays (stránka Terapia Cesta)
-Pripravené 3 sloty (`src/components/YouTubeEmbed.tsx`, použité v
-`src/app/sluzby/terapia-cesta/page.tsx`) — stačí doplniť YouTube odkaz do
-`url` pre každé video a automaticky sa prehrá priamo na stránke (bez
-odchodu na YouTube). Zatiaľ bez odkazov, zobrazuje sa placeholder.
-
-**Skúšané dohľadať zo starého webu (na žiadosť), nepodarilo sa:** starý
-web `monikastruharova.sk/terapia-cesta/` má sekciu "Videá s Brandon
-Bays", no jej YouTube odkazy sa načítavajú dynamicky cez JavaScript
-(pravdepodobne slider/widget) — automatizovaný prístup k stránke ich
-nevidí, len nadpis sekcie. Nechcel som hádať/dosadiť náhodné verejné
-video o Brandon Bays z YouTube namiesto tých, čo Monika skutočne
-vybrala. **Potrebujem od Moniky priamo 3 YouTube odkazy** (rovnako, ako
-poslala pri predošlých 3 meditačných videách) — potom ich hneď doplním.
+## ~~4. Videá Brandon Bays (stránka Terapia Cesta)~~ — VYRIEŠENÉ
+Monika poslala 3 YouTube odkazy, nasadené v
+`src/app/sluzby/terapia-cesta/page.tsx` (predtým sme sa ich márne
+snažili dohľadať zo starého webu — jeho video-slider sa načítaval cez
+JavaScript, automatizovaný prístup naň nevidel):
+1. „Duše K: rozhovor s Brandon Bays o transformačnej Ceste (2024)" —
+   https://youtu.be/omQynw97v-A
+2. „Dokument o metóde Cesta — Brandon Bays v Bratislave (2013)" —
+   https://youtu.be/C1omEQWuxgM
+3. „Duše K: rozhovor s Brandon Bays o liečivej Ceste (2018)" —
+   https://youtu.be/vBxtkzlJbRY
 
 ## 5. Facebook odkazy — čiastočne vyriešené
 Hlavný profil `https://www.facebook.com/cestou.srdca` je doplnený a

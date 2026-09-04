@@ -112,12 +112,20 @@ export default function TerapiaCestaPage() {
             metódy, s nesmiernou ľahkosťou a hĺbkou vysvetľuje, ako dokáže Cesta prebudiť
             samoliečiace schopnosti tvojho tela.
           </p>
-          {/* TODO (sekcia 14, bod 4): doplniť YouTube odkazy na videá Brandon Bays — stačí vyplniť `url` nižšie. */}
           <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { title: "Brandon Bays o metóde Cesta #1", url: undefined },
-              { title: "Brandon Bays o metóde Cesta #2", url: undefined },
-              { title: "Brandon Bays o metóde Cesta #3", url: undefined },
+              {
+                title: "Duše K: rozhovor s Brandon Bays o transformačnej Ceste (2024)",
+                url: "https://youtu.be/omQynw97v-A",
+              },
+              {
+                title: "Dokument o metóde Cesta — Brandon Bays v Bratislave (2013)",
+                url: "https://youtu.be/C1omEQWuxgM",
+              },
+              {
+                title: "Duše K: rozhovor s Brandon Bays o liečivej Ceste (2018)",
+                url: "https://youtu.be/vBxtkzlJbRY",
+              },
             ].map((video) => (
               <YouTubeEmbed key={video.title} title={video.title} url={video.url} />
             ))}
