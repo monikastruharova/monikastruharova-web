@@ -287,6 +287,26 @@ postupne dodala plný text všetkých referencií (`src/data/testimonials.ts`)
   chýbajúce medzery/čiarky po interpunkcii). Referencie zo starého webu
   sú týmto **kompletne spracované**.
 
+## NEVYRIEŠENÉ — 7 najstarších referencií sú len skrátené úryvky
+Monika (nevidiaca, web si necháva čítať telefónom) upozornila, že
+niektoré referencie znejú neúplne. Potvrdené: **7 referencií z úplne
+prvej dávky** (ešte z prvého commitu webu, predtým, než sa v tejto
+konverzácii doplnili plné texty ostatných ~40) obsahuje v strede vety
+"…", čo znamená, že ide o skrátený výťah, nie plný pôvodný text — na
+rozdiel od všetkých neskôr doplnených referencií, ktoré sú kompletné.
+Nejde o žiadne nastavenie telefónu/čítačky — text je v dátach naozaj
+kratší. Nemám k dispozícii pôvodné plné znenie (v histórii projektu ani
+v tejto konverzácii sa nenachádza) — **potrebujem od Moniky poslať plný
+pôvodný text ku každej z týchto 7 referencií**, presne tak, ako to
+urobila pri ostatných dávkach, a hneď ich doplním (`src/data/testimonials.ts`):
+- "Život je niečo fantastické!" — Peter
+- "Navraciam sa do vlastnej sily" — Zlatica
+- "Som vnútorne šťastný" — Marián
+- "Ešte si takéto prosím" — Eva
+- "Dokázala som ísť hlbšie, než som si myslela" — Diana
+- "Moja duša žiari šťastím" — Peter
+- "Proces mi priniesol nové uvedomenia" — Zlatica
+
 ## Kurátorstvo referencií — presné umiestnenie podľa Moniky
 Na žiadosť sme prestali spoliehať na automatický výber "prvé 2 podľa
 poradia v poli" a namiesto toho je presne určené, čo sa kde zobrazuje:
