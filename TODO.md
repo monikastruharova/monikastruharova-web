@@ -276,6 +276,10 @@ postupne dodala plný text všetkých referencií (`src/data/testimonials.ts`)
   (`src/data/harmonizaciaCakierQuotes.ts`, sekcia "A na záver vaše
   autentické momentky" na `/sluzby/harmonizacia-cakier`) — rovnaký
   princíp ako `dvojplamenQuotes.ts`.
+  **Možno chýba ešte jedna:** pri overovaní na starom webe sa mihla aj
+  momentka "Ja si harmonizujem čakry často. Vždy je to výborný pocit.",
+  ktorú v podkladoch nemám — ak ju Monika chce doplniť, stačí poslať
+  potvrdenie/text a pridá sa.
 - [x] **Ešte 12 posledných referencií dodaných a nasadených**: 7×
   Ženské kruhy (Andrea, Petra, Michaela, Eva, Viera, Denisa, Linda),
   4× Harmonizácia čakier (Juraj, Erika, Ingrid, Petra), 1× Terapia
@@ -287,18 +291,17 @@ postupne dodala plný text všetkých referencií (`src/data/testimonials.ts`)
   chýbajúce medzery/čiarky po interpunkcii). Referencie zo starého webu
   sú týmto **kompletne spracované**.
 
-## NEVYRIEŠENÉ — 7 najstarších referencií sú len skrátené úryvky
+## ~~7 najstarších referencií boli len skrátené úryvky~~ — VYRIEŠENÉ
 Monika (nevidiaca, web si necháva čítať telefónom) upozornila, že
-niektoré referencie znejú neúplne. Potvrdené: **7 referencií z úplne
-prvej dávky** (ešte z prvého commitu webu, predtým, než sa v tejto
-konverzácii doplnili plné texty ostatných ~40) obsahuje v strede vety
-"…", čo znamená, že ide o skrátený výťah, nie plný pôvodný text — na
-rozdiel od všetkých neskôr doplnených referencií, ktoré sú kompletné.
-Nejde o žiadne nastavenie telefónu/čítačky — text je v dátach naozaj
-kratší. Nemám k dispozícii pôvodné plné znenie (v histórii projektu ani
-v tejto konverzácii sa nenachádza) — **potrebujem od Moniky poslať plný
-pôvodný text ku každej z týchto 7 referencií**, presne tak, ako to
-urobila pri ostatných dávkach, a hneď ich doplním (`src/data/testimonials.ts`):
+niektoré referencie znejú neúplne. Potvrdené: 7 referencií z úplne
+prvej dávky (ešte z prvého commitu webu, predtým, než sa v tejto
+konverzácii doplnili plné texty ostatných ~40) obsahovalo v strede vety
+"…", čo znamenalo skrátený výťah, nie plný pôvodný text. Nešlo o žiadne
+nastavenie telefónu/čítačky — text bol v dátach naozaj kratší. Monika
+poslala plné pôvodné znenie všetkých 7 a sú teraz doplnené v
+`src/data/testimonials.ts` (zachované pôvodné odseky cez
+`whitespace-pre-line`, opravené len zjavné preklepy — napr.
+"softwér"→"softvér", "v v hrudi"→"v hrudi", "Bolo som"→"Bol som"):
 - "Život je niečo fantastické!" — Peter
 - "Navraciam sa do vlastnej sily" — Zlatica
 - "Som vnútorne šťastný" — Marián

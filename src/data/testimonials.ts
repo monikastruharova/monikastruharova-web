@@ -20,7 +20,7 @@ export const testimonials: Testimonial[] = [
     id: "zlatica-navraciam-sa",
     title: "Navraciam sa do vlastnej sily",
     quote:
-      "Prechádzam si cestou dvojplameňa, ktorá je veľmi náročná. Monika mi je obrovskou oporou... Po každom rozhovore s ňou sa navraciam do vlastnej sily.",
+      "Prechádzam si cestou dvojplameňa, ktorá je veľmi náročná.\nMonika mi je obrovskou oporou a jediným človekom, ktorý ma s úplným pochopením podporuje na tejto ceste. Po každom rozhovore s ňou sa navraciam do vlastnej sily. Jej láskyplné vedenie mi pomáha spoznávať samú seba a chápať súvislosti.",
     author: "Zlatica",
     services: ["terapia-cesta"],
   },
@@ -28,14 +28,14 @@ export const testimonials: Testimonial[] = [
     id: "marian-vnutorne-stastny",
     title: "Som vnútorne šťastný",
     quote:
-      "Pokoj. Monika mi ho ukázala a ja sa ho učím... Dokážem presnejšie vnímať realitu, dané emócie, zrkadlenia cez reakcie ľudí, frekvencie a celkovú energiu okolia.",
+      "Dnešok bol výnimočný deň.\nPokoj. Monika mi ho ukázala a ja sa ho učím. Veškerá moja energia sa mi vracia späť. Vnímam svoje ego, svoju dušu a svoje srdce a som vďačný, pokojný a šťastný (vnútorne šťastný). Dokážem presnejšie vnímať realitu, dané emócie, zrkadlenia cez reakcie ľudí, frekvencie a celkovú energiu okolia.\nTen wau efekt budem ešte pár dní ukotvovať.\nVšetko je v poriadku. Vždy bolo, je a bude. Po dnešku si to budem NAVŽDY pamätať.\nĎakujem, ďakujem, ďakujem 😉",
     author: "Marián",
     services: ["harmonizacia-cakier"],
   },
   {
     id: "eva-este-si-taketo-prosim",
     title: "Ešte si takéto prosím",
-    quote: "Bolo to úplne super... táto harmonizácia... ešte si takéto prosím 🙏😘❤️",
+    quote: "Bolo to úplne super, super... táto harmonizácia... ešte si takéto prosím 🙏🙏🙏😘😘😘😘❤️",
     author: "Eva",
     services: ["harmonizacia-cakier"],
   },
@@ -43,7 +43,7 @@ export const testimonials: Testimonial[] = [
     id: "diana-dokazala-som-ist-hlbsie",
     title: "Dokázala som ísť hlbšie, než som si myslela",
     quote:
-      "Terapia Cesta bola pre mňa výnimočným zážitkom... Zo sedenia som odišla s pocitom ľahkosti a väčšieho prepojenia so sebou samou.",
+      "Terapia Cesta bola pre mňa výnimočným zážitkom, aký som doposiaľ nikdy nezažila. Prišla som s otvorenou mysľou, ale bez jasnej predstavy o tom, čo ma čaká.\nUž počas úvodného vedenia som cítila, že vstupujem do priestoru, kde môžem naplno vnímať svoje telo a všetky emócie, ktoré sa vo mne objavujú.\nNajsilnejšou časťou celého procesu pre mňa bolo práve hlboké precítenie vlastného tela. Každá emócia mala svoj tvar, farbu aj intenzitu, a prvýkrát som si dovolila ich skutočne prežiť – bez toho, aby som ich posudzovala, alebo potláčala. Bola to pre mňa úplne nová forma sebaspoznávania, spojená s nečakanou úľavou a jemnosťou.\nTerapeutka vytvorila bezpečné a prijímajúce prostredie, v ktorom som sa dokázala uvoľniť a ísť hlbšie, než som si myslela, že je možné. Jej prístup bol profesionálny, empatický a veľmi podporujúci. Celý proces viedla citlivo, a zároveň s jasným zámerom, čo mi pomohlo dôverovať celému priebehu.\nZo sedenia som odišla s pocitom ľahkosti a väčšieho prepojenia so sebou samou.\nTerapia Cesta ma príjemne prekvapila a otvorila mi nový spôsob práce s emóciami a telom. Odporúčam ju každému, kto hľadá hlbšie pochopenie seba a nebojí sa ponoriť do svojho vnútorného sveta.",
     author: "Diana",
     services: ["terapia-cesta"],
   },
@@ -51,7 +51,7 @@ export const testimonials: Testimonial[] = [
     id: "peter-duasa-ziari",
     title: "Moja duša žiari šťastím",
     quote:
-      "Zovretá vrchná časť hrudníka... Cítil som, že moja duša žiari šťastím... len tak...ale že silne.",
+      "Zovretá vrchná časť hrudníka, potom fakticky celý hrudník. Netrvalo to dlho… Teplo dole až v bruchu, potom v hrudi a potom viac vĺn tepla v horných končatinách…\nĽahol som si bez meditácie… Ale ja sa viem rýchle uvoľniť a som vnímavý.\nDokážem cítiť svoj Dvojplameň, ale toto bolo pre mňa niečo nové… Bol som v pohode bez očakávaní. Na druhý deň som bol po 12-hodinovej službe veľmi vyčerpaný… Ale ako som si tak ležal už doma, cítil som, že moja duša žiari šťastím… len tak… ale že silne.\nAkože nebolo to prvý krát, ten pocit… ale som bol total unavený a aj tak sa objavil a intenzívne.\nAle tie pocity počas harmonizácie čakier… ťažko pochopiteľné aj pre mňa. A ďakujem ☺️",
     author: "Peter",
     services: ["harmonizacia-cakier"],
   },
@@ -59,7 +59,7 @@ export const testimonials: Testimonial[] = [
     id: "zlatica-proces-uvedomenia",
     title: "Proces mi priniesol nové uvedomenia",
     quote:
-      "Absolvovala som s Monikou harmonizáciu čakier na diaľku... Proces mi pomohol začať ich vedome spracovávať.",
+      "Absolvovala som s Monikou harmonizáciu čakier na diaľku a bol to veľmi príjemný a relaxačný zážitok. Po skončení som na sebe začala pozorovať, že sa vo mne aktivovali témy a pocity, ktoré som dlhšie potláčala. Proces mi pomohol začať ich vedome spracovávať a priniesol mi nové vnútorné uvedomenia. Som vďačná za túto skúsenosť a odporúčam ju každému, kto túži po jemnom, no zároveň transformačnom podnete pre svoju duševnú pohodu.",
     author: "Zlatica",
     services: ["harmonizacia-cakier"],
   },
@@ -441,7 +441,7 @@ export const testimonials: Testimonial[] = [
     id: "peter-zivot-fantasticke",
     title: "Život je niečo fantastické!",
     quote:
-      "Bol som sám prekvapený, že keď som ochorel, tak som bol psychicky v pohode... Myslím, že obdobie temnej duše mám za sebou. Už ma to nehádže psychicky dole.",
+      "Bol som sám prekvapený, že keď som ochorel, tak som bol psychicky v pohode. Bol som sám a to je niečo nové pre mňa. Cítil som v tom predtým strach.\nMyslím, že obdobie temnej duše mám za sebou. Už ma to nehádže psychicky dole. Je to zaujímavé zistenie.\nTeda ten život je niečo fantastické... A záleží na nás, ako ho vnímame... A ja ho vnímam výrazne ináč už... Akoby nový softvér v hlave.",
     author: "Peter",
     services: ["terapia-cesta"],
   },
