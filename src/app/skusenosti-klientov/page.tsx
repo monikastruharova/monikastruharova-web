@@ -3,7 +3,6 @@ import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
 import { TestimonialsBrowser } from "@/components/TestimonialsBrowser";
 import { testimonials } from "@/data/testimonials";
-import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Skúsenosti klientov",
@@ -48,7 +47,7 @@ export default function TestimonialsPage() {
           <CTABlock
             heading="Chceš napísať svoj vlastný príbeh transformácie?"
             ctaLabel="Chcem sa objednať na sedenie"
-            ctaHref={siteConfig.facebook}
+            ctaHref="/kontakt"
           />
         </Container>
       </section>

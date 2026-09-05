@@ -5,7 +5,12 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/sluzby/cesta-dvojplamena",
-        destination: "/dvojplamene",
+        destination: "/dvojplamen",
+        permanent: true,
+      },
+      {
+        source: "/dvojplamene",
+        destination: "/dvojplamen",
         permanent: true,
       },
     ];

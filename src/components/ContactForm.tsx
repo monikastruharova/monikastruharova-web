@@ -16,7 +16,7 @@ const services = [
   "Harmonizácia čakier",
   "Ženské kruhy — Esencia Bohyne",
   "Intuitívny tanec",
-  "Téma Dvojplamene",
+  "Téma Dvojplameň",
   "Neviem si vybrať / poradiť sa",
 ];
 

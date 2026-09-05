@@ -4,14 +4,13 @@ import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
 import { QuoteWall } from "@/components/QuoteWall";
 import { dvojplamenQuotes } from "@/data/dvojplamenQuotes";
-import { siteConfig } from "@/data/site";
 import { MandalaDivider } from "@/components/MandalaDivider";
 
 export const metadata: Metadata = {
-  title: "Dvojplamene",
+  title: "Dvojplameň",
   description:
     "Stretnutie s Dvojplameňom prebúdza tvoju najčistejšiu podstatu. Sprevádzam ťa vedomým procesom odpútania sa — od prebudenia cez zrkadlenie až po vnútornú slobodu.",
-  alternates: { canonical: "/dvojplamene" },
+  alternates: { canonical: "/dvojplamen" },
 };
 
 const phases = [
@@ -47,15 +46,12 @@ Je to ten moment, kedy sa obzrieš späť a už necítiš bolesť, hnev ani zúf
   },
 ];
 
-export default function DvojplamenePage() {
+export default function DvojplamenPage() {
   return (
     <>
       <section className="pt-14 pb-10 md:pt-20">
         <Container className="mx-auto max-w-3xl">
-          <p className="text-sm font-semibold tracking-[0.2em] text-sage-dark uppercase">
-            Špecializácia
-          </p>
-          <h1 className="mt-2 font-serif text-3xl text-ink md:text-5xl">Dvojplamene</h1>
+          <h1 className="font-serif text-3xl text-ink md:text-5xl">Dvojplameň</h1>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft md:text-lg">
             <p>
               Stretnutie s Dvojplameňom nie je klasickým romantickým príbehom z rozprávok. Je to
@@ -162,8 +158,8 @@ export default function DvojplamenePage() {
             Vaše aha-momenty na ceste Dvojplameňov
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-base leading-relaxed text-ink-soft md:text-lg">
-            Toto sú krátke odkazy a postrehy, ktoré mi počas koučingu Dvojplameňov napísali
-            klienti — presne tak, ako mi prišli, v momente, keď im to v srdci „cvaklo“.
+            Tu je aspoň zopár z nezabudnuteľných uvedomení, ktoré sa zrodili vo chvíli, keď
+            všetko zapadlo a začalo dávať zmysel.
           </p>
           <div className="mt-8">
             <QuoteWall quotes={dvojplamenQuotes} />
@@ -176,9 +172,9 @@ export default function DvojplamenePage() {
           <CTABlock
             tone="sage"
             heading="Prijmi moje pozvanie na stretnutie"
-            body="Napíš mi o svojej téme Dvojplameňa — spoločne nájdeme cestu k tvojej vnútornej slobode."
+            body="Napíš mi a spoločne nájdeme cestu k tvojej vnútornej slobode."
             ctaLabel="Chcem sa objednať na sedenie"
-            ctaHref={siteConfig.facebook}
+            ctaHref="/kontakt"
           />
         </Container>
       </section>

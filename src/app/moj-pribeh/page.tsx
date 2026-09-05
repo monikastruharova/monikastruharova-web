@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Container } from "@/components/Container";
 import { CTABlock } from "@/components/CTABlock";
 import { PlaceholderImage } from "@/components/PlaceholderImage";
-import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Môj príbeh",
@@ -183,7 +182,7 @@ export default function MyStoryPage() {
             heading="Chceš sa objednať na sedenie?"
             body="Napíš mi pár slov o tom, čo práve prežívaš — rada sa s tebou spojím a spoločne nájdeme tú správnu cestu."
             ctaLabel="Kontaktuj ma"
-            ctaHref={siteConfig.facebook}
+            ctaHref="/kontakt"
           />
         </Container>
       </section>

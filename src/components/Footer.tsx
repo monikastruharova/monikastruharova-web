@@ -36,13 +36,18 @@ export function Footer() {
           <p className="text-xs font-semibold tracking-wide text-ink-soft uppercase">Kontakt</p>
           <ul className="mt-4 space-y-2 text-sm text-ink-soft">
             <li>
-              <a
-                href={siteConfig.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium hover:text-ink"
-              >
-                Facebook — Cestou srdca
+              <a href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`} className="hover:text-ink">
+                {siteConfig.phone}
+              </a>
+            </li>
+            <li>
+              <a href={siteConfig.whatsapp} target="_blank" rel="noopener noreferrer" className="hover:text-ink">
+                WhatsApp
+              </a>
+            </li>
+            <li>
+              <a href={siteConfig.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-ink">
+                Facebook Messenger
               </a>
             </li>
             <li>

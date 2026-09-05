@@ -10,7 +10,7 @@ const staticRoutes = [
   "/sluzby/harmonizacia-cakier",
   "/sluzby/zenske-kruhy",
   "/sluzby/intuitivny-tanec",
-  "/dvojplamene",
+  "/dvojplamen",
   "/skusenosti-klientov",
   "/blog",
   "/kontakt",

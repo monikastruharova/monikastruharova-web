@@ -44,11 +44,10 @@ export const services: ServiceTeaser[] = [
 ];
 
 export const dvojplamenTeaser = {
-  slug: "cesta-dvojplamena" as ServiceSlug,
-  title: "Dvojplamene",
+  title: "Dvojplameň",
   teaser:
     "Hlboké zrkadlenie duší, ktoré prebúdza tvoju najčistejšiu podstatu. Spojenie, ktoré nezväzuje, ale transformuje, oslobodzuje a vedie ťa späť k sebe.",
-  href: "/dvojplamene",
+  href: "/dvojplamen",
 };
 
 export function serviceBySlug(slug: ServiceSlug) {

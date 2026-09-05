@@ -4,9 +4,22 @@ Tento súbor sleduje otvorené otázky zo zadania (sekcia 14) a chýbajúce asse
 Web je funkčne aj obsahovo hotový (statický Next.js build), ale **nejde ho
 pustiť naostro**, kým nie sú tieto body vyriešené.
 
-## 1. Štruktúra stránok — Dvojplamene / Ženské kruhy / Intuitívny tanec
-Dvojplamene sú vyčlenené ako samostatná téma / špecializácia v hlavnom menu na `/dvojplamene` (nie pod službami).
-Služby obsahujú: `/sluzby/terapia-cesta`, `/sluzby/harmonizacia-cakier`, `/sluzby/zenske-kruhy`, `/sluzby/intuitivny-tanec`.
+## 1. Štruktúra stránok — Dvojplameň / Ženské kruhy / Intuitívny tanec
+Dvojplameň je vyčlenený ako samostatná téma v hlavnom menu na `/dvojplamen`
+(nie pod službami). Služby obsahujú: `/sluzby/terapia-cesta`,
+`/sluzby/harmonizacia-cakier`, `/sluzby/zenske-kruhy`,
+`/sluzby/intuitivny-tanec`.
+
+**Aktualizácia (na žiadosť Moniky):** stránka aj URL premenované z
+množného čísla "Dvojplamene"/`/dvojplamene` na jednotné číslo
+"Dvojplameň"/`/dvojplamen` — všade, kde ide o názov sekcie/tlačidlo
+(menu, nadpis, CTA na Domove a v blogu). Pôvodná URL `/dvojplamene` má
+trvalé (301) presmerovanie na `/dvojplamen` (`next.config.ts`).
+Nezmenené ostali gramatické tvary v texte blogových článkov ("Dvojplamene
+sú...", "Dvojplamene majú...") a názov článku "Dvojplamene a veľká
+transformácia 2023" — to je Monikin pôvodný text, nie názov sekcie.
+Zároveň odstránený "eyebrow" nadpis "Špecializácia" nad H1 (na žiadosť),
+zmenená úvodná veta pred citátmi a text CTA na konci stránky.
 
 ## 2. ~~Ceny~~ — VYRIEŠENÉ
 Potvrdené (Petr): ostávajú vyššie/novšie ceny. Terapia Cesta 120 €,
@@ -24,26 +37,30 @@ TODO komentáre.
 - Pri Harmonizácii čakier vymazaná veta "Skupinové harmonizácie
   organizujem príležitostne."
 
-## 3. ~~Kontaktný formulár~~ → požiadavky vedú na Facebook — VYRIEŠENÉ
-Monika sa rozhodla, že požiadavky majú chodiť cez Facebook, nie cez formulár/
-e-mail. Všetky "Objednať sa" / "Chcem sa objednať..." CTA po webe (header,
-`/kontakt`, závery stránok služieb aj Dvojplameňov) teraz vedú na
-`siteConfig.facebook` = `https://www.facebook.com/cestou.srdca` (nová
-karta). Položka "Kontakt" bola na žiadosť odstránená aj z hlavnej
-navigácie (`src/data/site.ts` → `mainNav`) — stránka `/kontakt` naďalej
-existuje (napr. pre priamy odkaz), len už nie je v menu ani v pätičke.
+## 3. ~~Kontakt~~ — VYRIEŠENÉ (viackanálovo)
+Pôvodne (skôr v projekte) sa Monika rozhodla pre Facebook ako jediný
+kontaktný kanál, neskôr chcela späť aj e-mail. Teraz (nová požiadavka):
+nie každý klient má Facebook, takže `/kontakt` je prestavaný na
+rovnocenný výber zo 4 kanálov — Telefón, WhatsApp, Facebook Messenger,
+E-mail (`src/app/kontakt/page.tsx`, hodnoty v `siteConfig` v
+`src/data/site.ts`: `phone`, `whatsapp`, `email`, `facebook`). Telefónne
+číslo `+421 905 281 561` poslala Monika priamo. Položka "Facebook
+Messenger" pôvodne viedla na priamy `m.me/cestou.srdca` odkaz na
+Messenger chat — na žiadosť zmenené tak, aby viedla na jej Facebook
+stránku (`siteConfig.facebook`) rovnako ako všade inde na webe.
+
+Položka "Kontakt" je späť v hlavnej navigácii aj v pätičke (na konci,
+presne ako v úplne prvej verzii webu). Tlačidlo "Objednať sa" v hlavičke
+aj všetky CTA "Chcem sa objednať"/"Rezervovať si miesto..." naprieč
+webom teraz vedú na `/kontakt` namiesto priamo na Facebook — výnimka sú
+2 tlačidlá, ktoré sú zámerne o FB **udalostiach**, nie o kontaktovaní
+("Aktuálne podujatia na Facebooku" na Harmonizácii čakier, "Pozri si
+najbližšie termíny" na Intuitívnom tanci) — tie ostávajú viesť na
+`siteConfig.facebookEvents`.
 
 Pôvodný `ContactForm` + `/api/kontakt` route zostávajú v kóde nenapojené
-(pozri komentár na začiatku oboch súborov) pre prípad, že by sa Monika
-neskôr rozhodla pre formulár/e-mail popri Facebooku.
-
-**Aktualizácia:** Kontaktný e-mail bol pôvodne na žiadosť úplne
-odstránený, no Monika si to rozmyslela a požiadala o jeho vrátenie —
-ako doplnkový kontakt **za** Facebookom (Facebook zostáva primárny/prvý).
-Obnovené v pätičke, na `/kontakt` (pod FB tlačidlom) aj v
-`/ochrana-osobnych-udajov` (kontakt na prevádzkovateľa). Použitá je
-pôvodná adresa `info@monikastruharova.sk` (rovnaká, aká bola na webe
-predtým, kým sa neodstránila) — `siteConfig.email` v `src/data/site.ts`.
+(pozri komentár na začiatku oboch súborov) pre prípad, že by Monika
+predsa len chcela aj webový formulár popri týchto 4 kanáloch.
 
 ## ~~4. Videá Brandon Bays (stránka Terapia Cesta)~~ — VYRIEŠENÉ
 Monika poslala 3 YouTube odkazy, nasadené v
@@ -307,6 +324,23 @@ poslala plné pôvodné znenie všetkých 7 a sú teraz doplnené v
 - "Moja duša žiari šťastím" — Peter
 - "Proces mi priniesol nové uvedomenia" — Zlatica
 
+## ~~Recenzia "Rozviazala mi ruky" (Juraj) bola neúplná~~ — VYRIEŠENÉ
+Monika poslala plný text, doplnené v `src/data/testimonials.ts` (id
+`juraj-rozviazala-mi-ruky`) — pribudol chýbajúci úvodný odsek pred už
+existujúcou vetou. Opravený aj drobný preklep "Terapia cesta" →
+"Terapia Cesta" (veľké C, konzistentne s názvom metódy všade inde na
+webe).
+
+## Opravená "pomlčka" pri čítaní nahlas (na potvrdenie)
+Monika (číta si web cez čítačku) nahlásila rušivú dlhú pomlčku po
+skúsenosti Zuzky na Harmonizácii čakier a po skúsenostiach na
+Intuitívnom tanci. Overené char-by-char — jediné spojovníky/pomlčky v
+zobrazených referenciách boli: "Pracovali sme spolu 2-3 krát denne"
+(Zuzana) → zmenené na "2 až 3 krát denne"; "...nedá úplne opísať –
+treba ho zažiť." (Marián) → rozdelené na dve vety. **Zatiaľ nepotvrdené
+Monikou** — ak pomlčka po nasadení stále znie, potrebujem presnejšie
+miesto.
+
 ## Kurátorstvo referencií — presné umiestnenie podľa Moniky
 Na žiadosť sme prestali spoliehať na automatický výber "prvé 2 podľa
 poradia v poli" a namiesto toho je presne určené, čo sa kde zobrazuje:
@@ -341,10 +375,20 @@ Na žiadosť premenovaný nadpis sekcie so "stenou citátov" na
 aha-momenty na ceste Dvojplameňov" a doplnená chýbajúca úvodná veta
 (predtým nadpis prechádzal rovno do citátov bez kontextu).
 
-## Ochrana osobných údajov — obsah schválený Monikou
-Monika si stránku `/ochrana-osobnych-udajov` pozrela a text (mimo drobnej
-jazykovej opravy "poptávka" → "požiadavka") jej vyhovuje. Výslovne si
-zatiaľ neželá pridávať viac kontaktov, než mala na pôvodnom webe — takže
-sa tu už nemá dopĺňať napr. telefón ani e-mail, iba ak si to sama vyžiada.
-Zostávajúce TODO: doplniť fakturačné/IČO údaje pri "Prevádzkovateľ", ak sú
-relevantné (pozri komentár priamo v `page.tsx`).
+## ~~Ochrana osobných údajov~~ — VYRIEŠENÉ, stránka je finálna
+Monika potvrdila, že k GDPR obsahu už nič nové neplánuje posielať — text
+je definitívny. Preto:
+- odstránený viditeľný orientačný "TODO" rámček navrchu stránky aj veta
+  "(TODO: doplniť fakturačné/IČO údaje...)" pri "Prevádzkovateľ" (obe
+  boli reálne viditeľné pre návštevníkov, nielen vo vývoji)
+- `robots: { index: false }` odstránené z metadát (stránka už nie je
+  rozpracovaná, nemá dôvod byť schovaná pred vyhľadávačmi)
+- sekcia "Prevádzkovateľ" teraz odkazuje na `/kontakt` namiesto priameho
+  Facebook odkazu (kvôli viackanálovému kontaktu, pozri bod 3 vyššie);
+  sekcia "Aké údaje spracúvame" rozšírená o telefón/WhatsApp/e-mail
+  (predtým spomínala len Facebook)
+- **pridaná nová podsekcia "Vylúčenie zodpovednosti"** — návrh textu
+  odo mňa (bežná formulka pre terapeutické/koučovacie weby: obsah je
+  informačný, nenahrádza odbornú/lekársku starostlivosť, účasť na
+  sedeniach je dobrovoľná). **Monika si ho môže upraviť/prepísať** —
+  zatiaľ ide len o môj návrh, nie o jej vlastné schválené znenie.

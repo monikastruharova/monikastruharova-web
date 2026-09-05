@@ -195,7 +195,7 @@ export default function HarmonizaciaCakierPage() {
           <CTABlock
             heading="Chcem harmonizovať svoju energiu"
             ctaLabel="Chcem harmonizovať svoju energiu"
-            ctaHref={siteConfig.facebook}
+            ctaHref="/kontakt"
           />
         </Container>
       </section>

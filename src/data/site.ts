@@ -2,12 +2,12 @@ export const siteConfig = {
   name: "Monika Struhárová",
   title: "Monika Struhárová — Cestou srdca",
   domain: "monikastruharova.sk",
-  phone: "",
-  instagram: "",
-  // Doplnkový kontakt — na žiadosť zobrazovaný v kontaktoch až za Facebookom.
+  // Všetky kontaktné kanály — zobrazované spolu na `/kontakt` a v pätičke.
+  phone: "+421 905 281 561",
+  whatsapp: "https://wa.me/421905281561",
   email: "info@monikastruharova.sk",
-  // Hlavný kontaktný kanál — všetky "Objednať sa" CTA po webe vedú sem.
   facebook: "https://www.facebook.com/cestou.srdca",
+  instagram: "",
   // TODO: ak vznikne samostatná FB udalosť/skupina pre podujatia, doplniť
   // sem jej konkrétne URL — zatiaľ odkazujeme na ten istý profil vyššie.
   facebookEvents: "https://www.facebook.com/cestou.srdca",
@@ -32,7 +32,8 @@ export const mainNav: NavItem[] = [
       { label: "Intuitívny tanec", href: "/sluzby/intuitivny-tanec" },
     ],
   },
-  { label: "Dvojplamene", href: "/dvojplamene" },
+  { label: "Dvojplameň", href: "/dvojplamen" },
   { label: "Skúsenosti klientov", href: "/skusenosti-klientov" },
   { label: "Blog", href: "/blog" },
+  { label: "Kontakt", href: "/kontakt" },
 ];

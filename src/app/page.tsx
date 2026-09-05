@@ -131,7 +131,7 @@ Prijmi teda odo mňa túto krátku meditáciu ako malý darček na tvoju cestu k
             <div className="mx-auto max-w-sm overflow-hidden blob-alt">
               <Image
                 src="/images/h1-dvojplamene-vizual.jpg"
-                alt="Symbolický vizuál — Dvojplamene"
+                alt="Symbolický vizuál — Dvojplameň"
                 width={1300}
                 height={867}
                 className="h-auto w-full object-cover"
@@ -139,7 +139,7 @@ Prijmi teda odo mňa túto krátku meditáciu ako malý darček na tvoju cestu k
             </div>
             <div>
               <p className="text-xs font-semibold tracking-[0.2em] text-sage-dark uppercase">
-                Dvojplamene
+                Dvojplameň
               </p>
               <p className="mt-4 text-lg leading-relaxed text-ink md:text-xl">
                 Hlboké zrkadlenie duší, ktoré prebúdza tvoju najčistejšiu podstatu. Spojenie,
@@ -149,7 +149,7 @@ Prijmi teda odo mňa túto krátku meditáciu ako malý darček na tvoju cestu k
                 href={dvojplamenTeaser.href}
                 className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-clay-dark hover:underline"
               >
-                Preskúmať tému Dvojplamene <span aria-hidden>→</span>
+                Preskúmať tému Dvojplameň <span aria-hidden>→</span>
               </Link>
             </div>
           </div>
@@ -232,7 +232,7 @@ Prijmi teda odo mňa túto krátku meditáciu ako malý darček na tvoju cestu k
             heading="Cieľom života nie je prežívať v ochrannej ulite."
             body="Cieľom života je postaviť sa do svojej sily a naozaj žiť. Ak cítiš, že nastal čas ukončiť pasívne čakanie a chceš premeniť svoju bolesť na vnútornú slobodu, bude mi cťou ťa sprevádzať."
             ctaLabel="Chcem sa objednať na sedenie"
-            ctaHref={siteConfig.facebook}
+            ctaHref="/kontakt"
           />
         </Container>
       </section>

@@ -74,7 +74,7 @@ export const testimonials: Testimonial[] = [
     id: "marian-rastli-mi-kridla",
     title: "Rástli mi krídla",
     quote:
-      "Na tanec som prišiel bez očakávaní a netušil som, čo ma čaká. Hudba vo mne postupne otvorila napätie a silné emócie, ktoré vystriedal obrovský príval energie a radosti. V jednom momente som cítil neuveriteľnú ľahkosť, akoby som sa vznášal a rástli mi krídla. Pocit úplnej slobody. Bol to intenzívny a oslobodzujúci zážitok, ktorý sa nedá úplne opísať – treba ho zažiť.",
+      "Na tanec som prišiel bez očakávaní a netušil som, čo ma čaká. Hudba vo mne postupne otvorila napätie a silné emócie, ktoré vystriedal obrovský príval energie a radosti. V jednom momente som cítil neuveriteľnú ľahkosť, akoby som sa vznášal a rástli mi krídla. Pocit úplnej slobody. Bol to intenzívny a oslobodzujúci zážitok, ktorý sa nedá úplne opísať. Treba ho zažiť.",
     author: "Marián",
     services: ["intuitivny-tanec"],
     featured: true,
@@ -176,7 +176,7 @@ export const testimonials: Testimonial[] = [
     id: "juraj-rozviazala-mi-ruky",
     title: "Rozviazala mi ruky",
     quote:
-      "Som nesmierne vďačný, že som sa k terapii dostal. Vniesla do môjho života pokoj a vzala napätie, v ktorom som dlho žil.",
+      "Terapia Cesta mi dala možnosť nahliadnuť hlboko do mojej duše, odpustiť sebe samému aj ostatným. Ukázala mi smer a obrazne rozviazala ruky. Dlho som bol zaseknutý na jednom mieste a nevedel som sa pohnúť.\nSom nesmierne vďačný, že som sa k terapii dostal. Vniesla do môjho života pokoj a vzala napätie, v ktorom som dlho žil.",
     author: "Juraj",
     services: ["terapia-cesta"],
     featured: true,
@@ -259,7 +259,7 @@ export const testimonials: Testimonial[] = [
     id: "zuzana-pretekat-zivot",
     title: "Mojím telom znovu začínal pretekať život",
     quote:
-      "Pred 2 rokmi som bola v nemocnici vo veľmi vážnom stave. Zo dňa na deň sa mi pohoršovalo a bolesti boli neznesiteľné. Chodila som po vyšetreniach a lekári mi oznamovali samé zlé správy. Bola som zúfalá a nahnevaná a cítila som sa bezmocne. Môj pobyt v nemocnici sa z 3 dní natiahol na vyše 3 týždne.\nJedného dňa mi Monika navrhla terapiu.\nDôverovala som jej a okamžite som súhlasila, keďže som potrebovala všetku pomoc, ktorá sa ponúkala.\nPracovali sme spolu 2-3 krát denne. Hneď od začiatku som cítila, akoby mojím telom znovu začínal pretekať život. Konečne sa so mnou dialo niečo, čo som vnímala veľmi pozitívne. Moja rodina po každom sedení u mňa videla novú iskru v očiach, čo im aj mne dodávalo veľmi potrebnú nádej. Môj zdravotný stav sa konečne začal zlepšovať 🥳. Odvtedy si na prácu s energiou nedajú dopustiť. A ja tiež. 😁\nZo srdca odporúčam každému! Mne táto energia pomohla vo veľmi ťažkých chvíľach a som za ňu veľmi vďačná 🤗😀❤️",
+      "Pred 2 rokmi som bola v nemocnici vo veľmi vážnom stave. Zo dňa na deň sa mi pohoršovalo a bolesti boli neznesiteľné. Chodila som po vyšetreniach a lekári mi oznamovali samé zlé správy. Bola som zúfalá a nahnevaná a cítila som sa bezmocne. Môj pobyt v nemocnici sa z 3 dní natiahol na vyše 3 týždne.\nJedného dňa mi Monika navrhla terapiu.\nDôverovala som jej a okamžite som súhlasila, keďže som potrebovala všetku pomoc, ktorá sa ponúkala.\nPracovali sme spolu 2 až 3 krát denne. Hneď od začiatku som cítila, akoby mojím telom znovu začínal pretekať život. Konečne sa so mnou dialo niečo, čo som vnímala veľmi pozitívne. Moja rodina po každom sedení u mňa videla novú iskru v očiach, čo im aj mne dodávalo veľmi potrebnú nádej. Môj zdravotný stav sa konečne začal zlepšovať 🥳. Odvtedy si na prácu s energiou nedajú dopustiť. A ja tiež. 😁\nZo srdca odporúčam každému! Mne táto energia pomohla vo veľmi ťažkých chvíľach a som za ňu veľmi vďačná 🤗😀❤️",
     author: "Zuzana",
     services: ["harmonizacia-cakier"],
     featured: true,

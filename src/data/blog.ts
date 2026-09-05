@@ -337,8 +337,8 @@ export const blogPosts: BlogPost[] = [
     category: "pribehy-zo-zivota",
     excerpt:
       "„Láska je len slovo,“ znela kedysi téma školskej úvahy. O tom, ako láska stráca iskru pod ťarchou očakávaní — a ako vyzerá láska, ktorá si nekladie podmienky.",
-    ctaLabel: "Spoznaj Dvojplamene",
-    ctaHref: "/dvojplamene",
+    ctaLabel: "Spoznaj Dvojplameň",
+    ctaHref: "/dvojplamen",
     pending: false,
     body: [
       { type: "p", text: "Kedysi dávno sme v škole písali úvahu na tému „Láska je len slovo“. Bolo to pred mnohými rokmi, takže si nepamätám, ako moja práca dopadla. No táto myšlienka mnou stále rezonuje." },
@@ -945,8 +945,8 @@ export const blogPosts: BlogPost[] = [
     category: "tajomny-svet-dvojplamenov",
     excerpt:
       "Cyklicita sprevádza svet dvojplameňov na každom kroku. Veľký portál zjednotenia sa otvoril začiatkom roka 2022 a uzavrie sa koncom roka 2023 — ako sa táto zmena prejaví v našom živote?",
-    ctaLabel: "Preskúmať tému Dvojplamene",
-    ctaHref: "/dvojplamene",
+    ctaLabel: "Preskúmať tému Dvojplameň",
+    ctaHref: "/dvojplamen",
     pending: false,
     body: [
       { type: "p", text: "Všetko vo vesmíre je v neustálom pohybe a zmena je jeho prirodzenou súčasťou." },
@@ -993,8 +993,8 @@ export const blogPosts: BlogPost[] = [
     category: "tajomny-svet-dvojplamenov",
     excerpt:
       "Cesta dvojplameňa je náročná, neúprosná a zdrvujúca — a zároveň nesmierne obohacujúca. O tom, prečo je na nej toľko bolesti a ako dlho ešte môže trvať.",
-    ctaLabel: "Preskúmať tému Dvojplamene",
-    ctaHref: "/dvojplamene",
+    ctaLabel: "Preskúmať tému Dvojplameň",
+    ctaHref: "/dvojplamen",
     pending: false,
     body: [
       { type: "p", text: "Cesta dvojplameňa je cestou veľkej duchovnej a osobnej transformácie. Spoznávame samých seba a začíname na seba hľadieť z dovtedy nepoznanej perspektívy. Odkrývame to, čo sme na sebe nevideli a nechceli vidieť. Neústupčivá, transformačná sila dvojplameňa prináša koniec odmietaniu seba, svojej skutočnej žiary, svojho pravého JA, svojej božskej podstaty." },
@@ -1019,8 +1019,8 @@ export const blogPosts: BlogPost[] = [
     category: "tajomny-svet-dvojplamenov",
     excerpt:
       "Prečo pri niektorých ľuďoch cítime nevysvetliteľné puto a pri iných potrebu utiecť? O dvojplameni ako o dokonalom zrkadle našej duše.",
-    ctaLabel: "Preskúmať tému Dvojplamene",
-    ctaHref: "/dvojplamene",
+    ctaLabel: "Preskúmať tému Dvojplameň",
+    ctaHref: "/dvojplamen",
     pending: false,
     body: [
       { type: "p", text: "Položili ste si niekedy otázku, ako je možné, že niektorí ľudia popri nás prejdú bez povšimnutia a pri iných sa cítime vyslovene príjemne? A potom sú aj takí, pred ktorými máme potrebu utiecť a ich životnú cestu nadobro oddeliť od tej našej?" },
@@ -1048,8 +1048,8 @@ export const blogPosts: BlogPost[] = [
     category: "tajomny-svet-dvojplamenov",
     excerpt:
       "Pochopenie cesty a práca na sebe — dva piliere, bez ktorých sa na ceste dvojplameňa nedá napredovať. Osobná skúsenosť s hľadaním tej správnej metódy.",
-    ctaLabel: "Preskúmať tému Dvojplamene",
-    ctaHref: "/dvojplamene",
+    ctaLabel: "Preskúmať tému Dvojplameň",
+    ctaHref: "/dvojplamen",
     pending: false,
     body: [
       { type: "quote", text: "„Ľudia sa vydávajú rôznymi cestami, aby našli uspokojenie a šťastie. To, že nie sú na Vašej ceste, ešte neznamená, že sa stratili.“ — Dalajláma" },
@@ -1094,8 +1094,8 @@ export const blogPosts: BlogPost[] = [
     category: "tajomny-svet-dvojplamenov",
     excerpt:
       "Tušil Dante Alighieri vo svojej Božskej komédii, čo je dvojplameň? O ceste z pekla cez očistec do raja, ktorú dvojplamene prežívajú znova a znova.",
-    ctaLabel: "Preskúmať tému Dvojplamene",
-    ctaHref: "/dvojplamene",
+    ctaLabel: "Preskúmať tému Dvojplameň",
+    ctaHref: "/dvojplamen",
     pending: false,
     body: [
       { type: "p", text: "Tušil Dante Alighieri, jeden z najvýznamnejších svetových básnikov žijúci v stredovekom Taliansku, čo je „dvojplameň“?" },
@@ -1124,8 +1124,8 @@ export const blogPosts: BlogPost[] = [
     category: "tajomny-svet-dvojplamenov",
     excerpt:
       "Kniha „V objatí duše“ vznikla v jednom z najťažších období života — a priniesla so sebou tri dôležité uvedomenia o tom, komu je jej posolstvo určené.",
-    ctaLabel: "Preskúmať tému Dvojplamene",
-    ctaHref: "/dvojplamene",
+    ctaLabel: "Preskúmať tému Dvojplameň",
+    ctaHref: "/dvojplamen",
     pending: false,
     body: [
       { type: "p", text: "Knihu „V objatí duše“ som začala písať v jednom z najhorších období svojho života." },
@@ -1160,8 +1160,8 @@ export const blogPosts: BlogPost[] = [
     category: "tajomny-svet-dvojplamenov",
     excerpt:
       "Ako sa z pasce obete, presvedčení o vlastnej malosti a opakovaných pádov stáva cesta späť k vlastnej sile a k diamantu, ktorý sme v sebe celý čas ukrývali.",
-    ctaLabel: "Preskúmať tému Dvojplamene",
-    ctaHref: "/dvojplamene",
+    ctaLabel: "Preskúmať tému Dvojplameň",
+    ctaHref: "/dvojplamen",
     pending: false,
     body: [
       { type: "p", text: "Energia dvojplameňov je jedinečná. Bez ohľadu na to, či sme zjednotení so svojou druhou polovicou alebo nie, naša vnútorná žiara môže mať obrovskú moc." },

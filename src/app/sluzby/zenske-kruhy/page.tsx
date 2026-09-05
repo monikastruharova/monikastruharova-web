@@ -250,7 +250,7 @@ export default function ZenskeKruhyPage() {
           <CTABlock
             heading="Rezervuj si miesto v kruhu"
             ctaLabel="Rezervovať si miesto v kruhu"
-            ctaHref={siteConfig.facebook}
+            ctaHref="/kontakt"
           />
         </Container>
       </section>

@@ -6,7 +6,6 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import { testimonialsFor } from "@/data/testimonials";
-import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Terapia Cesta",
@@ -228,7 +227,7 @@ export default function TerapiaCestaPage() {
           <CTABlock
             heading="Chcem sa objednať"
             ctaLabel="Chcem sa objednať"
-            ctaHref={siteConfig.facebook}
+            ctaHref="/kontakt"
           />
         </Container>
       </section>
