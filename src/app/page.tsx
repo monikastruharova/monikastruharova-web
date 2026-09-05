@@ -130,10 +130,10 @@ Prijmi teda odo mňa túto krátku meditáciu ako malý darček na tvoju cestu k
           <div className="grid items-center gap-10 rounded-[2.5rem] border border-sand bg-white/50 p-8 md:grid-cols-2 md:p-14">
             <div className="mx-auto max-w-sm overflow-hidden blob-alt">
               <Image
-                src="/images/h1-dvojplamene-vizual.jpg"
+                src="/images/h1-dvojplamene-vizual-v2.jpg"
                 alt="Symbolický vizuál — Dvojplameň"
-                width={1300}
-                height={867}
+                width={1024}
+                height={559}
                 className="h-auto w-full object-cover"
               />
             </div>
