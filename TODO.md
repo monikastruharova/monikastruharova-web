@@ -122,12 +122,14 @@ byť (pozri aj bod nižšie o "Naučme sa dôverovať životu").
 Nasadené sú len jasne označené vizuálne "sloty"
 (`src/components/PlaceholderImage.tsx`) — žiadne umelo generované fotografie.
 Pred produkciou nahradiť skutočnými súbormi:
-- **Portrét Moniky (`monika-struharova-portret.jpg`) presunutý na žiadosť
-  z hera na Domove aj z Môjho príbehu na stránku Intuitívny tanec**
-  (`src/app/sluzby/intuitivny-tanec/page.tsx` — nová dvojstĺpcová hero
-  sekcia). Na Domove (`src/app/page.tsx`) aj na Môjom príbehu
-  (`src/app/moj-pribeh/page.tsx`) je na jeho mieste opäť viditeľný
-  placeholder — čaká sa na **inú, novú fotografiu** pre tieto 2 miesta.
+- [x] Portrét Moniky (`monika-struharova-portret.jpg`) presunutý na
+  žiadosť z hera na Domove aj z Môjho príbehu na stránku Intuitívny
+  tanec (`src/app/sluzby/intuitivny-tanec/page.tsx` — dvojstĺpcová hero
+  sekcia).
+- [x] Na Domov (`src/app/page.tsx`) aj Môj príbeh
+  (`src/app/moj-pribeh/page.tsx`) doplnená nová fotka namiesto
+  placeholderu — Monika s pierkom v prírode (`public/images/
+  monika-portret-pierko.jpg`, dodaná priamo v plnom rozlíšení).
 - [x] Foto Moniky s Dalajlámom (nasadené na `/moj-pribeh` z roku 2008)
 - [x] 3 fotografie certifikátov: Terapia Cesta (The Journey), Reiki Master,
   Kvantový dotyk (TKDM) — nasadené na `/moj-pribeh`, klikateľné na plnú
