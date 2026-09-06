@@ -37,7 +37,7 @@ export function TestimonialsBrowser({ testimonials }: { testimonials: Testimonia
         ))}
       </div>
 
-      <div className="mt-10 columns-1 gap-6 sm:columns-2 lg:columns-3 [&>*]:mb-6 [&>*]:break-inside-avoid">
+      <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {visible.map((t) => (
           <TestimonialCard key={t.id} testimonial={t} />
         ))}

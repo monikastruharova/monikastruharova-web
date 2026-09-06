@@ -173,7 +173,7 @@ export default function TerapiaCestaPage() {
       {reviews.length ? (
         <section className="py-10 md:py-16">
           <Container className="mx-auto max-w-3xl">
-            <div className="columns-1 gap-6 sm:columns-2 [&>*]:mb-6 [&>*]:break-inside-avoid">
+            <div className="grid gap-6 sm:grid-cols-2">
               {reviews.map((t) => (
                 <TestimonialCard key={t.id} testimonial={t} />
               ))}

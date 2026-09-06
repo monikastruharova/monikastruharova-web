@@ -115,7 +115,7 @@ export default function HarmonizaciaCakierPage() {
             <h2 className="font-serif text-2xl text-ink md:text-3xl">
               Čo hovoria tí, ktorí Harmonizáciu čakier už zažili?
             </h2>
-            <div className="mt-8 grid grid-cols-2 items-start gap-4 sm:gap-6">
+            <div className="mt-8 grid gap-6 sm:grid-cols-2">
               {reviews.map((t) => (
                 <TestimonialCard key={t.id} testimonial={t} />
               ))}

@@ -50,10 +50,10 @@ export default function MyStoryPage() {
           <div className="relative mx-auto w-full max-w-sm">
             <div className="overflow-hidden rounded-3xl border border-sand/80 bg-sand/20 shadow-md">
               <Image
-                src="/images/monika-portret-pierko.jpg"
+                src="/images/monika-portret-vetvicky.jpg"
                 alt="Monika Struhárová"
-                width={1920}
-                height={1280}
+                width={1280}
+                height={1920}
                 priority
                 className="h-auto w-full object-cover"
               />

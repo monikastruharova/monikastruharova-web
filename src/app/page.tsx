@@ -136,10 +136,10 @@ Prijmi teda odo mňa túto krátku meditáciu ako malý darček na tvoju cestu k
           <div className="grid items-center gap-10 rounded-[2.5rem] border border-sand bg-white/50 p-8 md:grid-cols-2 md:p-14">
             <div className="mx-auto max-w-sm overflow-hidden blob-alt">
               <Image
-                src="/images/h1-dvojplamene-vizual-v2.jpg"
+                src="/images/h1-dvojplamene-vizual.jpg"
                 alt="Symbolický vizuál — Dvojplameň"
-                width={1024}
-                height={559}
+                width={1300}
+                height={867}
                 className="h-auto w-full object-cover"
               />
             </div>
@@ -168,7 +168,7 @@ Prijmi teda odo mňa túto krátku meditáciu ako malý darček na tvoju cestu k
           <h2 className="text-center font-serif text-2xl text-ink md:text-3xl">
             Povedali o mne…
           </h2>
-          <div className="mt-10 columns-1 gap-6 md:columns-2 [&>*]:mb-6 [&>*]:break-inside-avoid">
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
             {featuredTestimonials.map((t) => (
               <TestimonialCard key={t.id} testimonial={t} />
             ))}

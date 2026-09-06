@@ -126,16 +126,22 @@ Pred produkciou nahradiť skutočnými súbormi:
   žiadosť z hera na Domove aj z Môjho príbehu na stránku Intuitívny
   tanec (`src/app/sluzby/intuitivny-tanec/page.tsx` — dvojstĺpcová hero
   sekcia).
-- [x] Na Domov (`src/app/page.tsx`) aj Môj príbeh
-  (`src/app/moj-pribeh/page.tsx`) doplnená nová fotka namiesto
-  placeholderu — Monika s pierkom v prírode (`public/images/
-  monika-portret-pierko.jpg`, dodaná priamo v plnom rozlíšení).
+- [x] Na Domov (`src/app/page.tsx`) doplnená fotka Monika s pierkom
+  v prírode (`public/images/monika-portret-pierko.jpg`) — hero portrét,
+  nezmenené.
+- [x] Na Môj príbeh (`src/app/moj-pribeh/page.tsx`) je odlišná fotka od
+  Domova — Monika medzi vetvičkami stromu (`public/images/
+  monika-portret-vetvicky.jpg`, na žiadosť nahradila fotku s pierkom,
+  ktorá zostala len na Domove a na Intuitívnom tanci).
 - [x] Foto Moniky s Dalajlámom (nasadené na `/moj-pribeh` z roku 2008)
 - [x] 3 fotografie certifikátov: Terapia Cesta (The Journey), Reiki Master,
   Kvantový dotyk (TKDM) — nasadené na `/moj-pribeh`, klikateľné na plnú
   veľkosť
 - [x] Vizuál k Dvojplameňom na Domove — ruky držiace srdce (`src/app/page.tsx`,
-  `public/images/h1-dvojplamene-vizual.jpg`)
+  `public/images/h1-dvojplamene-vizual.jpg`). Krátko nahradený AI
+  kozmickým vizuálom od Moniky (`h1-dvojplamene-vizual-v2.jpg`), na
+  žiadosť vrátené späť na pôvodnú fotku — súbor `-v2` zostáva v
+  `public/images`, ale nič naň neodkazuje.
 - [x] Foto atmosféry ženského kruhu (`/sluzby/zenske-kruhy`,
   `public/images/h2-zenske-kruhy-atmosfera.jpg`) — voľnejšia symbolická
   fotka (žena s rozpaženými rukami v poli), nie priamo fotka z reálneho
@@ -342,6 +348,23 @@ zobrazených referenciách boli: "Pracovali sme spolu 2-3 krát denne"
 treba ho zažiť." (Marián) → rozdelené na dve vety. **Zatiaľ nepotvrdené
 Monikou** — ak pomlčka po nasadení stále znie, potrebujem presnejšie
 miesto.
+
+## Zjednotený vzhľad kariet s referenciami (na žiadosť)
+Predošlé 2 kolo úprav vzhľadu referencií (masonry stĺpce podľa dĺžky
+textu, potom pevné 2 stĺpce vedľa seba na Harmonizácii čakier a
+Intuitívnom tanci) bolo na žiadosť zrušené a nahradené jedným
+jednotným riešením všade (Domov, `/skusenosti-klientov`, všetky 4
+stránky služieb — `TestimonialsBrowser.tsx` aj priame `<div className="grid...">`
+na jednotlivých stránkach):
+- Bežná CSS grid mriežka (`grid gap-6 sm:grid-cols-2` resp.
+  `lg:grid-cols-3` na `/skusenosti-klientov`) — na mobile teda všade
+  pod sebou, od `sm`/`lg` vyššie vedľa seba. Karty v tom istom riadku
+  majú vďaka `grid` rovnakú výšku (žiadne `items-start`).
+- `TestimonialCard.tsx` je teraz klientská komponenta — text nad 260
+  znakov sa v zbalenom stave oreže (`line-clamp-6`) a pridá sa tlačidlo
+  "Čítať viac" / "Čítať menej". Krátke referencie žiadne tlačidlo
+  nemajú. Výsledok: všetky okienka rovnako veľké, dlhší text sa dá
+  rozkliknúť.
 
 ## Kurátorstvo referencií — presné umiestnenie podľa Moniky
 Na žiadosť sme prestali spoliehať na automatický výber "prvé 2 podľa
