@@ -64,9 +64,20 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-sand/70 py-6">
-        <p className="container-page text-xs text-ink-soft">
-          © {new Date().getFullYear()} Monika Struhárová. Všetky práva vyhradené.
-        </p>
+        <div className="container-page flex flex-col gap-2 text-xs text-ink-soft sm:flex-row sm:items-center sm:justify-between">
+          <p>© {new Date().getFullYear()} Monika Struhárová. Všetky práva vyhradené.</p>
+          <p>
+            Web:{" "}
+            <a
+              href="https://www.aerisq.tech"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-ink"
+            >
+              aerisq.tech
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
