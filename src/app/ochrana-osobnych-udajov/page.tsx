@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
             <h2 className="font-serif text-xl text-ink">Prevádzkovateľ</h2>
             <p className="mt-2">
               Monika Struhárová, prevádzkovateľka webu {siteConfig.domain}. Kompletné kontaktné
-              údaje (telefón, WhatsApp, Facebook Messenger, e-mail) nájdeš na stránke{" "}
+              údaje (telefón, WhatsApp, Facebook, e-mail) nájdeš na stránke{" "}
               <Link href="/kontakt" className="underline">
                 Kontakt
               </Link>
@@ -31,9 +31,9 @@ export default function PrivacyPolicyPage() {
             <h2 className="font-serif text-xl text-ink">Aké údaje spracúvame</h2>
             <p className="mt-2">
               Údaje, ktoré nám dobrovoľne poskytneš pri komunikácii (telefonicky, cez WhatsApp,
-              Facebook Messenger, e-mailom, prípadne inak) — napr. meno, kontakt a obsah správy —
-              za účelom vybavenia tvojej požiadavky. Spracovanie správ prostredníctvom Facebook
-              Messengeru sa riadi aj zásadami ochrany súkromia spoločnosti Meta.
+              Facebook, e-mailom, prípadne inak) — napr. meno, kontakt a obsah správy —
+              za účelom vybavenia tvojej požiadavky. Spracovanie správ prostredníctvom Facebooku
+              sa riadi aj zásadami ochrany súkromia spoločnosti Meta.
             </p>
           </div>
           <div>

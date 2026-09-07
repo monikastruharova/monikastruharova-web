@@ -47,7 +47,7 @@ export function Footer() {
             </li>
             <li>
               <a href={siteConfig.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-ink">
-                Facebook Messenger
+                Facebook
               </a>
             </li>
             <li>
@@ -67,12 +67,12 @@ export function Footer() {
         <div className="container-page flex flex-col gap-2 text-xs text-ink-soft sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Monika Struhárová. Všetky práva vyhradené.</p>
           <p>
-            Web:{" "}
+            <span aria-hidden>💚</span> Web vytvoril{" "}
             <a
               href="https://www.aerisq.tech"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-ink"
+              className="font-medium hover:text-ink"
             >
               aerisq.tech
             </a>

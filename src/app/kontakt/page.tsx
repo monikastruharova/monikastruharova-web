@@ -5,7 +5,7 @@ import { siteConfig } from "@/data/site";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Telefón, WhatsApp, Facebook Messenger alebo e-mail — vyber si spôsob, akým sa mi ozveš, a objednaj sa na terapiu Cesta, harmonizáciu čakier, ženský kruh alebo intuitívny tanec.",
+    "Telefón, WhatsApp, Facebook alebo e-mail — vyber si spôsob, akým sa mi ozveš, a objednaj sa na terapiu Cesta, harmonizáciu čakier, ženský kruh alebo intuitívny tanec.",
   alternates: { canonical: "/kontakt" },
 };
 
@@ -21,8 +21,8 @@ const channels = [
     href: siteConfig.whatsapp,
   },
   {
-    label: "Facebook Messenger",
-    value: "Napísať cez Messenger",
+    label: "Facebook",
+    value: "Napísať na Facebooku",
     href: siteConfig.facebook,
   },
   {
