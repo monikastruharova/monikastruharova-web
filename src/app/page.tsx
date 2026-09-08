@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   // aplikovať, preto je tu radšej istota.
   title: `Domov | ${siteConfig.name}`,
   description:
-    "Monika Struhárová — terapeutka a lektorka. Staň sa tvorcom svojho života: terapia Cesta, harmonizácia čakier, ženské kruhy a intuitívny tanec.",
+    "Monika Struhárová — Cestou srdca. Staň sa tvorcom svojho života: terapia Cesta, harmonizácia čakier, ženské kruhy a intuitívny tanec.",
   alternates: { canonical: "/" },
 };
 
