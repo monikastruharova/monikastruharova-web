@@ -69,12 +69,12 @@ export function Footer() {
           <p>
             <span aria-hidden>💚</span> Web vytvoril{" "}
             <a
-              href="https://www.aerisq.tech"
+              href="https://aerisq.cz"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium hover:text-ink"
             >
-              aerisq.tech
+              aerisq.cz
             </a>
           </p>
         </div>

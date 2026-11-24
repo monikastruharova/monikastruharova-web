@@ -41,6 +41,408 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "krok-1-von-zo-zony-komfortu-a-odhalenie-mojej-novej-vyzvy",
+    title: "Krok 1 — Von zo zóny komfortu a odhalenie mojej novej výzvy",
+    category: "pribehy-zo-zivota",
+    excerpt:
+      "Poznáš ten pocit, keď je život celkom fajn, no napriek tomu cítiš, že ti niečo chýba a nikam sa neposúvaš? Moja nová výzva a 5 krokov vystúpenia zo zóny komfortu.",
+    ctaLabel: "Objav terapiu Cesta",
+    ctaHref: "/sluzby/terapia-cesta",
+    coverSrc: "/images/blog-krok-1-von-zo-zony-komfortu.jpg",
+    coverWidth: 526,
+    coverHeight: 526,
+    pending: false,
+    body: [
+      { type: "p", text: "Poznáš ten pocit...?" },
+      { type: "p", text: "Vieš, že tvoj život je celkom fajn a v podstate sa nemáš na čo sťažovať." },
+      { type: "p", text: "No napriek tomu cítiš, že ti niečo chýba a nikam sa neposúvaš?" },
+      { type: "h2", text: "Čo sa to v nás vlastne odohráva?" },
+      {
+        type: "list",
+        items: [
+          "Zvláštny, nepriznaný pocit prázdnoty. Ale ako je to možné, ak stále niečo robíme?",
+          "Nespokojnosť, ktorú pred svetom ukrývame. Ale prečo, ak máme aj to, čo iným chýba?",
+          "Bezcieľnosť. Nuž, možno už máme všetko, čo sme v živote chceli dosiahnuť. Malo by nám to stačiť, či nie?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Nuda, smútok, žiadny zmysel, žiadny úsmev na tvári, stratenosť. A strach zo zmeny a neistoty.",
+      },
+      {
+        type: "p",
+        text: "Cítime sa ako v neviditeľnej pasci, v zlatej klietke, ktorá nám poskytuje všetko, čo sme vždy chceli mať. Ale napriek tomu to nie je ono.",
+      },
+      {
+        type: "quote",
+        text: "Radosť, nadšenie, iskričky v tele... Kde sa to všetko podelo? Veď to ani nedáva zmysel!",
+      },
+      { type: "p", text: "A predsa tam ostávame." },
+      {
+        type: "p",
+        text: "Ale prečo? Ako často si bezpečne sedíme vo svojej zóne komfortu, lebo tam všetko poznáme a nič nám tam nehrozí? Ale sme tam šťastní?",
+      },
+      {
+        type: "p",
+        text: "Ak chceme dať svojmu životu novú iskru a nový zmysel, musíme vykročiť do neznáma.",
+      },
+      { type: "h2", text: "Moja nová výzva" },
+      {
+        type: "p",
+        text: "Mňa tento pocit v poslednom čase vyslovene mátal, a preto som sa rozhodla, že aj ja v živote niečo zmením a dám si novú výzvu.",
+      },
+      {
+        type: "p",
+        text: "V priebehu najbližšieho týždňa si na vlastnej koži prejdem 5 krokov vystúpenia zo zóny komfortu.",
+      },
+      {
+        type: "p",
+        text: "A v kroku č. 5 urobím niečo, z čoho mám už teraz stiahnutý žalúdok. Srdce mi už búši, ale je čas urobiť to.",
+      },
+      {
+        type: "quote",
+        text: "Natočím video a prihovorím sa vám priamo na kameru.",
+      },
+      { type: "p", text: "A ty môžeš túto moju cestu sledovať celý čas tu." },
+      {
+        type: "p",
+        text: "Priznávam, vôbec to pre mňa nie je ľahké a podpora vždy poteší. Človek sa bojí zlyhania a radšej by ostal tam, kde je, alebo si zachoval anonymitu.",
+      },
+      {
+        type: "p",
+        text: "Ale ak si to chceš vyskúšať aj ty so svojou vlastnou výzvou, máš moju plnú podporu, aj keď si to necháš len pre seba.",
+      },
+      { type: "h2", text: "Ako na to?" },
+      { type: "p", text: "Skús si teraz len tak pre seba položiť jedinú otázku:" },
+      {
+        type: "quote",
+        text: "V ktorej oblasti svojho života momentálne stagnuješ, lebo je to pohodlnejšie ako urobiť niečo inak?",
+      },
+      {
+        type: "p",
+        text: "Nemusíš mi to písať do komentára. Stačí, ak to v tichosti priznáš sebe. V najbližšom článku sa spolu pozrieme na krok 2.",
+      },
+      {
+        type: "p",
+        text: "O zóne komfortu a o tom, ako nás drží vo svojich „pazúroch“, si môžeš prečítať v článku o Zóne komfortu a 5 krokoch, ako z nej vystúpiť.",
+      },
+    ],
+  },
+  {
+    slug: "krok-2-pomenovanie-mojho-strachu",
+    title: "Krok 2 — Pomenovanie môjho strachu",
+    category: "pribehy-zo-zivota",
+    excerpt:
+      "Tento krok v procese vystúpenia zo zóny komfortu je asi najťažší, pretože tu priznávame strach sami pred sebou. Pomenovanie výhovoriek a odvaha čeliť im.",
+    ctaLabel: "Objav terapiu Cesta",
+    ctaHref: "/sluzby/terapia-cesta",
+    coverSrc: "/images/blog-krok-2-pomenovanie-mojho-strachu.jpg",
+    coverWidth: 1024,
+    coverHeight: 1024,
+    pending: false,
+    body: [
+      {
+        type: "p",
+        text: "Tento krok je v procese vystúpenia zo zóny komfortu asi najťažší, pretože tu priznávame strach sami pred sebou.",
+      },
+      {
+        type: "p",
+        text: "A myseľ nás, samozrejme, v tomto strachu obzvlášť rada podporí a na počkanie vytiahne všetky možné a nemožné dôvody, prečo do toho neísť. Paleta jej katastrofických scenárov, ktoré by sa teoreticky mohli udiať, je nesmierne pestrá a občas nemá hraníc. Veď čo všetko by sa mohlo stať...",
+      },
+      {
+        type: "quote",
+        text: "Ach, keby len nebolo keby.",
+      },
+      { type: "h2", text: "Prečo tak neradi skúšame nové veci?" },
+      {
+        type: "p",
+        text: "Viete, prečo tak opatrne a neradi skúšame nové veci? Nie preto, že by sme na to nemali. Najčastejšie je to preto, lebo sa obávame, čo si o nás pomyslia iní.",
+      },
+      {
+        type: "p",
+        text: "Priznávam, mám to podobne. Keď si spomeniem na video, ktoré sa chystám natočiť, hlava ma okamžite začne bombardovať výhovorkami:",
+      },
+      {
+        type: "list",
+        items: [
+          "Čo ak to nezvládnem?",
+          "Čo ak sa zosmiešnim?",
+          "Čo ak sa zamotám?",
+          "Čo ak to nebude dosť dobré?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Náš strach však nezmizne, keď ho ignorujeme. Strach začne slabnúť, až keď mu budeme čeliť. A preto:",
+      },
+      {
+        type: "quote",
+        text: "„Áno, mám z toho obavy a nie je mi to jedno. Ale chcem svoj život obohatiť. Prijímam teda výzvu a postavím sa pred kameru.“",
+      },
+      {
+        type: "p",
+        text: "...aj keď to nebude jednoduché, aj keď budem mať obrovskú trému a žalúdok v krku. Ak však cúvnem a nič neurobím, nič nezískam.",
+      },
+      { type: "h2", text: "Odvaha a ochota zlyhať" },
+      {
+        type: "p",
+        text: "Takže v sebe nájdem odvahu, keďže odhodlanie už mám. Myslím, že mi chýba už len ochota zlyhať a prekonať ju je pre mňa naozaj náročné. Ale viem, že sa to dá a skôr či neskôr sa mi to aj podarí.",
+      },
+      {
+        type: "p",
+        text: "Najdôležitejšie je vydržať a nevzdať sa svojho cieľa.",
+      },
+      {
+        type: "p",
+        text: "Ak sa chceš pridať, napíš si dnes aj ty na kúsok papiera, čo ti bráni v tvojom vlastnom vykročení z komfortnej zóny. A potom ten papier pokrč a zahoď.",
+      },
+      {
+        type: "p",
+        text: "Alebo, ak to tak cítiš, môžeš mi to napísať do súkromnej správy. Ostane to medzi nami. 😉",
+      },
+      {
+        type: "p",
+        text: "A na nasledujúci Krok 3 si spolu posvietime už čoskoro. Pridáš sa aj ty?",
+      },
+    ],
+  },
+  {
+    slug: "krok-3-malymi-krokmi-k-velkemu-cielu",
+    title: "Krok 3 — Malými krokmi k veľkému cieľu",
+    category: "pribehy-zo-zivota",
+    excerpt:
+      "Vystúpiť zo zóny komfortu nemusí znamenať skočiť s padákom. Tretia fáza je o mikrokrokoch, ktoré nervový systém nepovažuje za hrozbu.",
+    ctaLabel: "Objav terapiu Cesta",
+    ctaHref: "/sluzby/terapia-cesta",
+    coverSrc: "/images/blog-krok-3-malymi-krokmi-k-velkemu-cielu.jpg",
+    coverWidth: 526,
+    coverHeight: 526,
+    pending: false,
+    body: [
+      {
+        type: "p",
+        text: "V prvom rade chcem poďakovať za všetky správy, ktoré so mnou pri „vykúkaní“ z vašej ulity zdieľate. Som nadšená, že ste sa ku mne na tejto ceste pridali. 🩷",
+      },
+      { type: "p", text: "Pokračujme teda ďalej..." },
+      {
+        type: "quote",
+        text: "Vystúpiť zo zóny komfortu nemusí hneď znamenať vyskočiť s padákom, aby sme sa prestali báť výšok.",
+      },
+      { type: "h2", text: "Prečo sú mikrokroky také kľúčové?" },
+      {
+        type: "p",
+        text: "Tretia fáza je preto o mikrokrokoch. Ak je totiž náš skok príliš veľký, náš mozog zamrzne. A naopak, ak robíme drobné krôčiky, náš nervový systém ostane pokojný, lebo ich nebude vnímať ako hrozbu.",
+      },
+      {
+        type: "p",
+        text: "Moje dnešné mikrokroky k videu boli tieto:",
+      },
+      {
+        type: "list",
+        items: [
+          "Napísala som si zoznam toho, čo chcem vo videu povedať.",
+          "Začala som svoj prejav testovať zvukovými nahrávkami a veru, ešte mám čo zlepšovať.",
+          "A už rozmýšľam, kde to video natočíme.",
+        ],
+      },
+      { type: "h2", text: "Ako vyzerá tvoj dnešný malý krok?" },
+      {
+        type: "p",
+        text: "Ako vyzerá tvoj dnešný malý krok k dosiahnutiu tvojho cieľa?",
+      },
+      {
+        type: "p",
+        text: "Možno chceš upiecť na Vianoce tie najlepšie medovníčky, ale chýba ti ten správny recept. Tak môžeš začať tým, že zozbieraš dobré a osvedčené recepty svojich kamarátok a začneš ich vypekať v menších dávkach.",
+      },
+      {
+        type: "p",
+        text: "Alebo nevieš, či by ti viac vyhovovala joga, pilates, kalanetika, či kurz varenia? Nevadí. Dopraj si mesiac skúšania rôznych možností. Keď zažiješ hodinu čohokoľvek na vlastnej koži, urobiť rozhodnutie, či sa tomu chceš venovať pravidelne, bude pre teba jednoduchšie.",
+      },
+      {
+        type: "p",
+        text: "A ak napríklad cítiš preťaženie a neustály tlak, tvojím mikrokrokom pri posúvaní hraníc môže byť paradoxne to, že si dovolíš nerobiť vôbec nič.",
+      },
+      {
+        type: "quote",
+        text: "Pre človeka zvyknutého stále podávať výkon môže byť aj obyčajné ležanie a počúvanie hudby nepredstaviteľným krokom do neznáma.",
+      },
+      { type: "h2", text: "Dopraj si 10 minút len pre seba" },
+      {
+        type: "p",
+        text: "Tak prečo si takúto maličkosť dnes nevyskúšať?",
+      },
+      {
+        type: "p",
+        text: "Skús si dnes dopriať len 10 minút oddychu bez telefónu a bez výčitiek. Ľahni si, vypni hlavu a len buď. Zvládneš to?",
+      },
+      {
+        type: "p",
+        text: "A nezabudni mi napísať, ako ti to ide. Do skorého videnia pri Kroku 4, priatelia.",
+      },
+    ],
+  },
+  {
+    slug: "krok-4-podpora-v-bezpecnom-prostredi",
+    title: "Krok 4 — Podpora v bezpečnom prostredí",
+    category: "pribehy-zo-zivota",
+    excerpt:
+      "Z komfortnej zóny sa nám podarí dostať ľahšie, ak vieme, že nám nič nehrozí. O sile bezpečného prijímajúceho kruhu, autentickosti a blížiacom sa videu.",
+    ctaLabel: "Spoznaj Ženské kruhy",
+    ctaHref: "/sluzby/zenske-kruhy",
+    coverSrc: "/images/blog-krok-4-podpora-v-bezpecnom-prostredi.jpg",
+    coverWidth: 526,
+    coverHeight: 526,
+    pending: false,
+    body: [
+      {
+        type: "p",
+        text: "Z komfortnej zóny sa nám podarí dostať ľahšie, ak vieme, že nám nič nehrozí.",
+      },
+      {
+        type: "p",
+        text: "Ak nás niekto hodnotí, alebo odsúdi naše konanie, okamžite sa stiahneme do ulity, alebo utečieme do bezpečia.",
+      },
+      {
+        type: "quote",
+        text: "Ale ak nájdeme miesto, kde nás nikto s nikým neporovnáva a nič od nás neočakáva, náš strach a napätie v tele prirodzene opadnú.",
+      },
+      { type: "h2", text: "Sila prijímajúceho bezpečia" },
+      {
+        type: "p",
+        text: "Ja nachádzam takúto oporu v kruhu svojich najbližších. No vytváram si ho aj tu, s vami.",
+      },
+      {
+        type: "p",
+        text: "A keď sa spolu dopracujeme ku Kroku 5, svojím výkonom nebudem súťažiť o najlepšie video roka, ale budem sa snažiť byť autentická. Lebo viem, že môžem.",
+      },
+      {
+        type: "p",
+        text: "Mimochodom, takéto prijímajúce bezpečie zažívame pravidelne na stretnutiach, na ktorých vás vždy veľmi rada sprevádzam.",
+      },
+      { type: "h2", text: "Aká je tam atmosféra?" },
+      {
+        type: "p",
+        text: "Pár slovami by som ju opísala takto: Je naplňujúca, otvorená, prijímajúca, vždy veľmi priateľská, až magická, plná nehy, lásky, súdržnosti, podpory, ale hlavne emocionálneho bezpečia.",
+      },
+      {
+        type: "p",
+        text: "Nemusíme sa tam na nič hrať, nič predstierať, ani plniť žiadne očakávania. Sme jednoducho sami sebou.",
+      },
+      {
+        type: "quote",
+        text: "Smejeme sa, keď to tak cítime a plačeme, keď to tak cítime. Lebo môžeme. A práve to robí naše stretnutia takými liečivými.",
+      },
+      {
+        type: "p",
+        text: "Kde dostávate úplné a bezpodmienečné prijatie vy?",
+      },
+      { type: "h2", text: "Veľká výzva sa blíži" },
+      {
+        type: "p",
+        text: "Ale aby som v tomto emocionálnom opojení nezabudla na svoju výzvu. Uff, už sa to blíži! Video, o ktorom hovorím už pár dní.",
+      },
+      {
+        type: "p",
+        text: "Priatelia, držte mi palce... asi to budem potrebovať.",
+      },
+      {
+        type: "p",
+        text: "Vidíme sa čoskoro (resp. keď bude to moje „slávne“ video hotové). 😉",
+      },
+    ],
+  },
+  {
+    slug: "krok-5-akcia",
+    title: "Krok 5 — Akcia",
+    category: "pribehy-zo-zivota",
+    excerpt:
+      "Dala som to! Príbeh o tom, ako som prekonala samu seba pred kamerou, uzavrela s ňou prímerie a čo vás čaká na najbližšej hodine Intuitívneho tanca.",
+    ctaLabel: "Spoznaj Intuitívny tanec",
+    ctaHref: "/sluzby/intuitivny-tanec",
+    coverSrc: "/images/blog-krok-5-akcia.jpg",
+    coverWidth: 768,
+    coverHeight: 1024,
+    pending: false,
+    body: [
+      { type: "p", text: "Dala som to!" },
+      {
+        type: "p",
+        text: "Nuž, priznávam bez mučenia, môj komfort vzal tesne pred štartom nahrávania nohy na plecia. Ale sadla som si a predýchala som to.",
+      },
+      {
+        type: "p",
+        text: "Musím však povedať, že nám to išlo ako v lete na saniach. Akoby vesmír nemal záujem spolupracovať. Alebo predsa len áno?",
+      },
+      { type: "h2", text: "Cesta za tichým miestom" },
+      {
+        type: "p",
+        text: "Kamera bola pripravená... No zrazu sused vo svojej záhrade začal hlasno telefonovať a nevyzeralo to na krátky rozhovor. Tak sme sa po 10 minútach zbalili do auta a odišli z mesta.",
+      },
+      {
+        type: "p",
+        text: "Druhé miesto bolo tichšie. Po chvíli sa tam však objavili včely a tie som na videu fakt nechcela mať. Pretože čo sa včiel týka, radšej ostanem v bezpečnej zóne bez nich.",
+      },
+      {
+        type: "p",
+        text: "...A tretie miesto bolo už dokonalé. Pokojné, široké pole, stromy v diaľke a teplé slniečko. No kľud, ktorý som veľmi potrebovala, sme konečne našli... kým okolo nezačal krúžiť traktor.",
+      },
+      {
+        type: "quote",
+        text: "Toto proste človek nevymyslí, nech by sa o to akokoľvek snažil. No v konečnom dôsledku to bola veľká sranda.",
+      },
+      { type: "h2", text: "Prímerie s kamerou" },
+      {
+        type: "p",
+        text: "Prekonala som samu seba a s kamerou som uzavrela prímerie. Tuším z nás budú kamošky.",
+      },
+      {
+        type: "p",
+        text: "A tak som ti konečne mohla osobne (teda cez obrazovku) povedať, čo ťa na našej najbližšej hodine Intuitívneho tanca čaká.",
+      },
+      {
+        type: "p",
+        text: "Bola to prvá, naozaj veľmi oddychová a hlboká hudobná meditácia v ľahu, kde nemusíš tancovať, dokonca sa ani hýbať. Nemusíš robiť vôbec nič. Len si ľahneš, prikryješ sa dekou a zavrieš oči.",
+      },
+      {
+        type: "p",
+        text: "Po všetkých hudobných meditáciách, ktoré sme spolu pri intuitívnom tanci absolvovali v pohybe, bola táto úplne odlišná. A práve táto informácia si prostredníctvom môjho prvého videa úspešne našla cestu k tým, ktorí to mali počuť.",
+      },
+      { type: "h2", text: "Svet za hranicou komfortu" },
+      {
+        type: "p",
+        text: "Vykročenie zo zóny môjho komfortu mi teda doslova otvorilo bránu k mnohým, ale hlavne novým možnostiam. Moderné technologické vymoženosti sú niekedy ako neskutočný zázrak, o ktorom sa nám ešte pred možno 30 rokmi ani len nesnívalo.",
+      },
+      {
+        type: "p",
+        text: "To ešte bola éra starých dobrých pevných liniek, ktoré veru neboli v každej domácnosti. Spomínate si na klasické telefóny s veľkými slúchadlami, ktoré ležali väčšinou na stolíku v predsieni, alebo viseli na stene? A ten zvuk, ktorý sa rozliehal priestorom, keď sa na ikonickom koliesku vytáčalo telefónne číslo?",
+      },
+      {
+        type: "p",
+        text: "Kto by len bol vtedy povedal, že ani nie za pár rokov budeme všetci nosiť svoj vlastný malý šikovný smartfónik vo vrecku? A o tom, že to svietiace vibrujúce čudo, čo stále zvoní, dokáže robiť videá na počkanie a kedykoľvek, ani nehovorím. Bez koliesok na vytáčanie a veľkých žltých telefónnych zoznamov.",
+      },
+      {
+        type: "quote",
+        text: "Z akej vyšľapanej zóny komfortu musela naša doba vystúpiť, aby sa dostala tam, kde je teraz!",
+      },
+      {
+        type: "p",
+        text: "Ďakujem za všetky tieto možnosti, ktoré nás stále posúvajú ďalej a robia z nás nových ľudí. Zrazu mám pocit, že mám k vám bližšie. A verím, že podobne to vnímate aj vy.",
+      },
+      {
+        type: "p",
+        text: "Práca s videami je navyše veľmi kreatívna a to sa mi veľmi páči a vnútorne ma to napĺňa. Je veľa vecí, ktoré chcem pri vytváraní svojich videí vyskúšať. Prirodzene, veď som s nimi len začala. No už teraz cítim, že niektoré z nich ešte potrebujú čas, nové odhodlanie a určite aj ďalšiu dávku odvahy.",
+      },
+      {
+        type: "p",
+        text: "Ale práve o tom sú tie naše bezpečné zóny, ktoré nie je vždy úplne ľahké prekročiť. Ale keď sa nám to raz podarí... To je však už iný príbeh. Možno môj a možno aj tvoj...",
+      },
+      {
+        type: "quote",
+        text: "Tak nech sa nám všetkým naďalej darí v prekračovaní našich vnútorných hraníc, aby bol náš život pestrejší, naplnenejší a radostnejší!",
+      },
+    ],
+  },
+  {
     slug: "tanec-srdca-1-z-parketu-do-ambulancie",
     title: "Tanec srdca 1 — Z parketu do ambulancie",
     category: "pribehy-zo-zivota",
